@@ -9,16 +9,14 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class FastFire : CustomCard
+    class RapidFire : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-
-            gun.attackSpeed = +0.6f;
-
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            gun.attackSpeed = +0.5f;
+            gun.reloadTimeAdd = +0.25f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
-
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -32,7 +30,7 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Fast Fire";
+            return "Rapid Fire";
         }
         protected override string GetDescription()
         {
@@ -54,7 +52,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+60%",
+                    amount = "+50%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Reload Speed",
+                    amount = "+25%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
