@@ -17,7 +17,7 @@ namespace BPP.Cards
             gun.damage = +1.5f;
             gun.projectileSpeed = +1.5f;
             gun.attackSpeed = -0.4f;
-            gun.reloadTimeAdd = +0.4f;
+            gun.reloadTime = +0.4f;
             gun.recoil = +0.4f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -67,6 +67,13 @@ namespace BPP.Cards
                 },
                 new CardInfoStat()
                 {
+                    positive = true,
+                    stat = "Recoil",
+                    amount = "+40%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
                     positive = false,
                     stat = "ATKSPD",
                     amount = "-40%",
@@ -78,14 +85,8 @@ namespace BPP.Cards
                     stat = "Reload Time",
                     amount = "+40%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Recoil",
-                    amount = "+40%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
+
             };
         }
 
