@@ -14,16 +14,16 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.damage = +1.5f;
-            gun.projectileSpeed = +1.5f;
-            gun.attackSpeed = -0.4f;
-            gun.reloadTime = +0.4f;
-            gun.recoil = +0.4f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            gun.damage = +1.5f;
+            gun.projectileSpeed = +1.5f;
+            gun.attackSpeed = -0.4f;
+            gunAmmo.reloadTime = 1.4f;
+            gun.recoil = +0.4f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
