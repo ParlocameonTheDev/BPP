@@ -61,7 +61,7 @@ namespace BPP.Cards
         }
         public override string GetModName()
         {
-            return "BPP.ModInitials";
+            return BPP.ModInitials;
         }
     }
 }

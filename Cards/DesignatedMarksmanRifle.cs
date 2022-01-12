@@ -16,6 +16,7 @@ namespace BPP.Cards
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.damage = +1.5f;
             gun.projectileSpeed = +1.75f;
+            gun.attackSpeed = 1.5f;
             gun.reloadTimeAdd = +0.4f;
             gun.recoil = +0.4f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
