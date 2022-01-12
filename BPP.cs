@@ -37,6 +37,7 @@ namespace BPP
             CustomCard.BuildCard<Dash>();
             CustomCard.BuildCard<DashMk2>();
             CustomCard.BuildCard<DesignatedMarksmanRifle>();
+            CustomCard.BuildCard<FastFire>();
         }
     }
 }
