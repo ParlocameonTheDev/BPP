@@ -35,7 +35,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "I'm a movement player Louis!";
+            return "I'm a movement player Louis! Dashes you in the oppisite direction of your crosshair when you block.";
         }
         protected override GameObject GetCardArt()
         {
@@ -65,7 +65,7 @@ namespace BPP.Cards
                 },
                 new CardInfoStat()
                 {
-                    positive = true,
+                    positive = false,
                     stat = "Block Cooldown",
                     amount = "+0.33s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
@@ -75,7 +75,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.ColdBlue;
+            return CardThemeColor.CardThemeColorType.FirepowerYellow;
         }
         public override string GetModName()
         {
