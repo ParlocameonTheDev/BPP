@@ -1,0 +1,335 @@
+{
+    "$id": 0,
+    "$type": "0|MapsExt.CustomMap, MapsExtended",
+    "id": "1a7c23f7-6e1a-406b-b25b-c66a6dbaf365",
+    "name": "mapTunnel",
+    "mapObjects": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[MapsExt.MapObjects.MapObject, MapsExtended]], mscorlib",
+        "$rlength": 17,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "2|MapsExt.MapObjects.Ground, MapsExtended",
+                "active": true,
+                "position": {
+                    "$type": "3|UnityEngine.Vector3, UnityEngine.CoreModule",
+                    -25.1023026,
+                    -10.9601564,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    58,
+                    29,
+                    2
+                },
+                "rotation": {
+                    "$type": "4|UnityEngine.Quaternion, UnityEngine.CoreModule",
+                    0,
+                    0,
+                    -0.382683456,
+                    0.9238795
+                }
+            },
+            {
+                "$id": 3,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    -13.1698675,
+                    13.1698694,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    27.25,
+                    8,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    -0.382683456,
+                    0.9238795
+                }
+            },
+            {
+                "$id": 4,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    13.4350338,
+                    -13.4350338,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    28,
+                    8,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    -0.382683456,
+                    0.9238795
+                }
+            },
+            {
+                "$id": 5,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    23.3345375,
+                    12.7279224,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    65,
+                    29,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    -0.382683456,
+                    0.9238795
+                }
+            },
+            {
+                "$id": 6,
+                "$type": "5|MapsExt.MapObjects.Rope, MapsExtended",
+                "active": true,
+                "startPosition": {
+                    "$type": 3,
+                    -3.74999714,
+                    3.5,
+                    -3
+                },
+                "endPosition": {
+                    "$type": 3,
+                    -3.74999714,
+                    3.5,
+                    -3
+                }
+            },
+            {
+                "$id": 7,
+                "$type": 5,
+                "active": true,
+                "startPosition": {
+                    "$type": 3,
+                    -3.74999714,
+                    3.5,
+                    -3
+                },
+                "endPosition": {
+                    "$type": 3,
+                    -3.74999714,
+                    3.5,
+                    -3
+                }
+            },
+            {
+                "$id": 8,
+                "$type": 5,
+                "active": true,
+                "startPosition": {
+                    "$type": 3,
+                    -3.74999714,
+                    3.5,
+                    -3
+                },
+                "endPosition": {
+                    "$type": 3,
+                    -2.75,
+                    2.5,
+                    -3
+                }
+            },
+            {
+                "$id": 9,
+                "$type": 5,
+                "active": true,
+                "startPosition": {
+                    "$type": 3,
+                    -1.500001,
+                    1.499999,
+                    -3
+                },
+                "endPosition": {
+                    "$type": 3,
+                    -0.5000001,
+                    0.5,
+                    -3
+                }
+            },
+            {
+                "$id": 10,
+                "$type": 5,
+                "active": true,
+                "startPosition": {
+                    "$type": 3,
+                    0.499999046,
+                    -0.500000954,
+                    -3
+                },
+                "endPosition": {
+                    "$type": 3,
+                    1.49999988,
+                    -1.49999988,
+                    -3
+                }
+            },
+            {
+                "$id": 11,
+                "$type": 5,
+                "active": true,
+                "startPosition": {
+                    "$type": 3,
+                    2.499999,
+                    -2.500001,
+                    -3
+                },
+                "endPosition": {
+                    "$type": 3,
+                    3.499999,
+                    -3.75,
+                    -3
+                }
+            },
+            {
+                "$id": 12,
+                "$type": "6|MapsExt.MapObjects.Spawn, MapsExtended",
+                "active": true,
+                "id": 0,
+                "teamID": 0,
+                "position": {
+                    "$type": 3,
+                    -9.5,
+                    17.25,
+                    0
+                }
+            },
+            {
+                "$id": 13,
+                "$type": 6,
+                "active": true,
+                "id": 1,
+                "teamID": 1,
+                "position": {
+                    "$type": 3,
+                    -30.5,
+                    17.25,
+                    0
+                }
+            },
+            {
+                "$id": 14,
+                "$type": 6,
+                "active": true,
+                "id": 2,
+                "teamID": 2,
+                "position": {
+                    "$type": 3,
+                    1.5,
+                    -14.75,
+                    0
+                }
+            },
+            {
+                "$id": 15,
+                "$type": 6,
+                "active": true,
+                "id": 3,
+                "teamID": 3,
+                "position": {
+                    "$type": 3,
+                    22.75,
+                    -14.75,
+                    0
+                }
+            },
+            {
+                "$id": 16,
+                "$type": "7|MapsExt.MapObjects.BoxDestructible, MapsExtended",
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    -2.12132072,
+                    2.12132025,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    2,
+                    2,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    -0.382683456,
+                    0.9238795
+                }
+            },
+            {
+                "$id": 17,
+                "$type": 7,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    0.128679276,
+                    0.121320248,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    2,
+                    2,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    -0.382683456,
+                    0.9238795
+                }
+            },
+            {
+                "$id": 18,
+                "$type": 7,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    2.12867928,
+                    -1.87867975,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    2,
+                    2,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    -0.382683456,
+                    0.9238795
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "BPP",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/thunderstore-io",
+    "description": "Adds a countless amount of creative cards and maps to e n h a n c e your ROUNDS experience",
+    "dependencies": [
+"willis81808-UnboundLib-2.10.1",
+"BepInEx-BepInExPack_ROUNDS-5.4.1100",
+"Pykess-CardChoiceSpawnUniqueCardPatch-0.1.7",
+"Pykess-ModdingUtils-0.2.5",
+"olavim-MapsExtended-0.9.5",
+"BossSloth-ExtraMapObjects-1.1.0"
+]    
+}
