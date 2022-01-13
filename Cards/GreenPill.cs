@@ -9,21 +9,19 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Intervention : CustomCard
+    class GreenPill : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            gun.damage *= 0.80f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            gun.damage = +2.5f;
-            gun.projectileSpeed *= 2.00f;
-            gun.reloadTimeAdd = +0.5f;
-            gun.knockback = +2.0f;
-            gunAmmo.maxAmmo = 1;
+            characterStats.movementSpeed *= 1.2f;
+            characterStats.health *= 0.8f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -33,11 +31,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Intervention";
+            return "Green Pill";
         }
         protected override string GetDescription()
         {
-            return "Turns your weapon into a high powered sniper rifle that can leave your opponents devestated.";
+            return "Increases your movement speed while decreasing your max health and damage.";
         }
         protected override GameObject GetCardArt()
         {
@@ -45,7 +43,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -54,36 +52,22 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "DMG",
-                    amount = "+250%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Projectile Speed",
-                    amount = "+100%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Knockback",
-                    amount = "+200%",
+                    stat = "Movement Speed",
+                    amount = "+20%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Reload Speed",
-                    amount = "+0.5s",
+                    stat = "Health",
+                    amount = "-20%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Max Ammo",
-                    amount = "1",
+                    stat = "Damage",
+                    amount = "-20%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -91,7 +75,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.FirepowerYellow;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {

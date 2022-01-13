@@ -48,6 +48,11 @@ namespace BPP
             CustomCard.BuildCard<SwiftReactions>();
             CustomCard.BuildCard<MunitionsCase>();
             CustomCard.BuildCard<Intervention>();
+            CustomCard.BuildCard<RedPill>();
+            CustomCard.BuildCard<BluePill>();
+            CustomCard.BuildCard<GreenPill>();
+            CustomCard.BuildCard<ButtStock>();
+            CustomCard.BuildCard<BlackTarHeroin>();
         }
     }
 }

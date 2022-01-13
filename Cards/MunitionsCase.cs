@@ -61,7 +61,7 @@ namespace BPP.Cards
                     stat = "Reload Speed",
                     amount = "-0.25s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                }
+                },
             };
         }
 
