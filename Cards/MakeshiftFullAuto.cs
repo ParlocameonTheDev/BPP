@@ -9,16 +9,16 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class DesignatedMarksmanRifle : CustomCard
+    class MakeshiftFullAuto : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.damage = +1.5f;
-            gun.projectileSpeed = +1.75f;
-            gun.attackSpeed = 1.5f;
-            gun.reloadTimeAdd = +0.4f;
-            gun.knockback = +0.4f;
+            gun.attackSpeed = +2f;
+            gun.reloadTimeAdd = +0.50f;
+            gun.damage = +0.65f;
+            gun.projectileSpeed = +0.6f;
+            gun.knockback = -0.4f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -33,11 +33,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Designated Marksman Rifle";
+            return "Makeshift Full Auto";
         }
         protected override string GetDescription()
         {
-            return "i can't think of a desc yet lol kek.";
+            return "Greatly increases fire rate, if you are willing to suffer the consequences";
         }
         protected override GameObject GetCardArt()
         {
@@ -45,7 +45,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -54,45 +54,44 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "DMG",
-                    amount = "+50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Projectile Speed",
-                    amount = "+75%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Knockback",
-                    amount = "+40%",
+                    stat = "ATKSPD",
+                    amount = "+100%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "ATKSPD",
+                    stat = "Reload Speed",
+                    amount = "+50%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "DMG",
+                    amount = "-35%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Projectile Speed",
                     amount = "-40%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Reload Time",
-                    amount = "+40%",
+                    stat = "Knockback",
+                    amount = "-40%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
-
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.PoisonGreen;
+            return CardThemeColor.CardThemeColorType.FirepowerYellow;
         }
         public override string GetModName()
         {
