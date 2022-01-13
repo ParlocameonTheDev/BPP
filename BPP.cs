@@ -53,6 +53,7 @@ namespace BPP
             CustomCard.BuildCard<GreenPill>();
             CustomCard.BuildCard<ButtStock>();
             CustomCard.BuildCard<BlackTarHeroin>();
+            CustomCard.BuildCard<ExtendedMagizine>();
         }
     }
 }
