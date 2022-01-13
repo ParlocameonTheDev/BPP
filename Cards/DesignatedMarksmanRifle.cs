@@ -15,7 +15,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.damage = +1.5f;
-            gun.projectielSimulatonSpeed = +1.75f;
+            gun.projectileSpeed = +1.75f;
             gun.attackSpeed = 1.5f;
             gun.reloadTimeAdd = +0.4f;
             gun.knockback = +0.4f;

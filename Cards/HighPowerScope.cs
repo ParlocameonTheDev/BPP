@@ -15,7 +15,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.gravity *= 0.40f;
-            gun.projectielSimulatonSpeed *= 2.00f;
+            gun.projectileSpeed *= 2.00f;
             gun.recoil *= 1.30f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
