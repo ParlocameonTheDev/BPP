@@ -9,12 +9,12 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class SwiftReactions : CustomCard
+    class AvidVenter : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.forceToAddUp = 10.0f;
+            block.forceToAddUp = -10.0f;
             block.cdAdd = 0.5f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -30,11 +30,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Swift Reactions";
+            return "Avid Venter";
         }
         protected override string GetDescription()
         {
-            return "Dashes you upwards when you block, allowing for a swift escape.";
+            return "SUS SUS SUS SUS SUS SUS SUS SUS SUS SUS SUS SUS SUS SUS ";
         }
         protected override GameObject GetCardArt()
         {
@@ -51,7 +51,7 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Upward force while dashing",
+                    stat = "Downward force while dashing",
                     amount = "+10",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
@@ -67,7 +67,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DefensiveBlue;
+            return CardThemeColor.CardThemeColorType.DestructiveRed;
         }
         public override string GetModName()
         {

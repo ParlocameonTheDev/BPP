@@ -54,6 +54,9 @@ namespace BPP
             CustomCard.BuildCard<ButtStock>();
             CustomCard.BuildCard<BlackTarHeroin>();
             CustomCard.BuildCard<ExtendedMagizine>();
+            CustomCard.BuildCard<AvidVenter>();
+            CustomCard.BuildCard<OverlyConfident>();
+            CustomCard.BuildCard<OverlyDefensive>();
         }
     }
 }

@@ -9,18 +9,18 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class SwiftReactions : CustomCard
+    class OverlyDefensive : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.forceToAddUp = 10.0f;
-            block.cdAdd = 0.5f;
+            block.cdAdd = -1.0f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            characterStats.movementSpeed *= 0.6f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,11 +30,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Swift Reactions";
+            return "Overly Defensive";
         }
         protected override string GetDescription()
         {
-            return "Dashes you upwards when you block, allowing for a swift escape.";
+            return "Lowers your mobility for a better block cooldown.";
         }
         protected override GameObject GetCardArt()
         {
@@ -51,15 +51,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Upward force while dashing",
-                    amount = "+10",
+                    stat = "Block Cooldown",
+                    amount = "-1s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Block Cooldown",
-                    amount = "+0.5s",
+                    stat = "Movement Speed",
+                    amount = "-40%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -67,7 +67,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DefensiveBlue;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {
