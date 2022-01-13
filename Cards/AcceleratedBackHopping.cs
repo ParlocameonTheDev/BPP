@@ -15,7 +15,6 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             block.forceToAdd = -10f;
-            block.forceToAddUp = 6f;
             block.cdAdd = 0.33f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -54,13 +53,6 @@ namespace BPP.Cards
                     positive = true,
                     stat = "Force backwards while Dashing",
                     amount = "+10",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Force upward while Dashing",
-                    amount = "+6",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

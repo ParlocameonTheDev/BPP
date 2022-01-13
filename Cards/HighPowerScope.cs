@@ -9,21 +9,20 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class AtomicAmmunition : CustomCard
+    class HighPowerScope : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.projectileColor += Color.green;
-            gun.reloadTimeAdd = +0.20f;
-            gun.projectielSimulatonSpeed *= 0.8f;
-            gun.damageAfterDistanceMultiplier *= 1.6f;
+            gun.gravity *= 0.40f;
+            gun.projectielSimulatonSpeed *= 2.00f;
+            gun.recoil *= 1.30f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            gun.slow = (gun.slow > 0f) ? (gun.slow * 1.15f) : (gun.slow + 0.15f);
+            characterStats.movementSpeed *= 0.85f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -33,11 +32,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Atomic Ammunition";
+            return "High Power Scope";
         }
         protected override string GetDescription()
         {
-            return "Slower bullets that deal more damage depending on how much they have travelled and slow their targets.";
+            return "Heavier bullets that arch harder, but deal more damage.";
         }
         protected override GameObject GetCardArt()
         {
@@ -54,29 +53,29 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Damage Growth",
-                    amount = "+60%",
+                    stat = "Bullet Speed",
+                    amount = "+200%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Damage Slow",
-                    amount = "+15%",
+                    stat = "Bullet Gravity",
+                    amount = "-60%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Bullet Speed",
-                    amount = "-20%",
+                    stat = "Movement Speed",
+                    amount = "-15%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Reload Time",
-                    amount = "+0.20s",
+                    stat = "Recoil",
+                    amount = "+30%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -84,7 +83,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.PoisonGreen;
+            return CardThemeColor.CardThemeColorType.FirepowerYellow;
         }
         public override string GetModName()
         {

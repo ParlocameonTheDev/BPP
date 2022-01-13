@@ -9,21 +9,19 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class AtomicAmmunition : CustomCard
+    class TrustyPan : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.projectileColor += Color.green;
-            gun.reloadTimeAdd = +0.20f;
-            gun.projectielSimulatonSpeed *= 0.8f;
-            gun.damageAfterDistanceMultiplier *= 1.6f;
+            block.additionalBlocks++;
+            block.cooldown *= 0.90f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            gun.slow = (gun.slow > 0f) ? (gun.slow * 1.15f) : (gun.slow + 0.15f);
+            characterStats.movementSpeed *= 0.9f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -33,11 +31,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Atomic Ammunition";
+            return "Trusty Pan";
         }
         protected override string GetDescription()
         {
-            return "Slower bullets that deal more damage depending on how much they have travelled and slow their targets.";
+            return "This world-famous pan can block anything that may be in your way, sometimes, maybe...";
         }
         protected override GameObject GetCardArt()
         {
@@ -45,7 +43,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -54,29 +52,22 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Damage Growth",
-                    amount = "+60%",
+                    stat = "Additional Blocks",
+                    amount = "+1",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Damage Slow",
-                    amount = "+15%",
+                    stat = "Block Cooldown",
+                    amount = "-10%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Bullet Speed",
-                    amount = "-20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Reload Time",
-                    amount = "+0.20s",
+                    stat = "Movement Speed",
+                    amount = "-10%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -84,7 +75,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.PoisonGreen;
+            return CardThemeColor.CardThemeColorType.NatureBrown;
         }
         public override string GetModName()
         {

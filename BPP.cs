@@ -43,6 +43,10 @@ namespace BPP
             CustomCard.BuildCard<DamascusAmmunition>();
             CustomCard.BuildCard<Weights>();
             CustomCard.BuildCard<Minigun>();
+            CustomCard.BuildCard<TrustyPan>();
+            CustomCard.BuildCard<HighPowerScope>();
+            CustomCard.BuildCard<SwiftReactions>();
+            CustomCard.BuildCard<MunitionsCase>();
         }
     }
 }
