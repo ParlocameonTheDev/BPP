@@ -14,7 +14,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.attackSpeed = +2f;
+            gun.attackSpeed = +0.1f;
             gun.reloadTimeAdd = +0.50f;
             gun.damage = +0.65f;
             gun.projectileSpeed = +0.6f;
@@ -55,7 +55,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+100%",
+                    amount = "+90%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
