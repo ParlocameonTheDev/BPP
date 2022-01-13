@@ -9,18 +9,24 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class DashMk2 : CustomCard
+    class Minigun : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.forceToAdd = 15f;
-            block.cdAdd = 0.33f;
+            cardInfo.allowMultiple = false;
+            gun.reloadTime = 4.00f;
+            gun.damage = 0.05f;
+            gun.attackSpeed = 0.01f;
+            gun.projectielSimulatonSpeed = 0.5f;
+            gun.spread = 0.2f;
+            gun.ammo = 90;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            characterStats.movementSpeed *= 0.5f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,11 +36,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Dash Mk2";
+            return "Minigun";
         }
         protected override string GetDescription()
         {
-            return "Dashes you towards your crosshair with great strength when you block.";
+            return "Turns your weapon into a belt-fed machine gun with devestating fire rate.";
         }
         protected override GameObject GetCardArt()
         {
@@ -51,15 +57,50 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Force forward while Dashing",
-                    amount = "+25",
+                    stat = "ATKSPD",
+                    amount = "+100%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Ammo",
+                    amount = "+90",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Block Cooldown",
-                    amount = "+0.33s",
+                    stat = "Movement Speed",
+                    amount = "-50%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Reload Time",
+                    amount = "+400%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Damage",
+                    amount = "-95%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Spread",
+                    amount = "+50%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Projectile Speed",
+                    amount = "-50%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -67,7 +108,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DestructiveRed;
+            return CardThemeColor.CardThemeColorType.MagicPink;
         }
         public override string GetModName()
         {

@@ -14,7 +14,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.attackSpeed = +0.5f;
+            gun.attackSpeed = +0.60f;
             gun.reloadTimeAdd = +0.25f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -34,7 +34,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Increases your gun's fire rate.";
+            return "Increases your weapons rate of fire.";
         }
         protected override GameObject GetCardArt()
         {
@@ -52,7 +52,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+50%",
+                    amount = "+40%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

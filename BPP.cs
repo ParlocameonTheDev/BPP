@@ -39,6 +39,10 @@ namespace BPP
             CustomCard.BuildCard<DesignatedMarksmanRifle>();
             CustomCard.BuildCard<RapidFire>();
             CustomCard.BuildCard<MakeshiftFullAuto>();
+            CustomCard.BuildCard<AtomicAmmunition>();
+            CustomCard.BuildCard<DamascusAmmunition>();
+            CustomCard.BuildCard<Weights>();
+            CustomCard.BuildCard<Minigun>();
         }
     }
 }

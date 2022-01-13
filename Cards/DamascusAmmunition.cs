@@ -9,18 +9,20 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class DashMk2 : CustomCard
+    class DamascusAmmunition : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.forceToAdd = 15f;
-            block.cdAdd = 0.33f;
+            gun.projectileColor += Color.magenta;
+            gun.attackSpeed = +0.8f;
+            gun.reloadTimeAdd = +0.20f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            characterStats.lifeSteal = (characterStats.lifeSteal != 0f) ? (characterStats.lifeSteal * 1.20f) : (characterStats.lifeSteal + 0.20f);
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,11 +32,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Dash Mk2";
+            return "Damascus Ammunition";
         }
         protected override string GetDescription()
         {
-            return "Dashes you towards your crosshair with great strength when you block.";
+            return "Bullets that take health from others, and it's purple so that's pretty cool!";
         }
         protected override GameObject GetCardArt()
         {
@@ -42,7 +44,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Uncommon;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -51,15 +53,22 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Force forward while Dashing",
-                    amount = "+25",
+                    stat = "Lifesteal",
+                    amount = "+20%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "ATKSPD",
+                    amount = "+20%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Block Cooldown",
-                    amount = "+0.33s",
+                    stat = "Reload Time",
+                    amount = "+0.20s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -67,7 +76,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DestructiveRed;
+            return CardThemeColor.CardThemeColorType.TechWhite;
         }
         public override string GetModName()
         {

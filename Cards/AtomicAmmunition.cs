@@ -9,13 +9,15 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class DashMk2 : CustomCard
+    class AtomicAmmunition : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.forceToAdd = 15f;
-            block.cdAdd = 0.33f;
+            gun.projectileColor += Color.green;
+            gun.reloadTimeAdd = +0.20f;
+            gun.projectielSimulatonSpeed *= 0.8f;
+            gun.damageAfterDistanceMultiplier *= 1.6f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,11 +32,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Dash Mk2";
+            return "Atomic Ammunition";
         }
         protected override string GetDescription()
         {
-            return "Dashes you towards your crosshair with great strength when you block.";
+            return "Slower bullets that deal more damage depending on how much they have travelled.";
         }
         protected override GameObject GetCardArt()
         {
@@ -42,7 +44,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Uncommon;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -51,15 +53,22 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Force forward while Dashing",
-                    amount = "+25",
+                    stat = "Damage Growth",
+                    amount = "+60%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Block Cooldown",
-                    amount = "+0.33s",
+                    stat = "Bullet Speed",
+                    amount = "-20%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Reload Time",
+                    amount = "+0.20s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -67,7 +76,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DestructiveRed;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {

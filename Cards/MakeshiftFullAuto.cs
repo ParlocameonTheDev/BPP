@@ -37,7 +37,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Greatly increases fire rate, if you are willing to suffer the consequences";
+            return "Greatly increases fire rate, if you are willing to suffer the consequences.";
         }
         protected override GameObject GetCardArt()
         {

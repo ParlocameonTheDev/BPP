@@ -9,13 +9,13 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class DashMk2 : CustomCard
+    class Weights : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.forceToAdd = 15f;
-            block.cdAdd = 0.33f;
+            gun.gravity = 1.25f;
+            gun.damage = 1.25f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,11 +30,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Dash Mk2";
+            return "Weights";
         }
         protected override string GetDescription()
         {
-            return "Dashes you towards your crosshair with great strength when you block.";
+            return "Heavier bullets that arch harder, but deal more damage.";
         }
         protected override GameObject GetCardArt()
         {
@@ -42,7 +42,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -51,15 +51,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Force forward while Dashing",
-                    amount = "+25",
+                    stat = "Damage",
+                    amount = "+25%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Block Cooldown",
-                    amount = "+0.33s",
+                    stat = "Bullet Gravity",
+                    amount = "+25%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -67,7 +67,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DestructiveRed;
+            return CardThemeColor.CardThemeColorType.ColdBlue;
         }
         public override string GetModName()
         {

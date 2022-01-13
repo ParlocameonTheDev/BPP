@@ -34,7 +34,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Dashes you towards your crosshair when you block";
+            return "Dashes you towards your crosshair when you block.";
         }
         protected override GameObject GetCardArt()
         {
