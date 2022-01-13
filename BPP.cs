@@ -47,6 +47,7 @@ namespace BPP
             CustomCard.BuildCard<HighPowerScope>();
             CustomCard.BuildCard<SwiftReactions>();
             CustomCard.BuildCard<MunitionsCase>();
+            CustomCard.BuildCard<Intervention>();
         }
     }
 }

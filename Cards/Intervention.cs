@@ -9,20 +9,20 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class HighPowerScope : CustomCard
+    class Intervention : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.gravity *= 0.40f;
-            gun.projectielSimulatonSpeed *= 2.00f;
-            gun.recoil *= 1.30f;
+            gun.damage = +2.5f;
+            gun.projectielSimulatonSpeed = +2.00f;
+            gun.reloadTimeAdd = +0.5f;
+            gun.knockback = +2.0f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            characterStats.movementSpeed *= 0.85f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -32,11 +32,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "High Power Scope";
+            return "Intervention";
         }
         protected override string GetDescription()
         {
-            return "High magnification sight that makes targets easier to hit at longer ranges.";
+            return "Turns your weapon into a high powered sniper rifle that can leave your opponents devestated. You're ammo will be maxed out at 1 permanently.";
         }
         protected override GameObject GetCardArt()
         {
@@ -44,7 +44,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -53,29 +53,36 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullet Speed",
-                    amount = "+200%",
+                    stat = "DMG",
+                    amount = "+250%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullet Gravity",
-                    amount = "-60%",
+                    stat = "Projectile Speed",
+                    amount = "+100%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Knockback",
+                    amount = "+200%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Movement Speed",
-                    amount = "-15%",
+                    stat = "Reload Speed",
+                    amount = "+0.5%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Recoil",
-                    amount = "+30%",
+                    stat = "MAX AMMO",
+                    amount = "1",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

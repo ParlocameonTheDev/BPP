@@ -83,7 +83,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+40%",
+                    amount = "+0.40s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
 
