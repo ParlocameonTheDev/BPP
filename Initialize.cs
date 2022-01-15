@@ -59,6 +59,12 @@ namespace BPP
             CustomCard.BuildCard<OverlyDefensive>();
 
             CustomCard.BuildCard<LiquidCourage>();
+
+            CustomCard.BuildCard<Nuclear>();
+
+            CustomCard.BuildCard<BigBang>();
+            
+            CustomCard.BuildCard<Sparatic>();
         }
     }
 }
