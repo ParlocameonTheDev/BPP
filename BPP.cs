@@ -57,6 +57,7 @@ namespace BPP
             CustomCard.BuildCard<AvidVenter>();
             CustomCard.BuildCard<OverlyConfident>();
             CustomCard.BuildCard<OverlyDefensive>();
+            CustomCard.BuildCard<Nuclear>();
             CustomCard.BuildCard<BigBang>();
         }
     }

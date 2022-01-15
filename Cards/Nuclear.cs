@@ -9,13 +9,13 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class BigBang : CustomCard
+    class Nuclear : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.damage *= 2.50f;
-            gun.attackSpeed = 1.50f;
+            gun.damage *= 4.00f;
+            gun.attackSpeed *= 3.00f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,11 +30,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Big Bang";
+            return "Nuclear";
         }
         protected override string GetDescription()
         {
-            return "Greatly increases your damage while greatly decreasing your rate of fire.";
+            return "Welcome to the endgame...";
         }
         protected override GameObject GetCardArt()
         {
@@ -42,7 +42,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -52,14 +52,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Damage",
-                    amount = "+250&",
+                    amount = "+400%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "ATKSPD",
-                    amount = "+1.5s",
+                    amount = "+300%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -67,7 +67,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.FirepowerYellow;
+            return CardThemeColor.CardThemeColorType.DestructiveRed;
         }
         public override string GetModName()
         {
