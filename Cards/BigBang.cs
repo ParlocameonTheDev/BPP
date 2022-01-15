@@ -15,7 +15,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.damage *= 2.50f;
-            gun.attackSpeed = 1.50f;
+            gun.attackSpeed = 3.50f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -59,7 +59,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "ATKSPD",
-                    amount = "+1.5s",
+                    amount = "+3.5s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

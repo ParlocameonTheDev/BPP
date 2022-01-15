@@ -9,13 +9,14 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Nuclear : CustomCard
+    class Sparatic : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.damage *= 4.00f;
-            gun.attackSpeed *= 3.00f;
+            int randBlockForce = UnityEngine.Random.Range(-20, 20);
+            block.forceToAdd = randBlockForce;
+            block.cdAdd = 0.5f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,11 +31,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Nuclear";
+            return "Sparatic";
         }
         protected override string GetDescription()
         {
-            return "Welcome to the end game...";
+            return "Every block will dash your character with varying force towards your crosshair.";
         }
         protected override GameObject GetCardArt()
         {
@@ -42,7 +43,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -51,15 +52,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Damage",
-                    amount = "+400%",
+                    stat = "Force while dashing",
+                    amount = "Random (20, -20)",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "ATKSPD",
-                    amount = "+300%",
+                    stat = "Block Cooldown",
+                    amount = "+0.5s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -67,7 +68,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DestructiveRed;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {
