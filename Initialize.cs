@@ -24,7 +24,7 @@ namespace BPP
             
             CustomCard.BuildCard<AtomicAmmunition>();
             
-            CustomCard.BuildCard<BloodsuckingBullets>();
+            CustomCard.BuildCard<BloodAmmunition>();
             
             CustomCard.BuildCard<Weights>();
             

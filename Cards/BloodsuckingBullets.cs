@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class BloodsuckingBullets : CustomCard
+    class BloodAmmunition : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
@@ -32,7 +32,7 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Bloodsucking Bullets";
+            return "Blood Ammunition";
         }
         protected override string GetDescription()
         {
