@@ -15,9 +15,9 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.projectileColor += Color.green;
-            gun.reloadTimeAdd = +0.20f;
-            gun.projectielSimulatonSpeed *= 0.8f;
-            gun.damageAfterDistanceMultiplier *= 1.6f;
+            gun.reloadTimeAdd = 0.20f;
+            gun.projectielSimulatonSpeed = 0.8f;
+            gun.damageAfterDistanceMultiplier = 1.6f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
