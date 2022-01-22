@@ -21,3 +21,5 @@ Removed Card: Nuclear
 Removed Card: Trusty Pan
 
 Balanced almost every card to be more in-line with other popular packs and vanilla cards, it's not in the best state but it's much better now.
+
+-Penial
