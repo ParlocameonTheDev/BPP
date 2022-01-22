@@ -14,7 +14,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.projectileSpeed *= 2.00f;
+            gun.projectileSpeed = 2.00f;
             gun.spread = 0.40f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }

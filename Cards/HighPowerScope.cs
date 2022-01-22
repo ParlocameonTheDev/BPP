@@ -14,15 +14,15 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.gravity *= 0.40f;
-            gun.projectileSpeed *= 2.00f;
-            gun.recoil *= 1.30f;
+            gun.gravity = 1.40f;
+            gun.projectileSpeed = 2.00f;
+            gun.recoil = 1.30f;
+            statModifiers.movementSpeed = 0.85f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            characterStats.movementSpeed *= 0.85f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -59,9 +59,9 @@ namespace BPP.Cards
                 },
                 new CardInfoStat()
                 {
-                    positive = true,
+                    positive = false,
                     stat = "Bullet Gravity",
-                    amount = "-60%",
+                    amount = "+40%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

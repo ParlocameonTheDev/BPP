@@ -21,12 +21,12 @@ namespace BPP.Cards
             gun.projectielSimulatonSpeed = 0.5f;
             gun.spread = 0.2f;
             gun.ammo = 90;
+            statModifiers.movementSpeed = 0.50f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            characterStats.movementSpeed *= 0.5f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)

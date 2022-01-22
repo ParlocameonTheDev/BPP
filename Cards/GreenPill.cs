@@ -14,14 +14,14 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            statModifiers.movementSpeed = 1.20f;
+            statModifiers.health = 0.80f;
             gun.damage = 0.80f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            characterStats.movementSpeed *= 1.2f;
-            characterStats.health *= 0.8f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -60,14 +60,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Health",
-                    amount = "-20%",
+                    amount = "-25%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-20%",
+                    amount = "-25%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

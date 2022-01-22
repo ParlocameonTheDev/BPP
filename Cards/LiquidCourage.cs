@@ -18,14 +18,9 @@ namespace BPP.Cards
             cardInfo.allowMultiple = false;
 
             //Positive Stats
-            gun.numberOfProjectiles *= 3;
-            gun.ammo *= 3;
-            gun.knockback *= 3f;
-
-            //Negative Stats
-            gun.spread /= 3f;
-            gun.reloadTime /= 3f;
-            gun.attackSpeed /= 3f;
+            gun.numberOfProjectiles = 3;
+            gun.ammo = 3;
+            gun.knockback = 3f;
 
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -34,6 +29,12 @@ namespace BPP.Cards
             player.gameObject.AddComponent<Alcoholic>();
 
             //Edits values on player when card is selected
+
+            //Negative Stats
+            gun.spread /= 3f;
+            gun.reloadTime /= 3f;
+            gun.attackSpeed /= 3f;
+
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
