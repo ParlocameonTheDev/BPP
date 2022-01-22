@@ -57,6 +57,8 @@ namespace BPP
             CustomCard.BuildCard<NoScope>();
 
             CustomCard.BuildCard<BankShot>();
+
+            CustomCard.BuildCard<Nuclear>();
         }
     }
 }
