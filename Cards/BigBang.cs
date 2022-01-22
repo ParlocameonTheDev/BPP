@@ -9,19 +9,13 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Minigun : CustomCard
+    class BigBang : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            cardInfo.allowMultiple = false;
-            gun.reloadTime = 4.00f;
-            gun.damage = 0.05f;
-            gun.attackSpeed = 0.01f;
-            gun.projectielSimulatonSpeed = 0.50f;
-            gun.spread = 0.25f;
-            gun.ammo = 90;
-            statModifiers.movementSpeed = 0.50f;
+            gun.damage = 2.0f;
+            gun.attackSpeed = 1.66f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -36,11 +30,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Minigun";
+            return "Big Bang";
         }
         protected override string GetDescription()
         {
-            return "Turns your weapon into a belt-fed machine gun with devestating fire rate.";
+            return "Welcome to the endgame...";
         }
         protected override GameObject GetCardArt()
         {
@@ -48,7 +42,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Uncommon;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -57,50 +51,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "ATKSPD",
+                    stat = "Damage",
                     amount = "+100%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
-                    positive = true,
-                    stat = "Ammo",
-                    amount = "+90",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
                     positive = false,
-                    stat = "Movement Speed",
-                    amount = "-50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Reload Time",
-                    amount = "+400%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Damage",
-                    amount = "-95%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Spread",
-                    amount = "+25%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Projectile Speed",
-                    amount = "-50%",
+                    stat = "ATKSPD",
+                    amount = "+166%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -108,7 +67,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.MagicPink;
+            return CardThemeColor.CardThemeColorType.DestructiveRed;
         }
         public override string GetModName()
         {

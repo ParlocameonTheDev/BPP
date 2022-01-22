@@ -14,8 +14,8 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            statModifiers.movementSpeed = 0.80f;
-            statModifiers.health = 0.80f;
+            statModifiers.movementSpeed = 0.75f;
+            statModifiers.health = 0.75f;
             gun.damage = 1.20f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }

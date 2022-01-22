@@ -9,19 +9,14 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Minigun : CustomCard
+    class CondensedShot : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            cardInfo.allowMultiple = false;
-            gun.reloadTime = 4.00f;
-            gun.damage = 0.05f;
-            gun.attackSpeed = 0.01f;
-            gun.projectielSimulatonSpeed = 0.50f;
-            gun.spread = 0.25f;
-            gun.ammo = 90;
-            statModifiers.movementSpeed = 0.50f;
+            gun.spread = 0f;
+            gun.projectielSimulatonSpeed = 0.70f;
+            gun.gravity = 0.70f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -36,11 +31,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Minigun";
+            return "Condensed Shot";
         }
         protected override string GetDescription()
         {
-            return "Turns your weapon into a belt-fed machine gun with devestating fire rate.";
+            return "Bullets will have no spread, but will travel slower and will be heavier.";
         }
         protected override GameObject GetCardArt()
         {
@@ -48,7 +43,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -57,50 +52,22 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "ATKSPD",
-                    amount = "+100%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Ammo",
-                    amount = "+90",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Movement Speed",
-                    amount = "-50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Reload Time",
-                    amount = "+400%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Damage",
-                    amount = "-95%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
                     stat = "Spread",
-                    amount = "+25%",
+                    amount = "No",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Projectile Speed",
-                    amount = "-50%",
+                    amount = "-30%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Bullet Gravity",
+                    amount = "+30%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -108,7 +75,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.MagicPink;
+            return CardThemeColor.CardThemeColorType.FirepowerYellow;
         }
         public override string GetModName()
         {

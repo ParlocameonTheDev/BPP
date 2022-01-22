@@ -34,7 +34,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "gameing";
+            return "Ballista > DSR 50. fight me bro";
         }
         protected override GameObject GetCardArt()
         {

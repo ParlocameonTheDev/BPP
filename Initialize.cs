@@ -59,6 +59,10 @@ namespace BPP
             CustomCard.BuildCard<BankShot>();
 
             CustomCard.BuildCard<Nuclear>();
+
+            CustomCard.BuildCard<BigBang>();
+
+            CustomCard.BuildCard<CondensedShot>();
         }
     }
 }

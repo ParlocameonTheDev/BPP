@@ -14,7 +14,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.damage = 4.33f;
+            gun.damage = 3.50f;
             gun.attackSpeed = 3.33f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -52,7 +52,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Damage",
-                    amount = "+333%",
+                    amount = "+250%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

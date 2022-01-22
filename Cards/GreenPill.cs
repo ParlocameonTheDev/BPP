@@ -15,8 +15,8 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             statModifiers.movementSpeed = 1.20f;
-            statModifiers.health = 0.80f;
-            gun.damage = 0.80f;
+            statModifiers.health = 0.75f;
+            gun.damage = 0.75f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)

@@ -15,7 +15,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.projectileColor = Color.red;
-            gun.attackSpeed = 0.8f;
+            gun.attackSpeed = 0.80f;
             gun.reloadTimeAdd = 0.20f;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
