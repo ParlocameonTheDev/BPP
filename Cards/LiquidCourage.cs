@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BPP.MonoBehaviors;
+using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
@@ -22,7 +23,7 @@ namespace BPP.Cards
             gun.ammo = 3;
             gun.knockback = 3f;
 
-            UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
+            BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -35,14 +36,14 @@ namespace BPP.Cards
             gun.reloadTime /= 3f;
             gun.attackSpeed /= 3f;
 
-            UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
+            BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             GameObject.Destroy(player.gameObject.GetComponent<Alcoholic>());
 
             //Run when the card is removed from the player
-            UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been removed from player {player.playerID}.");
+            BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been removed from player {player.playerID}.");
         }
         protected override string GetTitle()
         {
@@ -67,7 +68,7 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Everything",
+                    stat = "Gun's Everything",
                     amount = "3x",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
