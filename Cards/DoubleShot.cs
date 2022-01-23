@@ -9,13 +9,18 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class BigBang : CustomCard
+    class DoubleShot : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.damage = 2.0f;
-            gun.attackSpeed = 1.66f;
+            gun.ammo = 1;
+            gun.numberOfProjectiles = 1;
+            gun.damage = 0.67f;
+            gun.spread = 0.10f;
+            gun.size -= 0.33f;
+
+            cardInfo.allowMultiple = false;
             UnityEngine.Debug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,11 +35,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Big Bang";
+            return "Double Shot";
         }
         protected override string GetDescription()
         {
-            return "A devistating damage boost, while sacrificing your attack speed.";
+            return "Shoots an extra bullet when you fire your gun.";
         }
         protected override GameObject GetCardArt()
         {
@@ -51,15 +56,36 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Damage",
-                    amount = "+100%",
+                    stat = "Bullets",
+                    amount = "+1",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Ammo",
+                    amount = "+1",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "ATKSPD",
-                    amount = "+166%",
+                    stat = "Spread",
+                    amount = "+10%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Damage",
+                    amount = "-33%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Bullet Size",
+                    amount = "-33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -67,7 +93,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DestructiveRed;
+            return CardThemeColor.CardThemeColorType.DefensiveBlue;
         }
         public override string GetModName()
         {

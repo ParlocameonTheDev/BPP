@@ -63,6 +63,8 @@ namespace BPP
             CustomCard.BuildCard<BigBang>();
 
             CustomCard.BuildCard<CondensedShot>();
+
+            CustomCard.BuildCard<DoubleShot>();
         }
     }
 }
