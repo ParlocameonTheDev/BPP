@@ -6,6 +6,24 @@ Contact Penial#3298 on Discord with feedback or bug reports/concerns.
 
 ---
 
+Version 1.1.0:
+
+We did some more stuff, mainly new content and more balancing, which I think is pretty cool.
+
+Readdded most of the removed cards, with new balancing
+
+New Card: Double Shot
+
+New Card: Condensed Shot
+
+New Map: Blocksaw
+
+New Map: Switch
+
+More balancing and bug fixes, should be fine now, hopefully...
+
+---
+
 Version 1.0.1:
 
 Yo, I caught COVID shortly after we released the mod, and very quickly started recieving feedback. I am now feeling fine and have adjusted many things. There are no new cards or maps, but I have fixed many bugs and made various balance tweaks. I also want to thank Willuwontu for the information about card stats and for their pull requests.
