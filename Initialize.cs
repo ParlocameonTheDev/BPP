@@ -65,6 +65,8 @@ namespace BPP
             CustomCard.BuildCard<CondensedShot>();
 
             CustomCard.BuildCard<DoubleShot>();
+
+            CustomCard.BuildCard<TrustyPan>();
         }
     }
 }

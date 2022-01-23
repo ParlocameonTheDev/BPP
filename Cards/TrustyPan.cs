@@ -10,13 +10,14 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Overdose : CustomCard
+    class TrustyPan : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            int randHealth = UnityEngine.Random.Range(-1, 1);
-            statModifiers.health = randHealth;
+            block.additionalBlocks = 1;
+            block.cdAdd = 1.00f;
+            statModifiers.movementSpeed = 0.80f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -31,11 +32,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Overdose";
+            return "Trusty Pan";
         }
         protected override string GetDescription()
         {
-            return "Here is your chance to make a comeback, potentially, maybe, mayhaps?";
+            return "This world-famous pan can block anything that may be in your way, sometimes, maybe...";
         }
         protected override GameObject GetCardArt()
         {
@@ -43,7 +44,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -52,8 +53,22 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Health",
-                    amount = "Random (-100 - 100)",
+                    stat = "Additional Blocks",
+                    amount = "+1",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Block Cooldown",
+                    amount = "+1s",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Movement Speed",
+                    amount = "-20%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -61,7 +76,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.ColdBlue;
+            return CardThemeColor.CardThemeColorType.NatureBrown;
         }
         public override string GetModName()
         {
