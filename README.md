@@ -8,7 +8,7 @@ Contact Penial#3298 on Discord with feedback or bug reports/concerns.
 
 Version 1.1.1
 
-Hello again, we decided that some maps needed to go, mainly ones with weird layouts. These were some of my/Penial's first maps and they definently did not play well. To fill in the removal of them, I created 2 more, but expect more soon™. And as usual, we made some minor balance tweaks, and a small amonunt of bug fixes. 
+Hello again, we decided that some maps needed to go, mainly ones with weird layouts. These were some of my/Penial's first maps and they definently did not play well. To fill in the removal of them, I created 2 more, but expect more soonâ„¢. And as usual, we made some minor balance tweaks, and a small amonunt of bug fixes. 
 
 Removed Map: Dominos
 
@@ -71,3 +71,4 @@ Removed Card: Trusty Pan
 Balanced almost every card to be more in-line with other popular packs and vanilla cards, it's not in the best state but it's much better now.
 
 -Penial
+
