@@ -1,8 +1,36 @@
-Adds a countless amount of creative cards and maps to e n h a n c e your ROUNDS experience (26 cards, 25 maps.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards and maps to e n h a n c e your ROUNDS experience (30 cards, 23 maps.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
 Contact Penial#3298 on Discord with feedback or bug reports/concerns.
+
+---
+
+Version 1.1.1
+
+Hello again, we decided that some maps needed to go, mainly ones with weird layouts. These were some of my/Penial's first maps and they definently did not play well. To fill in the removal of them, I created 2 more, but expect more soon™. And as usual, we made some minor balance tweaks, and a small amonunt of bug fixes. 
+
+Removed Map: Dominos
+
+Removed Map: Hills
+
+Removed Map: Labs
+
+Removed Map: Phone
+
+Removed Map: Table
+
+Removed Map: Tunnel
+
+Added Map: Flicker
+
+Added Map: Pickle (the name was Porty's idea, it does not have anything to do with pickles sadly.)
+
+New Card: Trusty Pan Ultra Super XL
+
+More balancing and bug fixes, as usual.
+
+-Penial
 
 ---
 
@@ -21,6 +49,8 @@ New Map: Blocksaw
 New Map: Switch
 
 More balancing and bug fixes, should be fine now, hopefully...
+
+-Penial
 
 ---
 

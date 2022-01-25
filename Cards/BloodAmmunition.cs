@@ -33,7 +33,7 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Bloodsucking Ammo";
+            return "Blood Ammunition";
         }
         protected override string GetDescription()
         {

@@ -17,7 +17,7 @@ namespace BPP
     {
         private const string ModId = "com.binarypenialporty.rounds.bpp";
         private const string ModName = "BPP";
-        public const string Version = "1.1.0";
+        public const string Version = "1.1.1";
         public const string ModInitials = "BPP";
 
         public static BPP instance { get; private set; }

@@ -35,7 +35,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Ballista > DSR 50. fight me bro";
+            return "Ballista > DSR 50. fight me bro (this is a Black Ops 2 reference)";
         }
         protected override GameObject GetCardArt()
         {

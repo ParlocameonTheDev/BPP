@@ -17,7 +17,6 @@ namespace BPP.Cards
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.gravity = 1.40f;
             gun.projectileSpeed = 2.00f;
-            gun.recoil = 1.30f;
             statModifiers.movementSpeed = 0.85f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -70,13 +69,6 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Movement Speed",
                     amount = "-15%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Recoil",
-                    amount = "+30%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

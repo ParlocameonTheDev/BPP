@@ -10,13 +10,13 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class TrustyPan : CustomCard
+    class TrustyPanUltraSuperXL : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.additionalBlocks = 1;
-            block.cdAdd = 0.66f;
+            block.additionalBlocks = 4;
+            block.cdAdd = 1.33f;
             statModifiers.movementSpeed = 0.80f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -32,11 +32,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Trusty Pan";
+            return "Trusty Pan Ultra Super XL";
         }
         protected override string GetDescription()
         {
-            return "This world-famous pan can block anything that may be in your way, sometimes, maybe...";
+            return "30 day satisfaction guarintee, we did not copy down your social security number when you ordered it.";
         }
         protected override GameObject GetCardArt()
         {
@@ -44,7 +44,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -54,14 +54,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Additional Blocks",
-                    amount = "+1",
+                    amount = "+4",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Block Cooldown",
-                    amount = "+0.66s",
+                    amount = "+1.33s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
