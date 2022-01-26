@@ -6,6 +6,12 @@ Contact Penial#3298 on Discord with feedback or bug reports/concerns.
 
 ---
 
+Version 1.1.2
+
+Mainly bug fixes, a little bit of balancing as well.
+
+---
+
 Version 1.1.1
 
 Hello again, we decided that some maps needed to go, mainly ones with weird layouts. These were some of my/Penial's first maps and they definently did not play well. To fill in the removal of them, I created 2 more, but expect more soon™. And as usual, we made some minor balance tweaks, and a small amonunt of bug fixes. 
