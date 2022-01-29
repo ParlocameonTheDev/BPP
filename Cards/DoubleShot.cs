@@ -19,7 +19,6 @@ namespace BPP.Cards
             gun.numberOfProjectiles = 1;
             gun.damage = 0.67f;
             gun.spread = 0.10f;
-            gun.size -= 0.33f;
 
             cardInfo.allowMultiple = false;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");

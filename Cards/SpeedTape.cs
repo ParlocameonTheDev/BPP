@@ -10,20 +10,18 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class BloodAmmunition : CustomCard
+    class SpeedTape : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.projectileColor = Color.red;
-            gun.attackSpeed = 0.80f;
-            gun.reloadTimeAdd = 0.20f;
+            gun.reloadTime = 0.85f;
+            gun.attackSpeed = 0.85f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            characterStats.lifeSteal = (characterStats.lifeSteal != 0f) ? (characterStats.lifeSteal * 1.20f) : (characterStats.lifeSteal + 0.20f);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -33,11 +31,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Blood Ammunition";
+            return "Speed Tape";
         }
         protected override string GetDescription()
         {
-            return "Bullets that take health from others, and it's <color=#ff2020>red</color> so that's pretty cool!";
+            return "Increases your reload speed and attack speed";
         }
         protected override GameObject GetCardArt()
         {
@@ -45,7 +43,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -54,22 +52,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Lifesteal",
-                    amount = "+20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "ATKSPD",
-                    amount = "+20%",
+                    stat = "Reload Speed",
+                    amount = "-15%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Reload Time",
-                    amount = "+0.20s",
+                    stat = "ATKSPD",
+                    amount = "+15%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -77,7 +68,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.TechWhite;
+            return CardThemeColor.CardThemeColorType.ColdBlue;
         }
         public override string GetModName()
         {

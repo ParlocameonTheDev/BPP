@@ -1,8 +1,22 @@
-Adds a countless amount of creative cards and maps to e n h a n c e your ROUNDS experience (30 cards, 23 maps.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (34 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
 Contact Penial#3298 on Discord with feedback or bug reports/concerns.
+
+Version 1.2.0
+
+We have officially split up BPP into two seperate mods, "BPP-Cards", and "BPP-Maps." This will make it easier to play with specific content from are pack.
+
+New Card: Coilgun
+
+New Card: Nailgun
+
+New Card: Speed Tape
+
+New Card: Splatter
+
+More balancing and bug fixes, as usual.
 
 ---
 

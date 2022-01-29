@@ -8,7 +8,6 @@ namespace BPP
     [BepInDependency("com.willis.rounds.unbound", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.moddingutils", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInDependency("io.olavim.rounds.mapsextended", BepInDependency.DependencyFlags.HardDependency)]
 
     [BepInPlugin(ModId, ModName, Version)]
 
@@ -16,8 +15,8 @@ namespace BPP
     public class BPP : BaseUnityPlugin
     {
         private const string ModId = "com.binarypenialporty.rounds.bpp";
-        private const string ModName = "BPP";
-        public const string Version = "1.1.2";
+        private const string ModName = "BPP-Cards";
+        public const string Version = "1.2.0";
         public const string ModInitials = "BPP";
 
         public static BPP instance { get; private set; }

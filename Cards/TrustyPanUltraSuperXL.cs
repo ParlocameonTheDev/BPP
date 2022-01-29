@@ -15,6 +15,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            cardInfo.allowMultiple = false;
             block.additionalBlocks = 4;
             block.cdAdd = 1.33f;
             statModifiers.movementSpeed = 0.80f;

@@ -15,6 +15,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            cardInfo.allowMultiple = false;
             gun.damage = 3.50f;
             gun.attackSpeed = 5.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -35,7 +36,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Welcome to the endgame...";
+            return "<b><color=#ffd900>Welcome to the end game...</b></color>";
         }
         protected override GameObject GetCardArt()
         {

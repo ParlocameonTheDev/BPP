@@ -69,6 +69,14 @@ namespace BPP
             CustomCard.BuildCard<TrustyPan>();
 
             CustomCard.BuildCard<TrustyPanUltraSuperXL>();
+
+            CustomCard.BuildCard<Coilgun>();
+
+            CustomCard.BuildCard<Splatter>();
+
+            CustomCard.BuildCard<Nailgun>();
+
+            CustomCard.BuildCard<SpeedTape>();
         }
     }
 }
