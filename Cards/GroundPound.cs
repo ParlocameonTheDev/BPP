@@ -10,17 +10,13 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Splatter : CustomCard
+    class GroundPound : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            cardInfo.allowMultiple = false;
-            gun.ammo = 7;
-            gun.numberOfProjectiles = 9;
-            gun.damage = 0.25f;
-            gun.spread = 0.35f;
-            gun.destroyBulletAfter = 0.60f;
+            block.forceToAddUp -= 10.0f;
+            block.cdAdd = 0.50f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -35,11 +31,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Splatter";
+            return "Ground Pound";
         }
         protected override string GetDescription()
         {
-            return "Shoots 10 bullets when you fire your gun, pretty excessive but you can handle it.";
+            return "Dashes you downwards when you block, don't break your legs, wouldn't be fun.";
         }
         protected override GameObject GetCardArt()
         {
@@ -47,7 +43,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -56,29 +52,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullets",
-                    amount = "+9",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Ammo",
-                    amount = "+7",
+                    stat = "Force downwards while Dashing",
+                    amount = "+10",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Damage",
-                    amount = "-75%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Spread",
-                    amount = "+35%",
+                    stat = "Block Cooldown",
+                    amount = "+0.50s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -86,7 +68,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DefensiveBlue;
+            return CardThemeColor.CardThemeColorType.TechWhite;
         }
         public override string GetModName()
         {

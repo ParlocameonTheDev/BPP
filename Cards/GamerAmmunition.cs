@@ -10,17 +10,14 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Splatter : CustomCard
+    class GamerAmmunition : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            cardInfo.allowMultiple = false;
-            gun.ammo = 7;
-            gun.numberOfProjectiles = 9;
-            gun.damage = 0.25f;
-            gun.spread = 0.35f;
-            gun.destroyBulletAfter = 0.60f;
+            gun.unblockable = true;
+            gun.damage = 0.67f;
+            gun.attackSpeed = 0.67f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -35,11 +32,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Splatter";
+            return "Gamer Ammunition";
         }
         protected override string GetDescription()
         {
-            return "Shoots 10 bullets when you fire your gun, pretty excessive but you can handle it.";
+            return "Bullets infused with caffine and <color=#ff0400>r</color><color=#ff8c00>a</color><color=#fffb00>i</color><color=#00ff0d>n</color><color=#002fff>b</color><color=#ae00ff>o</color><color=#ff00a6>w</color> gfuel to crush your opponents with.";
         }
         protected override GameObject GetCardArt()
         {
@@ -57,28 +54,21 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Bullets",
-                    amount = "+9",
+                    amount = "Unblockable",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Ammo",
-                    amount = "+7",
+                    stat = "ATKSPD",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-75%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Spread",
-                    amount = "+35%",
+                    amount = "-33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -86,7 +76,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DefensiveBlue;
+            return CardThemeColor.CardThemeColorType.TechWhite;
         }
         public override string GetModName()
         {

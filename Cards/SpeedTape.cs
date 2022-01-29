@@ -35,7 +35,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Increases your reload speed and attack speed";
+            return "Decreases your reload speed and increases your attack speed";
         }
         protected override GameObject GetCardArt()
         {
@@ -52,15 +52,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Reload Speed",
-                    amount = "-15%",
+                    stat = "ATKSPD",
+                    amount = "+15%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
-                    positive = false,
-                    stat = "ATKSPD",
-                    amount = "+15%",
+                    positive = true,
+                    stat = "Reload Speed",
+                    amount = "-15%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

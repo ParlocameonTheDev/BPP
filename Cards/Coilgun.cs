@@ -54,8 +54,8 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bursts",
-                    amount = "+5",
+                    stat = "Round Burst",
+                    amount = "5",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

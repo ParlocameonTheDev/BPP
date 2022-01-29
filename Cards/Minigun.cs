@@ -93,13 +93,6 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Spread",
-                    amount = "+25%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
                     stat = "Projectile Speed",
                     amount = "-50%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned

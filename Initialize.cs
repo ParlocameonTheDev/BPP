@@ -77,6 +77,18 @@ namespace BPP
             CustomCard.BuildCard<Nailgun>();
 
             CustomCard.BuildCard<SpeedTape>();
+
+            CustomCard.BuildCard<AA12>();
+
+            CustomCard.BuildCard<GroundPound>();
+
+            CustomCard.BuildCard<PumpAction>();
+
+            CustomCard.BuildCard<P90>();
+
+            CustomCard.BuildCard<OldFashioned>();
+
+            CustomCard.BuildCard<GamerAmmunition>();
         }
     }
 }
