@@ -10,13 +10,13 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class MunitionsCase : CustomCard
+    class MunitionsPack : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.ammo = 1;
-            gun.reloadTime = 0.95f;
+            gun.ammo = 2;
+            gun.reloadTime = 0.90f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -31,11 +31,11 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Munitions Case";
+            return "Munitions Pack";
         }
         protected override string GetDescription()
         {
-            return "haha ammo go brrrrrrrrrrrrrrr";
+            return "haha ammo go brrrrrrrrrrrrrrr!";
         }
         protected override GameObject GetCardArt()
         {
@@ -53,14 +53,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+1",
+                    amount = "+2",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Reload Speed",
-                    amount = "-5%",
+                    amount = "-10%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
             };

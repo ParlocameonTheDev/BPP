@@ -34,7 +34,7 @@ namespace BPP
             
             CustomCard.BuildCard<SwiftReactions>();
             
-            CustomCard.BuildCard<MunitionsCase>();
+            CustomCard.BuildCard<MunitionsPack>();
             
             CustomCard.BuildCard<RedPill>();
             
@@ -89,6 +89,8 @@ namespace BPP
             CustomCard.BuildCard<OldFashioned>();
 
             CustomCard.BuildCard<GamerAmmunition>();
+
+            CustomCard.BuildCard<TacticalGloves>();
         }
     }
 }

@@ -18,6 +18,7 @@ namespace BPP.Cards
             gun.unblockable = true;
             gun.damage = 0.67f;
             gun.attackSpeed = 0.67f;
+            gun.reloadTimeAdd = 0.20f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -69,6 +70,13 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Damage",
                     amount = "-33%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Reload Time",
+                    amount = "+0.20s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

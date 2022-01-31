@@ -18,7 +18,8 @@ namespace BPP.Cards
             gun.bursts = 5;
             gun.ammo = 7;
             gun.damage = 0.40f;
-            gun.timeBetweenBullets = 0.06f;
+            gun.timeBetweenBullets = 0.04f;
+            gun.reloadTimeAdd = 0.25f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -70,6 +71,13 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Damage",
                     amount = "-60%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Reload Time",
+                    amount = "+0.25s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

@@ -1,4 +1,4 @@
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (40 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (41 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -29,6 +29,8 @@ New Card: Old Fashioned
 New Card: Speed Tape
 
 New Card: Splatter
+
+New Card: Tactical Gloves
 
 More balancing and bug fixes, as usual.
 

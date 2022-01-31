@@ -35,7 +35,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Decreases your reload speed and increases your attack speed";
+            return "Decreases your reload speed and increases your attack speed.";
         }
         protected override GameObject GetCardArt()
         {
