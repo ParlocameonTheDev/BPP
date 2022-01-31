@@ -8,7 +8,7 @@ Contact Penial#3298 on Discord with feedback or bug reports/concerns.
 
 Version 1.2.0
 
-We have officially split up BPP into two seperate mods, "BPP-Cards", and "BPP-Maps." This will make it easier to play with specific content from are pack.
+We have officially split up BPP into two seperate mods, "BPP", and "BPP-Maps." This will make it easier to play with specific content from are pack.
 
 New Card: AA-12 Shotgun
 
