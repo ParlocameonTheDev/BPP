@@ -35,7 +35,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Lowers your mobility for a better block cooldown.";
+            return "Decreases your mobility for a decreased block cooldown.";
         }
         protected override GameObject GetCardArt()
         {

@@ -21,13 +21,13 @@ namespace BPP.Cards
             gun.attackSpeed = 0.01f;
             gun.projectielSimulatonSpeed = 0.50f;
             gun.spread = 0.25f;
-            statModifiers.movementSpeed = 0.50f;
+            statModifiers.movementSpeed = 0.60f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            gunAmmo.maxAmmo = 80;
+            gunAmmo.maxAmmo = 90;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -45,7 +45,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardNameArt9;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -73,7 +73,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Movement Speed",
-                    amount = "-50%",
+                    amount = "-40%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

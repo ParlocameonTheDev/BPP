@@ -15,8 +15,8 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.ammo = 2;
-            gun.reloadTime = 0.90f;
+            gun.ammo = 3;
+            gun.reloadTime = 0.80f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardNameArt16;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -53,14 +53,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+2",
+                    amount = "+3",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Reload Speed",
-                    amount = "-10%",
+                    amount = "-20%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
             };

@@ -18,7 +18,7 @@ namespace BPP.Cards
             gun.attackSpeed = 0.15f;
             gun.reloadTime = 1.15f;
             gun.damage = 0.25f;
-            gun.spread = 0.20f;
+            gun.spread = 0.15f;
             gun.gravity = 0.30f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -43,7 +43,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardNameArt12;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -85,7 +85,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Spread",
-                    amount = "+20%",
+                    amount = "+15%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

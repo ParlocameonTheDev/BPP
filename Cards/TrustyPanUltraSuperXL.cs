@@ -37,11 +37,11 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "30 day satisfaction guarintee, we did not copy down your social security number when you ordered it.";
+            return "30 day satisfaction guarantee, we did not copy down your social security number when you ordered it.";
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardNameArt22;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -63,6 +63,13 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Block Cooldown",
                     amount = "+1.33s",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Movement Speed",
+                    amount = "-20%  ",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

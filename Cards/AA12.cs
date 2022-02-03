@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BPP.Utilities;
+using Jotunn.Utils;
 using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
@@ -17,7 +18,7 @@ namespace BPP.Cards
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
             gun.numberOfProjectiles = 4;
-            gun.damage = 0.15f;
+            gun.damage = 0.25f;
             gun.spread = 0.40f;
             gun.gravity = 0.60f;
             gun.attackSpeed = 0.50f;
@@ -45,7 +46,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardNameArt;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -80,7 +81,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-85%",
+                    amount = "-75%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

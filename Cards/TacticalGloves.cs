@@ -35,11 +35,11 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Increases your fire rate while decreasing your bullets gravity.";
+            return "Increases your fire rate while increasing your bullets gravity.";
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardNameArt15;
         }
         protected override CardInfo.Rarity GetRarity()
         {

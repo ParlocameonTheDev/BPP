@@ -15,7 +15,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.projectileSpeed = 2.50f;
+            gun.projectileSpeed = 3.00f;
             gun.spread = 0.40f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardNameArt11;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -53,7 +53,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Projectile Speed",
-                    amount = "+150%",
+                    amount = "+200%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

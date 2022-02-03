@@ -2,7 +2,39 @@ Adds a countless amount of creative cards to e n h a n c e your ROUNDS experienc
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
-Contact Penial#3298 on Discord with feedback or bug reports/concerns.
+Contact Penial#3298 on Discord with feedback or bug reports/concerns. 
+
+---
+
+Version 1.2.3
+
+More balance tweaks, and bug fixes.
+
+23/41 Cards now have card art, it is very barebones and does not look very good right now, but I will make them better with time :)
+
+-Penial
+
+---
+
+Version 1.2.2
+
+More balance tweaks, and bug fixes.
+
+Added the base for card art, will probably be a thing when we have the time to do it.
+
+Literally one peice of card art for the AA-12 card
+
+14 other placeholder card arts (they are extremely tiny and I gotta fix that some other time)
+
+-Penial
+
+---
+
+Version 1.2.1
+
+Some balance tweaks, and spelling errors being fixed.
+
+-Penial
 
 ---
 
@@ -34,11 +66,15 @@ New Card: Tactical Gloves
 
 More balancing and bug fixes, as usual.
 
+-Penial
+
 ---
 
 Version 1.1.2
 
 Mainly bug fixes, a little bit of balancing as well.
+
+-Penial
 
 ---
 

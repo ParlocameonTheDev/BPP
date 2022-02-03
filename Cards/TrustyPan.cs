@@ -41,7 +41,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardNameArt21;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -63,6 +63,13 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Block Cooldown",
                     amount = "+0.66s",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Movement Speed",
+                    amount = "-20%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
