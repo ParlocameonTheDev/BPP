@@ -40,7 +40,7 @@ Some balance tweaks, and spelling errors being fixed.
 
 Version 1.2.0
 
-We have officially split up BPP into two seperate mods, "BPP-Cards", and "BPP-Maps." This will make it easier to play with specific content from are pack.
+We have officially split up BPP into two seperate mods, "BPP", and "BPP-Maps." This will make it easier to play with specific content from are pack.
 
 New Card: AA-12 Shotgun
 
