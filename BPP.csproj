@@ -48,4 +48,8 @@
 	  <EmbeddedResource Include="AssetsEmbedded\bppart" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Maps\" />
+  </ItemGroup>
+
 </Project>
