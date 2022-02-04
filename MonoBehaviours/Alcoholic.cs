@@ -31,17 +31,30 @@ namespace BPP.MonoBehaviors
             
         }
 
+        public override void OnOnDestroy()
+        {
+            base.characterStatModifiersModifier.movementSpeed_mult = 1f;
+            base.OnOnDestroy();
+        }
+
         IEnumerator invertControls()
         {
             while (true)
             {
-                if (true)
+                //I cannot make this work for some reason
+
+                //bool isRoundActive = gameManager.isPlaying;
+                bool isRoundActive = true;
+                if (isRoundActive)
                 {
+                    //none of this inverts???
+
+
                     int secTilInvert = UnityEngine.Random.Range(5, 10);
                     yield return new WaitForSeconds((float)secTilInvert);
                     //checking again after timer
                     //game manager can't be found? test later
-                    if (true)
+                    if (isRoundActive)
                     {
                         base.characterStatModifiersModifier.movementSpeed_mult = -1f;
                         yield return new WaitForSeconds(inversionTime);

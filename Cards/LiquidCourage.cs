@@ -18,11 +18,6 @@ namespace BPP.Cards
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
 
-            //Positive Stats
-            gun.numberOfProjectiles = 3;
-            gun.ammo = 3;
-            gun.knockback = 3f;
-
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -31,6 +26,10 @@ namespace BPP.Cards
 
             //Edits values on player when card is selected
 
+            //Positive Stats
+            gun.numberOfProjectiles = 3;
+            gun.ammo *= 3;
+            gun.knockback = 3f;
             //Negative Stats
             gun.spread /= 3f;
             gun.reloadTime /= 3f;

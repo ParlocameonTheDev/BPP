@@ -92,6 +92,9 @@ namespace BPP
             CustomCard.BuildCard<GamerAmmunition>();
 
             CustomCard.BuildCard<TacticalGloves>();
+
+            //Potentially bugged? Disable/Comment before release until confirmed working
+            //CustomCard.BuildCard<LiquidCourage>();
         }
 
         //Initializes Card Art
