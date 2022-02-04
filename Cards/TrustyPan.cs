@@ -41,7 +41,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt21;
+            return BPP.CardArt["TrustyPan"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

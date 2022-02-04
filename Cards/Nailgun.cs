@@ -43,7 +43,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt10;
+            return BPP.CardArt["Nailgun"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

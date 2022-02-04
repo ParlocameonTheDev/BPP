@@ -40,7 +40,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt20;
+            return BPP.CardArt["Nuclear"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

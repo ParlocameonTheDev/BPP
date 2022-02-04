@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt16;
+            return BPP.CardArt["MunitionsPack"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt5;
+            return BPP.CardArt["SwiftReactions"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

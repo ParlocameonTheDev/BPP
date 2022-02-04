@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt4;
+            return BPP.CardArt["DashMK2"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

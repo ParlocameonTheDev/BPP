@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnboundLib.Cards;
 using BPP.Cards;
+using UnityEngine;
 
 namespace BPP
 {
@@ -92,5 +93,42 @@ namespace BPP
 
             CustomCard.BuildCard<TacticalGloves>();
         }
+
+        //Initializes Card Art
+
+        private static readonly AssetBundle Bundle = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("bppart", typeof(BPP).Assembly);
+
+        public static Dictionary<String, GameObject> CardArtDictionary()
+        {
+            Dictionary<String, GameObject> cardArt = new Dictionary<String, GameObject>();
+
+            cardArt.Add("AA12", Bundle.LoadAsset<GameObject>("C_AA12"));
+            cardArt.Add("AcceleratedBackHopping", Bundle.LoadAsset<GameObject>("C_AcceleratedBackHopping"));
+            cardArt.Add("Dash", Bundle.LoadAsset<GameObject>("C_Dash"));
+            cardArt.Add("DashMK2", Bundle.LoadAsset<GameObject>("C_DashMK2"));
+            cardArt.Add("SwiftReactions", Bundle.LoadAsset<GameObject>("C_SwiftReactions"));
+            cardArt.Add("CondensedShot", Bundle.LoadAsset<GameObject>("C_CondensedShot"));
+            cardArt.Add("DesignatedMarksmanRifle", Bundle.LoadAsset<GameObject>("C_DesignatedMarksmanRifle"));
+            cardArt.Add("HighPowerScope", Bundle.LoadAsset<GameObject>("C_HighPowerScope"));
+            cardArt.Add("Minigun", Bundle.LoadAsset<GameObject>("C_Minigun"));
+            cardArt.Add("Nailgun", Bundle.LoadAsset<GameObject>("C_Nailgun"));
+            cardArt.Add("NoScope", Bundle.LoadAsset<GameObject>("C_NoScope"));
+            cardArt.Add("P90", Bundle.LoadAsset<GameObject>("C_P90"));
+            cardArt.Add("PumpAction", Bundle.LoadAsset<GameObject>("C_PumpAction"));
+            cardArt.Add("SpeedTape", Bundle.LoadAsset<GameObject>("C_SpeedTape"));
+            cardArt.Add("TacticalGloves", Bundle.LoadAsset<GameObject>("C_TacticalGloves"));
+            cardArt.Add("MunitionsPack", Bundle.LoadAsset<GameObject>("C_MunitionsPack"));
+            cardArt.Add("BluePill", Bundle.LoadAsset<GameObject>("C_BluePill"));
+            cardArt.Add("GreenPill", Bundle.LoadAsset<GameObject>("C_GreenPill"));
+            cardArt.Add("RedPill", Bundle.LoadAsset<GameObject>("C_RedPill"));
+            cardArt.Add("Nuclear", Bundle.LoadAsset<GameObject>("C_Nuclear"));
+            cardArt.Add("TrustyPan", Bundle.LoadAsset<GameObject>("C_TrustyPan"));
+            cardArt.Add("TrustyPanUltraSuperXL", Bundle.LoadAsset<GameObject>("C_TrustyPanUltraSuperXL"));
+            cardArt.Add("GroundPound", Bundle.LoadAsset<GameObject>("C_GroundPound"));
+
+            return cardArt;
+
+        }
+
     }
 }

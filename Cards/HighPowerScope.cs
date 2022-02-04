@@ -41,7 +41,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt8;
+            return BPP.CardArt["HighPowerScope"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

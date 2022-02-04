@@ -40,7 +40,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt6;
+            return BPP.CardArt["CondensedShot"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
