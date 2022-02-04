@@ -1,0 +1,401 @@
+{
+    "$id": 0,
+    "$type": "0|MapsExt.CustomMap, MapsExtended",
+    "id": "4bc43a1a-39f1-4e0e-849f-8c0bdfaef751",
+    "name": "mapHazard",
+    "mapObjects": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[MapsExt.MapObjects.MapObject, MapsExtended]], mscorlib",
+        "$rlength": 18,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "2|MapsExt.MapObjects.Ground, MapsExtended",
+                "active": true,
+                "position": {
+                    "$type": "3|UnityEngine.Vector3, UnityEngine.CoreModule",
+                    -6,
+                    -1.5,
+                    0
+                },
+                "scale": {
+                    "$type": 3,
+                    2,
+                    9,
+                    2
+                },
+                "rotation": {
+                    "$type": "4|UnityEngine.Quaternion, UnityEngine.CoreModule",
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 3,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    6,
+                    -1.5,
+                    0
+                },
+                "scale": {
+                    "$type": 3,
+                    2,
+                    9,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 4,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    15,
+                    1.5,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    2,
+                    9,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 5,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    -15,
+                    1.5,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    2,
+                    9,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 6,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    -27.5,
+                    -12,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    17,
+                    16,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 7,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    27.5,
+                    -12,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    17,
+                    16,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 8,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    27.5,
+                    12,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    17,
+                    16,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 9,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    -27.5,
+                    12,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    17,
+                    16,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 10,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    -12,
+                    -5,
+                    0
+                },
+                "scale": {
+                    "$type": 3,
+                    8,
+                    2,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 11,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    12,
+                    -5,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    8,
+                    2,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 12,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    -9,
+                    5,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    8,
+                    2,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 13,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    9,
+                    5,
+                    -3
+                },
+                "scale": {
+                    "$type": 3,
+                    8,
+                    2,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 14,
+                "$type": "5|WWMO.MapObjects.Lava, WillsWackyMapObjects",
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    0,
+                    -15.5,
+                    0
+                },
+                "scale": {
+                    "$type": 3,
+                    38,
+                    9,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            },
+            {
+                "$id": 15,
+                "$type": "6|MapsExt.MapObjects.Spawn, MapsExtended",
+                "active": true,
+                "id": 0,
+                "teamID": 0,
+                "position": {
+                    "$type": 3,
+                    -15,
+                    7,
+                    0
+                }
+            },
+            {
+                "$id": 16,
+                "$type": 6,
+                "active": true,
+                "id": 1,
+                "teamID": 1,
+                "position": {
+                    "$type": 3,
+                    15,
+                    7,
+                    0
+                }
+            },
+            {
+                "$id": 17,
+                "$type": 6,
+                "active": true,
+                "id": 2,
+                "teamID": 2,
+                "position": {
+                    "$type": 3,
+                    33,
+                    -3,
+                    0
+                }
+            },
+            {
+                "$id": 18,
+                "$type": 6,
+                "active": true,
+                "id": 3,
+                "teamID": 3,
+                "position": {
+                    "$type": 3,
+                    -33,
+                    -3,
+                    0
+                }
+            },
+            {
+                "$id": 19,
+                "$type": 2,
+                "active": true,
+                "position": {
+                    "$type": 3,
+                    0,
+                    18,
+                    0
+                },
+                "scale": {
+                    "$type": 3,
+                    38,
+                    4,
+                    2
+                },
+                "rotation": {
+                    "$type": 4,
+                    0,
+                    0,
+                    0,
+                    1
+                }
+            }
+        ]
+    }
+}
