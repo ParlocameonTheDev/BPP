@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt2;
+            return BPP.CardArt["AcceleratedBackHopping"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

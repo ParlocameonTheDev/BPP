@@ -45,7 +45,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt13;
+            return BPP.CardArt["PumpAction"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

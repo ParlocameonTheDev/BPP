@@ -37,7 +37,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "<b><color=#ff2020>Absolutley NOTHING could go wrong, right?</b></color>";
+            return "<b><color=#ff2020>Absolutely NOTHING could go wrong, right?</b></color>";
         }
         protected override GameObject GetCardArt()
         {

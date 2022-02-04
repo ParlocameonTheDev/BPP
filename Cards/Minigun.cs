@@ -45,7 +45,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt9;
+            return BPP.CardArt["Minigun"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

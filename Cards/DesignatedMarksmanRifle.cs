@@ -42,7 +42,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt7;
+            return BPP.CardArt["DesignatedMarksmanRifle"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

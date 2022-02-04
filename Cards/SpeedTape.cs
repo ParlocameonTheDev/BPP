@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt14;
+            return BPP.CardArt["SpeedTape"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

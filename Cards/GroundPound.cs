@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardNameArt23;
+            return BPP.CardArt["GroundPound"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
