@@ -117,7 +117,7 @@ namespace BPP
             cardArt.Add("PumpAction", Bundle.LoadAsset<GameObject>("C_PumpAction"));
             cardArt.Add("SpeedTape", Bundle.LoadAsset<GameObject>("C_SpeedTape"));
             cardArt.Add("TacticalGloves", Bundle.LoadAsset<GameObject>("C_TacticalGloves"));
-            cardArt.Add("MunitonsPack", Bundle.LoadAsset<GameObject>("C_MunitionsPack"));
+            cardArt.Add("MunitionsPack", Bundle.LoadAsset<GameObject>("C_MunitionsPack"));
             cardArt.Add("BluePill", Bundle.LoadAsset<GameObject>("C_BluePill"));
             cardArt.Add("GreenPill", Bundle.LoadAsset<GameObject>("C_GreenPill"));
             cardArt.Add("RedPill", Bundle.LoadAsset<GameObject>("C_RedPill"));
