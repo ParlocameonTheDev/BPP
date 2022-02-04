@@ -128,6 +128,10 @@ namespace BPP
             cardArt.Add("TrustyPan", Bundle.LoadAsset<GameObject>("C_TrustyPan"));
             cardArt.Add("TrustyPanUltraSuperXL", Bundle.LoadAsset<GameObject>("C_TrustyPanUltraSuperXL"));
             cardArt.Add("GroundPound", Bundle.LoadAsset<GameObject>("C_GroundPound"));
+            cardArt.Add("Weights", Bundle.LoadAsset<GameObject>("C_Weights"));
+            cardArt.Add("ButtStock", Bundle.LoadAsset<GameObject>("C_ButtStock"));
+            cardArt.Add("OldFashioned", Bundle.LoadAsset<GameObject>("C_OldFashioned"));
+            cardArt.Add("DoubleShot", Bundle.LoadAsset<GameObject>("C_DoubleShot"));
 
             return cardArt;
 
