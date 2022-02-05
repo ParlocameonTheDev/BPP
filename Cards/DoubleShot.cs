@@ -43,7 +43,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["OldFashioned"];
+            return BPP.CardArt["DoubleShot"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

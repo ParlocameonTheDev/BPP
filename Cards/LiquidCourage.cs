@@ -50,11 +50,11 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "TRIPLES(negative and positive depending on effect to player) your gun's stats, but inverts your controls(NOT JUST MOVEMENT) every 5-10 seconds for 6 seconds.\n\"WHERE THE HELL AM I?!?!?!?\"";
+            return "Triples your gun's stats, but inverts all of your controls every 5-10 seconds for 6 seconds.\n\"WHERE THE HELL AM I?!?!?!?\"";
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardArt["LiquidCourage"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -67,8 +67,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Gun's Everything",
-                    amount = "3x",
+                    stat = "Gun Related Stats",
+                    amount = "300%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Inverted Controls",
+                    amount = "(every 5 - 10s)",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

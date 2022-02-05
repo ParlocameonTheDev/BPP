@@ -6,6 +6,16 @@ Contact Penial#3298 on Discord with feedback or bug reports/concerns.
 
 ---
 
+Version 1.2.4
+
+Reworked all card art to be more colorful, we are also in the process of animating a lot of them.
+
+Some more balancing is included as well :)
+
+-Penial
+
+---
+
 Version 1.2.3
 
 More balance tweaks, and bug fixes.

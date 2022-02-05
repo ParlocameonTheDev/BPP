@@ -132,6 +132,10 @@ namespace BPP
             cardArt.Add("ButtStock", Bundle.LoadAsset<GameObject>("C_ButtStock"));
             cardArt.Add("OldFashioned", Bundle.LoadAsset<GameObject>("C_OldFashioned"));
             cardArt.Add("DoubleShot", Bundle.LoadAsset<GameObject>("C_DoubleShot"));
+            cardArt.Add("BlackTarHeroin", Bundle.LoadAsset<GameObject>("C_BlackTarHeroin"));
+            cardArt.Add("Coilgun", Bundle.LoadAsset<GameObject>("C_Coilgun"));
+            cardArt.Add("MakeshiftFullAuto", Bundle.LoadAsset<GameObject>("C_MakeshiftFullAuto"));
+            cardArt.Add("LiquidCourage", Bundle.LoadAsset<GameObject>("C_LiquidCourage"));
 
             return cardArt;
 

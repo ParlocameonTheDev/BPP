@@ -58,7 +58,7 @@ namespace BPP.Cards
                 },
                 new CardInfoStat()
                 {
-                    positive = false,
+                    positive = true,
                     stat = "Bullet Gravity",
                     amount = "-25%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
