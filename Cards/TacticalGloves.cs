@@ -15,7 +15,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.gravity = 0.75f;
+            gun.gravity = 1.10f;
             gun.attackSpeed = 0.75f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -35,7 +35,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Increases your fire rate while increasing your bullets gravity.";
+            return "Increases your fire rate while decreasing your bullets gravity.";
         }
         protected override GameObject GetCardArt()
         {
@@ -60,7 +60,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Bullet Gravity",
-                    amount = "-25%",
+                    amount = "+10%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

@@ -47,7 +47,7 @@ namespace BPP
             
             CustomCard.BuildCard<BlackTarHeroin>();
             
-            CustomCard.BuildCard<ExtendedMagizine>();
+            CustomCard.BuildCard<ExtendedMagazine>();
             
             CustomCard.BuildCard<OverlyConfident>();
             
@@ -90,6 +90,8 @@ namespace BPP
             CustomCard.BuildCard<OldFashioned>();
 
             CustomCard.BuildCard<GamerAmmunition>();
+
+            CustomCard.BuildCard<Intervention>();
 
             CustomCard.BuildCard<TacticalGloves>();
 
@@ -136,6 +138,18 @@ namespace BPP
             cardArt.Add("Coilgun", Bundle.LoadAsset<GameObject>("C_Coilgun"));
             cardArt.Add("MakeshiftFullAuto", Bundle.LoadAsset<GameObject>("C_MakeshiftFullAuto"));
             cardArt.Add("LiquidCourage", Bundle.LoadAsset<GameObject>("C_LiquidCourage"));
+            cardArt.Add("ExtendedMagizine", Bundle.LoadAsset<GameObject>("C_ExtendedMagizine"));
+            cardArt.Add("AtomicAmmunition", Bundle.LoadAsset<GameObject>("C_AtomicAmmunition"));
+            cardArt.Add("BloodAmmunition", Bundle.LoadAsset<GameObject>("C_BloodAmmunition"));
+            cardArt.Add("GamerAmmunition", Bundle.LoadAsset<GameObject>("C_GamerAmmunition"));
+            cardArt.Add("BankShot", Bundle.LoadAsset<GameObject>("C_BankShot"));
+            cardArt.Add("BigBang", Bundle.LoadAsset<GameObject>("C_BigBang"));
+            cardArt.Add("OverlyConfident", Bundle.LoadAsset<GameObject>("C_OverlyConfident"));
+            cardArt.Add("OverlyDefensive", Bundle.LoadAsset<GameObject>("C_OverlyDefensive"));
+            cardArt.Add("RapidFire", Bundle.LoadAsset<GameObject>("C_RapidFire"));
+            cardArt.Add("Sparatic", Bundle.LoadAsset<GameObject>("C_Sparatic"));
+            cardArt.Add("Splatter", Bundle.LoadAsset<GameObject>("C_Splatter"));
+            cardArt.Add("Intervention", Bundle.LoadAsset<GameObject>("C_Intervention"));
 
             return cardArt;
 

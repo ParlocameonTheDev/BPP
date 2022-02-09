@@ -23,7 +23,7 @@ namespace BPP
     {
         private const string ModId = "com.binarypenialporty.rounds.bpp";
         private const string ModName = "BPP";
-        public const string Version = "1.2.4";
+        public const string Version = "1.3.0";
         public const string ModInitials = "BPP";
 
         public static Dictionary<String, GameObject> CardArt = new Dictionary<String, GameObject>();

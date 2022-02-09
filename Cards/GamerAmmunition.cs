@@ -37,11 +37,11 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Bullets infused with caffine and <color=#ff0400>r</color><color=#ff8c00>a</color><color=#fffb00>i</color><color=#00ff0d>n</color><color=#002fff>b</color><color=#ae00ff>o</color><color=#ff00a6>w</color> gfuel to crush your opponents with.";
+            return "Bullets infused with caffine and <color=#ff0400>r</color><color=#ff8c00>a</color><color=#fffb00>i</color><color=#00ff0d>n</color><color=#002fff>b</color><color=#ae00ff>o</color><color=#ff00a6>w</color> GFUEL to crush your opponents with.";
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardArt["GamerAmmunition"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

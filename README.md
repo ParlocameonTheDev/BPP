@@ -1,8 +1,30 @@
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (41 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (42 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
-Contact Penial#3298 on Discord with feedback or bug reports/concerns. 
+Contact BinaryAssault#8863 on Discord with feedback or bug reports/concerns.
+
+---
+
+Version 1.3.0
+
+Every single card in BPP now has card art, and a decent chunk of those are animated as well. Some cards we're reworked and some older art was also updated.
+
+New Card: Intervention
+
+Bug fix for the nailgun cards attack speed.
+
+-Penial
+
+---
+
+Version 1.2.5
+
+We have added some more card art, while animating some old card art as well.
+
+Did a little bit of balancing too.
+
+-Penial
 
 ---
 
@@ -10,7 +32,7 @@ Version 1.2.4
 
 Reworked all card art to be more colorful, we are also in the process of animating a lot of them.
 
-Some more balancing is included as well :)
+Some more balancing is included as well.
 
 -Penial
 

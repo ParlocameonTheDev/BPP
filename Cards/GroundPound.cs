@@ -35,7 +35,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Dashes you downwards when you block, don't break your legs, wouldn't be fun.";
+            return "Dashes you downwards when you block, makes you extremely sus.";
         }
         protected override GameObject GetCardArt()
         {
@@ -68,7 +68,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.TechWhite;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {
