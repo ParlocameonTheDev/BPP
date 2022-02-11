@@ -1,8 +1,26 @@
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (42 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (45 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
 Contact BinaryAssault#8863 on Discord with feedback or bug reports/concerns.
+
+---
+
+Version 1.3.1
+
+New stuff, yay :)
+
+New Card: Rigged Slippers
+
+New Card: Steel Ammunition
+
+New Card: Surgical Kit
+
+More changes to card art.
+
+A small amount of balancing.
+
+-Penial
 
 ---
 

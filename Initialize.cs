@@ -95,6 +95,12 @@ namespace BPP
 
             CustomCard.BuildCard<TacticalGloves>();
 
+            CustomCard.BuildCard<RiggedSlippers>();
+
+            CustomCard.BuildCard<SurgicalKit>();
+
+            CustomCard.BuildCard<SteelAmmunition>();
+
             //Potentially bugged? Disable/Comment before release until confirmed working
             //CustomCard.BuildCard<LiquidCourage>();
         }
@@ -150,6 +156,9 @@ namespace BPP
             cardArt.Add("Sparatic", Bundle.LoadAsset<GameObject>("C_Sparatic"));
             cardArt.Add("Splatter", Bundle.LoadAsset<GameObject>("C_Splatter"));
             cardArt.Add("Intervention", Bundle.LoadAsset<GameObject>("C_Intervention"));
+            cardArt.Add("RiggedSlippers", Bundle.LoadAsset<GameObject>("C_RiggedSlippers"));
+            cardArt.Add("SurgicalKit", Bundle.LoadAsset<GameObject>("C_SurgicalKit"));
+            cardArt.Add("SteelAmmunition", Bundle.LoadAsset<GameObject>("C_SteelAmmunition"));
 
             return cardArt;
 

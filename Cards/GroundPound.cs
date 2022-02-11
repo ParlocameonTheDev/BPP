@@ -35,7 +35,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Dashes you downwards when you block, makes you extremely sus.";
+            return "Dashes you downwards when you block, making you extremely sus.";
         }
         protected override GameObject GetCardArt()
         {

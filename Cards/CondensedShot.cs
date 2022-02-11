@@ -15,8 +15,8 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.projectielSimulatonSpeed = 0.70f;
-            gun.gravity = 0.70f;
+            gun.projectielSimulatonSpeed = 0.80f;
+            gun.gravity = 0.80f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -32,7 +32,7 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Condensed Shot";
+            return "Condensed Ammunition";
         }
         protected override string GetDescription()
         {
@@ -61,14 +61,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Projectile Speed",
-                    amount = "-30%",
+                    amount = "-20%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Bullet Gravity",
-                    amount = "+30%",
+                    amount = "+20%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

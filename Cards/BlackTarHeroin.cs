@@ -16,8 +16,9 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-            statModifiers.movementSpeed = 1.40f;
-            statModifiers.health = 1.40f;
+            statModifiers.movementSpeed = 1.33f;
+            statModifiers.health = 1.33f;
+            statModifiers.jump = 1.33f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -54,14 +55,21 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Health",
-                    amount = "+40%",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Movement Speed",
-                    amount = "+40%",
+                    amount = "+33%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Jump Height",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
