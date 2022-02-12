@@ -11,9 +11,6 @@ Contact BinaryAssault#8863 on Discord with feedback or bug reports/concerns.
 <details>
 <summary>Version 1.3.1</summary>
 <br>
-
-Version 1.3.1
-
 New stuff, yay :)
 
 New Card: Rigged Slippers
@@ -25,23 +22,18 @@ New Card: Surgical Kit
 More changes to card art.
 
 A small amount of balancing.
-
--Penial
 </details>
----
 
-Version 1.3.0
+<details>
+<summary>Version 1.3.0</summary>
+<br>
 
 Every single card in BPP now has card art, and a decent chunk of those are animated as well. Some cards we're reworked and some older art was also updated.
 
 New Card: Intervention
 
 Bug fix for the nailgun cards attack speed.
-
--Penial
-
----
-
+</details>
 Version 1.2.5
 
 We have added some more card art, while animating some old card art as well.
