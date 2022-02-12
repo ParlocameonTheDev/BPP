@@ -8,6 +8,10 @@ Contact BinaryAssault#8863 on Discord with feedback or bug reports/concerns.
 
 ---
 
+<details>
+<summary>Version 1.3.1</summary>
+<br>
+
 Version 1.3.1
 
 New stuff, yay :)
@@ -23,7 +27,7 @@ More changes to card art.
 A small amount of balancing.
 
 -Penial
-
+</details>
 ---
 
 Version 1.3.0
