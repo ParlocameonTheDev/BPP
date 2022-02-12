@@ -20,7 +20,7 @@ namespace BPP.Cards
             gun.numberOfProjectiles = 9;
             gun.damage = 0.25f;
             gun.spread = 0.30f;
-            gun.destroyBulletAfter = 0.60f;
+            gun.destroyBulletAfter = 0.55f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)

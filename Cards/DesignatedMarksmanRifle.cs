@@ -22,7 +22,7 @@ namespace BPP.Cards
             //Edits values on player when card is selected
             gun.damage = 1.50f;
             gun.projectileSpeed = 1.75f;
-            gun.attackSpeed = 1.50f;
+            gun.attackSpeed = 1.40f;
             gun.reloadTimeAdd = 0.40f;
             gun.knockback = 0.40f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
@@ -55,7 +55,7 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "DMG",
+                    stat = "Damage",
                     amount = "+50%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },

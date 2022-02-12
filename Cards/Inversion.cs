@@ -10,17 +10,14 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class MakeshiftFullAuto : CustomCard
+    class Inversion : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-            gun.attackSpeed = 0.10f;
-            gun.reloadTimeAdd = 0.33f;
-            gun.damage = 0.67f;
-            gun.projectileSpeed = 0.60f;
-            gun.knockback = 0.60f;
+            statModifiers.numberOfJumps = 999;
+            statModifiers.movementSpeed = 0.01f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -35,19 +32,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Makeshift Full Auto";
+            return "Inversion";
         }
         protected override string GetDescription()
         {
-            return "Greatly increases fire rate, if you are willing to suffer the consequences.";
+            return "Now you can fly, kinda.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["MakeshiftFullAuto"];
+            return BPP.CardArt["Inversion"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -56,36 +53,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "ATKSPD",
-                    amount = "+90%",
+                    stat = "Jumps",
+                    amount = "Infinite",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Damage",
-                    amount = "-33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Reload Time",
-                    amount = "+0.33s",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Projectile Speed",
-                    amount = "-40%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Knockback",
-                    amount = "-40%",
+                    stat = "Movement Speed",
+                    amount = "Almost No",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -93,7 +69,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.FirepowerYellow;
+            return CardThemeColor.CardThemeColorType.MagicPink;
         }
         public override string GetModName()
         {

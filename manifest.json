@@ -1,13 +1,14 @@
 {
-    "name": "BPP",
-    "version_number": "1.3.1",
-    "website_url": "https://github.com/ParlocameonTheDev/BPP#readme",
-    "description": "Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (45 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)",
+  "name": "BPP",
+  "version_number": "1.3.3",
+  "website_url": "https://github.com/ParlocameonTheDev/BPP",
+  "description": "Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (46 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)",
   "dependencies": [
-"willis81808-UnboundLib-2.10.1",
-"BepInEx-BepInExPack_ROUNDS-5.4.1100",
-"Pykess-CardChoiceSpawnUniqueCardPatch-0.1.7",
-"Pykess-ModdingUtils-0.2.6",
-"willuwontu-BlockForcePatch-1.0.1"
+    "willis81808-UnboundLib-2.10.1",
+    "BepInEx-BepInExPack_ROUNDS-5.4.1100",
+    "Pykess-CardChoiceSpawnUniqueCardPatch-0.1.7",
+    "Pykess-ModdingUtils-0.2.6",
+    "Pykess-PlayerJumpPatch-0.0.2",
+    "willuwontu-BlockForcePatch-1.0.1"
   ]
 }

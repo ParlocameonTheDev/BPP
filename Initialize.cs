@@ -101,6 +101,8 @@ namespace BPP
 
             CustomCard.BuildCard<SteelAmmunition>();
 
+            CustomCard.BuildCard<Inversion>();
+
             //Potentially bugged? Disable/Comment before release until confirmed working
             //CustomCard.BuildCard<LiquidCourage>();
         }
@@ -159,6 +161,7 @@ namespace BPP
             cardArt.Add("RiggedSlippers", Bundle.LoadAsset<GameObject>("C_RiggedSlippers"));
             cardArt.Add("SurgicalKit", Bundle.LoadAsset<GameObject>("C_SurgicalKit"));
             cardArt.Add("SteelAmmunition", Bundle.LoadAsset<GameObject>("C_SteelAmmunition"));
+            cardArt.Add("Inversion", Bundle.LoadAsset<GameObject>("C_Inversion"));
 
             return cardArt;
 
