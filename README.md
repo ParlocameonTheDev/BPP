@@ -224,6 +224,24 @@ Balanced almost every card to be more in-line with other popular packs and vanil
   ---
 </details>
 
+<details>
+<summary>Version 1.0.0</summary>
+<br>
+
+Initial release.
+  
+  ---
+</details>
+
+<details>
+<summary>Version 0.3.5 - 0.3.6</summary>
+<br>
+
+Old beta releases, not really important.
+  
+  ---
+</details>
+
 ---
 
 <i>Credits</i>
