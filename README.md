@@ -1,10 +1,128 @@
 ![BPPReadmeGIF](https://user-images.githubusercontent.com/62630906/153533143-25b650bc-26af-4d21-8514-7f5bc3e3ea7e.gif)
 
+<i>Yo, [download are maps too!](https://rounds.thunderstore.io/package/BPP_Team/BPP_Maps/)</i>
+
 Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (46 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
 Contact BinaryAssault#8863 on Discord with feedback or bug reports/concerns.
+
+---
+
+<details>
+<summary>Common Cards</summary>
+<br>
+  
+Bank Shot : Bullets will bounce off of surfaces, opening up many trickshot possibilities.
+  
+Blue Pill : Increases your max health while decreasing your movement speed and damage.
+  
+Butt Stock : Increases your weapons stability, while reducing your mobility.
+  
+Dash : Dashes you towards your crosshair when you block.
+  
+Double Shot : Shoots an extra bullet when you fire your gun.
+  
+Green Pill : Increases your movement speed while decreasing your max health and damage.
+  
+Ground Pound : Dashes you downwards when you block, making you extremely sus.
+  
+Makeshift Full Auto : Greatly increases fire rate, if you are willing to suffer the consequences.
+  
+Munitions Pack : haha ammo go brrrrrrrrrrrrrrr!
+  
+Nailgun : Turns your weapon into a nailgun. Very weak, but shoots pretty fast.
+  
+No Scope : Ballista > DSR 50. fight me bro (this is a Black Ops 2 reference.)
+  
+Old Fashioned : Bullets that deal more damage, and cause more knockback, while making your weapon fire slower.
+  
+Overly Confident : Increases your block cooldown for increased mobility.
+  
+Overly Defensive : Decreases your mobility for a decreased block cooldown.
+  
+Rapid Fire : Increases your weapons rate of fire.
+  
+Red Pill : Increases your damage while decreasing your movement speed and your max health.
+  
+Rigged Slippers : These slippers that you found on the black market help you jump very high.
+  
+Sparatic : Gives a random amount of dashing force, which will dash you towards your crosshair.
+  
+Speed Tape : Decreases your reload speed and increases your attack speed.
+  
+Steel Ammunition : While the bullets travel faster, they still arch downwards, requiring skill to use properly.
+  
+Surgical Kit : A very shady medical kit that somehow still works. Gives you an extra life.
+  
+Swift Reactions : Dashes you upwards when you block, allowing for a swift escape.
+  
+Tactical Gloves : Increases your fire rate and decreases your bullet gravity.
+  
+Trusty Pan : This world-famous pan can block anything that may be in your way, sometimes, maybe...
+  
+Weights : Heavier bullets that arch harder, but deal more damage.
+  
+---
+</details>
+
+<details>
+<summary>Uncommon Cards</summary>
+<br>
+  
+Accelerated Back Hopping : I'm a movement player Louis! Dashes you in the oppisite direction of your crosshair when you block.
+  
+Atomic Ammunition : Slower bullets that deal more damage depending on how much they have travelled and slow their targets.
+  
+Big Bang : A devistating damage boost, while sacrificing your attack speed.
+  
+Blood Ammunition : Bullets that take health from others, and it's red so that's pretty cool!
+  
+Coilgun : Turns your weapon into a 5 round burst.
+  
+Condensed Ammunition : Bullets will have no spread, but will travel slower and will be heavier.
+  
+Designated Marksman Rifle : Turns your weapon into a semi-auto rifle that can consistently hit targets from a distance.
+  
+Extended Magazine : Doubles your current ammo count.
+  
+Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your opponents with.
+  
+High Power Scope : High magnification sight that makes targets easier to hit at longer ranges.
+  
+P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
+  
+Pump Action : Shoot, slam, and repeat.
+  
+Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you can handle it.
+
+---
+</details>
+
+<details>
+<summary>Rare Cards</summary>
+<br>
+
+AA-12 : Turns your weapon into a devestating, full auto shotgun that can chew through health.
+  
+Black Tar Heroin : Absolutely NOTHING could go wrong, right?
+  
+Dash MK2 : Dashes you towards your crosshair with great strength when you block.
+  
+Intervention : Turns your weapon into a high-caliber sniper rifle.
+  
+Inversion : Now you can fly, kinda.
+  
+Minigun : Turns your weapon into a belt-fed machine gun with devestating fire rate.
+  
+Nuclear : Welcome to the end game...
+  
+Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down your social security number when you ordered it.
+  
+---
+</details>
+
 
 ---
 
