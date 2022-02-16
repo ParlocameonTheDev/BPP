@@ -19,8 +19,8 @@ namespace BPP.Cards
             gun.attackSpeed = 0.10f;
             gun.reloadTimeAdd = 0.33f;
             gun.damage = 0.67f;
-            gun.projectileSpeed = 0.60f;
-            gun.knockback = 0.60f;
+            gun.projectileSpeed = 0.67f;
+            gun.knockback = 0.67f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -78,14 +78,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Projectile Speed",
-                    amount = "-40%",
+                    amount = "-33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Knockback",
-                    amount = "-40%",
+                    amount = "-33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

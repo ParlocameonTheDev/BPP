@@ -16,9 +16,8 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.damage = 1.33f;
-            gun.knockback = 1.25f;
+            gun.knockback = 1.33f;
             gun.attackSpeed = 1.33f;
-            gun.spread = 0.08f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -62,7 +61,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Knockback",
-                    amount = "+25%",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
@@ -72,13 +71,6 @@ namespace BPP.Cards
                     amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Spread",
-                    amount = "+8%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                }
             };
         }
 

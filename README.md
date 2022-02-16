@@ -2,7 +2,7 @@
 
 <i>Yo, [download are maps too!](https://rounds.thunderstore.io/package/BPP_Team/BPP_Maps/)</i>
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (46 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (48 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -90,6 +90,8 @@ Extended Magazine : Doubles your current ammo count.
 Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your opponents with.
   
 High Power Scope : High magnification sight that makes targets easier to hit at longer ranges.
+
+Hovercraft : Gives you many additional jumps, while giving you a small jump height.
   
 P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
   
@@ -105,6 +107,8 @@ Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you ca
 <br>
 
 AA-12 : Turns your weapon into a devestating, full auto shotgun that can chew through health.
+
+Ascension : Riseeeeeeeeeeee, RISEEEEEEEEEEEEEEEEEEEE!
   
 Black Tar Heroin : Absolutely NOTHING could go wrong, right?
   
@@ -127,6 +131,30 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 1.3.4</summary>
+<br>
+  
+New Card: Acsension
+
+New Card: Hovercraft
+
+More rebalancing, mainly around more common cards. The goal of these changes are to make them more viable compared to commons from other popular mods.
+
+A fix for cards that we're supposed to give the player a tighter spread - thanks willuwontu.
+  
+---
+</details>
+
+<details>
+<summary>Version 1.3.3</summary>
+<br>
+  
+Small hotfix, adjusting the README and changing the rarity of some cards.
+  
+---
+</details>
 
 <details>
 <summary>Version 1.3.2</summary>

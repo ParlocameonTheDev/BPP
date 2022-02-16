@@ -17,7 +17,7 @@ namespace BPP.Cards
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
             statModifiers.numberOfJumps = 999;
-            statModifiers.movementSpeed = 0.01f;
+            statModifiers.movementSpeed = 0.05f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -36,7 +36,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Now you can fly, kinda.";
+            return "Now you can fly, kinda...";
         }
         protected override GameObject GetCardArt()
         {

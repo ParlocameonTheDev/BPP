@@ -18,7 +18,6 @@ namespace BPP.Cards
             gun.gravity = 0.60f;
             gun.projectileSpeed = 2.00f;
             statModifiers.movementSpeed = 0.85f;
-            gun.spread -= 0.15f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -63,13 +62,6 @@ namespace BPP.Cards
                     positive = true,
                     stat = "Bullet Gravity",
                     amount = "-40%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Spread",
-                    amount = "-15%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

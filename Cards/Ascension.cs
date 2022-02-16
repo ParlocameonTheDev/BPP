@@ -10,21 +10,18 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class BlackTarHeroin : CustomCard
+    class Ascension : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            cardInfo.allowMultiple = false;
-            statModifiers.movementSpeed = 1.33f;
-            statModifiers.health = 1.33f;
-            statModifiers.jump = 1.33f;
+            statModifiers.health = 0.25f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            characterStats.lifeSteal = (characterStats.lifeSteal != 0f) ? (characterStats.lifeSteal * 1.33f) : (characterStats.lifeSteal + 0.33f);
+            characterStats.respawns += 3;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -34,15 +31,15 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Black Tar Heroin";
+            return "Ascension";
         }
         protected override string GetDescription()
         {
-            return "<b><color=#ff2020>Absolutely NOTHING could go wrong, right?</b></color> (Nothing cool actually happens yet, sorry :L)";
+            return "Riseeeeeeeeeeee, RISEEEEEEEEEEEEEEEEEEEE!";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["BlackTarHeroin"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -55,29 +52,15 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
+                    stat = "Extra Lives",
+                    amount = "+3",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
                     stat = "Health",
-                    amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Movement Speed",
-                    amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Jump Height",
-                    amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Life Steal",
-                    amount = "+33%",
+                    amount = "-75%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -85,7 +68,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.MagicPink;
+            return CardThemeColor.CardThemeColorType.TechWhite;
         }
         public override string GetModName()
         {

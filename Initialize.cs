@@ -103,7 +103,12 @@ namespace BPP
 
             CustomCard.BuildCard<Inversion>();
 
-            //Potentially bugged? Disable/Comment before release until confirmed working
+            CustomCard.BuildCard<Ascension>();
+
+            CustomCard.BuildCard<Hovercraft>();
+
+            //Work in progress cards.
+
             //CustomCard.BuildCard<LiquidCourage>();
         }
 
@@ -162,6 +167,11 @@ namespace BPP
             cardArt.Add("SurgicalKit", Bundle.LoadAsset<GameObject>("C_SurgicalKit"));
             cardArt.Add("SteelAmmunition", Bundle.LoadAsset<GameObject>("C_SteelAmmunition"));
             cardArt.Add("Inversion", Bundle.LoadAsset<GameObject>("C_Inversion"));
+
+            // Work in progress card art.
+
+            //cardArt.Add("Ascension", Bundle.LoadAsset<GameObject>("C_Ascension"));
+            //cardArt.Add("Hovercraft", Bundle.LoadAsset<GameObject>("C_Hovercraft"));
 
             return cardArt;
 

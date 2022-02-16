@@ -16,7 +16,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-            gun.damage = 1.20f;
+            gun.damage = 1.25f;
             gun.projectielSimulatonSpeed = 1.75f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -61,7 +61,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Damage",
-                    amount = "+20%",
+                    amount = "+25%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
