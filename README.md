@@ -2,6 +2,8 @@
 
 <i>Yo, [download are maps too!](https://rounds.thunderstore.io/package/BPP_Team/BPP_Maps/)</i>
 
+---
+
 Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (48 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
@@ -108,7 +110,7 @@ Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you ca
 
 AA-12 : Turns your weapon into a devestating, full auto shotgun that can chew through health.
 
-Ascension : Riseeeeeeeeeeee, RISEEEEEEEEEEEEEEEEEEEE!
+Acsension : Riseeeeeeeeeeee, RISEEEEEEEEEEEEEEEEEEEE!
   
 Black Tar Heroin : Absolutely NOTHING could go wrong, right?
   
