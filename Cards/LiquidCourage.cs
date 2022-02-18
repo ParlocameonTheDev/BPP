@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BPP.MonoBehaviors;
+using BPP.MonoBehaviours;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -22,7 +22,7 @@ namespace BPP.Cards
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            player.gameObject.AddComponent<Alcoholic>();
+            player.gameObject.AddComponent<AlcoholicMono>();
 
             //Edits values on player when card is selected
 
@@ -39,7 +39,8 @@ namespace BPP.Cards
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            GameObject.Destroy(player.gameObject.GetComponent<Alcoholic>());
+            var mono = player.gameObject.GetOrAddComponent<AlcoholicMono>();
+            UnityEngine.GameObject.Destroy(mono);
 
             //Run when the card is removed from the player
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been removed from player {player.playerID}.");

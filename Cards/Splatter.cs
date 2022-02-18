@@ -18,9 +18,9 @@ namespace BPP.Cards
             cardInfo.allowMultiple = false;
             gun.ammo = 7;
             gun.numberOfProjectiles = 9;
-            gun.damage = 0.25f;
+            gun.damage = 0.30f;
             gun.spread = 0.30f;
-            gun.destroyBulletAfter = 0.55f;
+            gun.destroyBulletAfter = 0.75f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -71,7 +71,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-75%",
+                    amount = "-70%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

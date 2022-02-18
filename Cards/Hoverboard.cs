@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Hovercraft : CustomCard
+    class Hoverboard : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
@@ -32,7 +32,7 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Hovercraft";
+            return "Hoverboard";
         }
         protected override string GetDescription()
         {
@@ -40,7 +40,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardArt["Hoverboard"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

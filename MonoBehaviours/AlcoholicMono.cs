@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using BPP.Cards;
 using ModdingUtils.MonoBehaviours;
 
-namespace BPP.MonoBehaviors
+namespace BPP.MonoBehaviours
 {
-    public class Alcoholic : ReversibleEffect
+    public class AlcoholicMono : ReversibleEffect
     {
         GameManager gameManager = GameObject.FindObjectOfType<GameManager>();
         bool crRunning = false;

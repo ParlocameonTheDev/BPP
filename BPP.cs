@@ -3,10 +3,13 @@ using System.Collections;
 using BepInEx;
 using HarmonyLib;
 using BPP.Cards;
+using BPP.MonoBehaviours;
+using ClassesManager;
 using Jotunn.Utils;
 using UnboundLib;
 using UnboundLib.Cards;
 using UnboundLib.GameModes;
+using UnboundLib.Utils;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -21,9 +24,10 @@ namespace BPP
     [BepInProcess("Rounds.exe")]
     public class BPP : BaseUnityPlugin
     {
+        public const string AbbrModName = "BPP";
         private const string ModId = "com.binarypenialporty.rounds.bpp";
         private const string ModName = "BPP";
-        public const string Version = "1.3.4";
+        public const string Version = "1.3.5";
         public const string ModInitials = "BPP";
 
         public static Dictionary<String, GameObject> CardArt = new Dictionary<String, GameObject>();
@@ -41,9 +45,8 @@ namespace BPP
         {
             instance = this;
 
-            //Setting up the code for the credits tab of the mod.
-
-            Unbound.RegisterCredits("<b><color=#ffd900>BPP v1.3.4</b></color>", new string[]
+            // Setting up the code for the credits tab of the mod.
+            Unbound.RegisterCredits("<b><color=#ffd900>BPP v1.3.5</b></color>", new string[]
 {
                 "BinaryAssault, Penial, and Porty."
 }, new string[]
@@ -60,11 +63,9 @@ namespace BPP
                 "https://steamcommunity.com/id/portmens"
 });
 
-            //Added a class specifically for initializing cards, because it was getting messy.
-
+            // Added a class specifically for initializing cards, because it was getting messy.
             Initialize.Cards();
             CardArt = Initialize.CardArtDictionary();
-
         }
     }
 }

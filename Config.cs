@@ -6,7 +6,7 @@ namespace BPP
 {
     public static class Config
     {
-        //Remember to set this to false in a release version!
+        // Remember to set this to false in a release version!
         public const bool isDebugBuild = false;
     }
 }

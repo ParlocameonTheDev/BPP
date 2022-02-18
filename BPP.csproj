@@ -21,6 +21,9 @@
     <Reference Include="CardChoiceSpawnUniqueCardPatch">
       <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Rounds Rounds Rounds Rounds Rounds Rounds\BepInEx\plugins\Pykess-CardChoiceSpawnUniqueCardPatch\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
     </Reference>
+    <Reference Include="ClassesManager">
+      <HintPath>..\..\..\Downloads\FluxxField-ClassesManager-1.4.1\ClassesManager.dll</HintPath>
+    </Reference>
     <Reference Include="HarmonyXInterop">
       <HintPath>..\..\..\Downloads\BepInEx_x86_5.4.11.0\BepInEx\core\HarmonyXInterop.dll</HintPath>
     </Reference>
@@ -29,6 +32,9 @@
     </Reference>
     <Reference Include="UnboundLib">
       <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Rounds Rounds Rounds Rounds Rounds Rounds\BepInEx\plugins\willis81808-UnboundLib\UnboundLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\Downloads\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ROUNDS\Rounds_Data\Managed\UnityEngine.dll</HintPath>

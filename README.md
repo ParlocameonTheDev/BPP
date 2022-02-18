@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (48 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (49 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -93,7 +93,7 @@ Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your 
   
 High Power Scope : High magnification sight that makes targets easier to hit at longer ranges.
 
-Hovercraft : Gives you many additional jumps, while giving you a small jump height.
+Hoverboard : Gives you many additional jumps, while giving you a small jump height.
   
 P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
   
@@ -115,6 +115,8 @@ Acsension : Riseeeeeeeeeeee, RISEEEEEEEEEEEEEEEEEEEE!
 Black Tar Heroin : Absolutely NOTHING could go wrong, right?
   
 Dash MK2 : Dashes you towards your crosshair with great strength when you block.
+
+Escapist : Quadruples your movement speed after you block for a short period of time.
   
 Intervention : Turns your weapon into a high-caliber sniper rifle.
   
@@ -135,12 +137,25 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 1.3.5</summary>
+<br>
+  
+New Card: Escapist
+
+Added art for all the new cards.
+
+Some more balance changes, as usual.
+  
+---
+</details>
+
+<details>
 <summary>Version 1.3.4</summary>
 <br>
   
 New Card: Acsension
 
-New Card: Hovercraft
+New Card: Hoverboard
 
 More rebalancing, mainly around more common cards. The goal of these changes are to make them more viable compared to commons from other popular mods.
 

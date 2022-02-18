@@ -105,15 +105,16 @@ namespace BPP
 
             CustomCard.BuildCard<Ascension>();
 
-            CustomCard.BuildCard<Hovercraft>();
+            CustomCard.BuildCard<Hoverboard>();
 
-            //Work in progress cards.
+            CustomCard.BuildCard<Escapist>();
 
-            //CustomCard.BuildCard<LiquidCourage>();
+            // Work in progress cards, either they aren't finished, or they brokey.
+
+            // CustomCard.BuildCard<LiquidCourage>();
         }
 
-        //Initializes Card Art
-
+        // Initializes Card Art
         private static readonly AssetBundle Bundle = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("bppart", typeof(BPP).Assembly);
 
         public static Dictionary<String, GameObject> CardArtDictionary()
@@ -167,11 +168,11 @@ namespace BPP
             cardArt.Add("SurgicalKit", Bundle.LoadAsset<GameObject>("C_SurgicalKit"));
             cardArt.Add("SteelAmmunition", Bundle.LoadAsset<GameObject>("C_SteelAmmunition"));
             cardArt.Add("Inversion", Bundle.LoadAsset<GameObject>("C_Inversion"));
+            cardArt.Add("Ascension", Bundle.LoadAsset<GameObject>("C_Ascension"));
+            cardArt.Add("Escapist", Bundle.LoadAsset<GameObject>("C_Escapist"));
+            cardArt.Add("Hoverboard", Bundle.LoadAsset<GameObject>("C_Hoverboard"));
 
-            // Work in progress card art.
-
-            //cardArt.Add("Ascension", Bundle.LoadAsset<GameObject>("C_Ascension"));
-            //cardArt.Add("Hovercraft", Bundle.LoadAsset<GameObject>("C_Hovercraft"));
+            // Work in progress card art, once again, either they aren't finished, or they brokey.
 
             return cardArt;
 
