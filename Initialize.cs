@@ -109,6 +109,12 @@ namespace BPP
 
             CustomCard.BuildCard<Escapist>();
 
+            CustomCard.BuildCard<AngelicBurst>();
+
+            CustomCard.BuildCard<FuturisticMagazine>();
+
+            CustomCard.BuildCard<AmmoEnthusiast>();
+
             // Work in progress cards, either they aren't finished, or they brokey.
 
             // CustomCard.BuildCard<LiquidCourage>();
@@ -171,6 +177,9 @@ namespace BPP
             cardArt.Add("Ascension", Bundle.LoadAsset<GameObject>("C_Ascension"));
             cardArt.Add("Escapist", Bundle.LoadAsset<GameObject>("C_Escapist"));
             cardArt.Add("Hoverboard", Bundle.LoadAsset<GameObject>("C_Hoverboard"));
+            cardArt.Add("AngelicBurst", Bundle.LoadAsset<GameObject>("C_AngelicBurst"));
+            cardArt.Add("FuturisticMagazine", Bundle.LoadAsset<GameObject>("C_FuturisticMagazine"));
+            cardArt.Add("AmmoEnthusiast", Bundle.LoadAsset<GameObject>("C_AmmoEnthusiast"));
 
             // Work in progress card art, once again, either they aren't finished, or they brokey.
 

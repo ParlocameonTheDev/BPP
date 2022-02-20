@@ -10,18 +10,21 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class NoScope : CustomCard
+    class AngelicBurst : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.projectileSpeed = 3.00f;
-            gun.spread = 0.25f;
+            gun.bursts = 15;
+            gun.timeBetweenBullets = 0.03f;
+            gun.damage = 0.34f;
+            gun.reloadTimeAdd = 0.66f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            gunAmmo.maxAmmo *= 3;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -31,19 +34,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "No Scope";
+            return "Angelic Burst";
         }
         protected override string GetDescription()
         {
-            return "Ballista > DSR 50. fight me bro (this is a Black Ops 2 reference.)";
+            return "Turns your weapon into a 15 round burst, how did this happen?";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["NoScope"];
+            return BPP.CardArt["AngelicBurst"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -52,15 +55,29 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Projectile Speed",
-                    amount = "+200%",
+                    stat = "Round Burst",
+                    amount = "15",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Ammo",
+                    amount = "3x",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Spread",
-                    amount = "+25%",
+                    stat = "Damage",
+                    amount = "-66%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Reload Time",
+                    amount = "+0.66s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
@@ -68,7 +85,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.FirepowerYellow;
+            return CardThemeColor.CardThemeColorType.MagicPink;
         }
         public override string GetModName()
         {

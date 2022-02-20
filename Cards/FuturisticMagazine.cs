@@ -2,26 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using BPP.Utilities;
+using System.Threading.Tasks;
 using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
 namespace BPP.Cards
 {
-    class NoScope : CustomCard
+    class FuturisticMagazine : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.projectileSpeed = 3.00f;
-            gun.spread = 0.25f;
+            cardInfo.allowMultiple = false;
+            gun.reloadTimeAdd = 0.50f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            gunAmmo.maxAmmo *= 3;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -31,19 +32,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "No Scope";
+            return "Futuristic Magazine";
         }
         protected override string GetDescription()
         {
-            return "Ballista > DSR 50. fight me bro (this is a Black Ops 2 reference.)";
+            return "Triples your current ammo count.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["NoScope"];
+            return BPP.CardArt["FuturisticMagazine"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -52,23 +53,23 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Projectile Speed",
-                    amount = "+200%",
+                    stat = "Ammo",
+                    amount = "x3",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Spread",
-                    amount = "+25%",
+                    stat = "Reload Speed",
+                    amount = "+0.50s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                }
+                },
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.FirepowerYellow;
+            return CardThemeColor.CardThemeColorType.TechWhite;
         }
         public override string GetModName()
         {

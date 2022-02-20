@@ -15,7 +15,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            int randBlockForce = UnityEngine.Random.Range(-20, 20);
+            int randBlockForce = UnityEngine.Random.Range(-25, 25);
             block.forceToAdd = randBlockForce;
             block.cdAdd = 0.50f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -54,7 +54,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Force while dashing",
-                    amount = "Random (20, -20)",
+                    amount = "Random (25, -25)",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

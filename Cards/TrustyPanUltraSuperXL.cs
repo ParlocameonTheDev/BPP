@@ -18,7 +18,6 @@ namespace BPP.Cards
             cardInfo.allowMultiple = false;
             block.additionalBlocks = 4;
             block.cdAdd = 1.25f;
-            statModifiers.movementSpeed = 0.80f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -65,13 +64,6 @@ namespace BPP.Cards
                     amount = "+1.25s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Movement Speed",
-                    amount = "-20%  ",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                }
             };
         }
 

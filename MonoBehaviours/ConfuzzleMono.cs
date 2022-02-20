@@ -2,13 +2,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
+using UnboundLib;
+using UnboundLib.GameModes;
 using UnityEngine;
 using BPP.Cards;
+using ModdingUtils.Extensions;
+using ModdingUtils.Utils;
 using ModdingUtils.MonoBehaviours;
 
 namespace BPP.MonoBehaviours
 {
-    internal class EscapistMono : ReversibleEffect
+    internal class ConfuzzleMono : ReversibleEffect
     {
         private float duration = 0;
         public override void OnOnDestroy()
@@ -22,19 +27,16 @@ namespace BPP.MonoBehaviours
                 ApplyModifiers();
             }
 
-            // 0.5 might need to be increased, gotta test how powerful the card is though.
-            // duration = 0.5f;
-            // So about it being too powerful...
-            duration = 0.75f;
-
+            duration = 2f;
         }
 
         public override void OnStart()
-        {
-            characterStatModifiersModifier.movementSpeed_mult = 4f;
+        {   
+            characterStatModifiersModifier.movementSpeed_mult = 2f;
             block.BlockAction = (Action<BlockTrigger.BlockTriggerType>)Delegate.Combine(block.BlockAction, new Action<BlockTrigger.BlockTriggerType>(OnBlock));
             SetLivesToEffect(int.MaxValue);
         }
+
         public override void OnUpdate()
         {
             if (!(duration <= 0))
@@ -44,7 +46,6 @@ namespace BPP.MonoBehaviours
             else
             {
                 ClearModifiers();
-
             }
         }
     }

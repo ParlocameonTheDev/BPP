@@ -16,7 +16,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-            gun.attackSpeed = 0.10f;
+            gun.attackSpeed = 0.01f;
             gun.reloadTimeAdd = 0.33f;
             gun.damage = 0.67f;
             gun.projectileSpeed = 0.67f;
@@ -57,7 +57,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+90%",
+                    amount = "+100%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

@@ -60,7 +60,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Movement Speed",
-                    amount = "-33%",
+                    amount = "-25%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

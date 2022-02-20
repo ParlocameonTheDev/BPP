@@ -15,10 +15,10 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.ammo = 1;
+            gun.ammo = 3;
             gun.numberOfProjectiles = 1;
             gun.damage = 0.67f;
-            gun.spread = 0.10f;
+            gun.spread = 0.02f;
 
             cardInfo.allowMultiple = false;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -64,7 +64,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+1",
+                    amount = "+3",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
@@ -72,13 +72,6 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Damage",
                     amount = "-33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Spread",
-                    amount = "+10%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

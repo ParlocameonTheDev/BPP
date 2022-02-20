@@ -16,7 +16,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-            statModifiers.jump = 0.30f;
+            statModifiers.jump = 0.34f;
             statModifiers.numberOfJumps = 25;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -61,7 +61,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Jump Height",
-                    amount = "-75%",
+                    amount = "-66%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

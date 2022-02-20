@@ -18,8 +18,8 @@ namespace BPP.Cards
             cardInfo.allowMultiple = false;
             gun.ammo = 7;
             gun.numberOfProjectiles = 9;
-            gun.damage = 0.30f;
-            gun.spread = 0.30f;
+            gun.damage = 0.34f;
+            gun.spread = 0.33f;
             gun.destroyBulletAfter = 0.75f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -71,14 +71,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-70%",
+                    amount = "-66%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Spread",
-                    amount = "+30%",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

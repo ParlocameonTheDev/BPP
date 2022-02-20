@@ -15,7 +15,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.forceToAdd = 7.50f;
+            block.forceToAdd = 10f;
             block.cdAdd = 0.50f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -53,14 +53,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Force forward while Dashing",
-                    amount = "+7.5",
+                    amount = "+10.0",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Block Cooldown",
-                    amount = "+0.50s",
+                    amount = "+0.33s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (49 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (52 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -74,6 +74,8 @@ Weights : Heavier bullets that arch harder, but deal more damage.
 <br>
   
 Accelerated Back Hopping : I'm a movement player Louis! Dashes you in the oppisite direction of your crosshair when you block.
+
+Ammo Enthusiast : You got some issues my guy...
   
 Atomic Ammunition : Slower bullets that deal more damage depending on how much they have travelled and slow their targets.
   
@@ -110,6 +112,8 @@ Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you ca
 
 AA-12 : Turns your weapon into a devestating, full auto shotgun that can chew through health.
 
+Angelic Burst : Turns your weapon into a 15 round burst, how did this happen?
+
 Acsension : Riseeeeeeeeeeee, RISEEEEEEEEEEEEEEEEEEEE!
   
 Black Tar Heroin : Absolutely NOTHING could go wrong, right?
@@ -117,6 +121,8 @@ Black Tar Heroin : Absolutely NOTHING could go wrong, right?
 Dash MK2 : Dashes you towards your crosshair with great strength when you block.
 
 Escapist : Quadruples your movement speed after you block for a short period of time.
+
+Futuristic Magizine : Triples your current ammo count.
   
 Intervention : Turns your weapon into a high-caliber sniper rifle.
   
@@ -135,6 +141,31 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 1.4.0</summary>
+<br>
+
+New Card: Ammo Enthusiast
+  
+New Card: Angelic Burst
+
+New Card: Futuristic Magi
+
+Nerfed Ascension, lets see how busted it's still gonna be...
+
+Dash-based cards recieved a slight buff.
+
+Trusty Pan was rebalanced.
+
+Made Inversion somewhat usable now.
+
+Escapist card art was brokey, so me fixey :)
+
+Some more balance changes, as usual.
+  
+---
+</details>
 
 <details>
 <summary>Version 1.3.5</summary>
