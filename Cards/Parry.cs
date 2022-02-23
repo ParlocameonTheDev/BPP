@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BPP.MonoBehaviours;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -10,40 +11,42 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Dash : CustomCard
+    class Parry : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.forceToAdd = 10f;
-            block.cdAdd = 0.33f;
+            block.cdMultiplier = 1.20f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            var mono = player.gameObject.GetOrAddComponent<ParryMono>();
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Run when the card is removed from the player
+            var mono = player.gameObject.GetOrAddComponent<ParryMono>();
+            UnityEngine.GameObject.Destroy(mono);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been removed from player {player.playerID}.");
         }
         protected override string GetTitle()
         {
-            return "Dash";
+            return "Parry";
         }
         protected override string GetDescription()
         {
-            return "Dashes you towards your crosshair when you block.";
+            return "<b><color=#de0000>QUINTUPLES</b></color> your damage for <b>66 miliseconds</b> after you block, you might wanna practice the timing...";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["Dash"];
+            return BPP.CardArt["Parry"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -51,24 +54,17 @@ namespace BPP.Cards
             {
                 new CardInfoStat()
                 {
-                    positive = true,
-                    stat = "Force forward while Dashing",
-                    amount = "+10.0",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
                     positive = false,
                     stat = "Block Cooldown",
-                    amount = "+0.33s",
+                    amount = "+20%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
-                }
+                },
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DefensiveBlue;
+            return CardThemeColor.CardThemeColorType.DestructiveRed;
         }
         public override string GetModName()
         {

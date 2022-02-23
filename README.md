@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (52 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (53 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -143,6 +143,17 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 1.4.1</summary>
+<br>
+
+New Card: Parry
+
+Simple Stats have been setup for people using this setting in game.
+  
+---
+</details>
+
+<details>
 <summary>Version 1.4.0</summary>
 <br>
 
@@ -150,7 +161,7 @@ New Card: Ammo Enthusiast
   
 New Card: Angelic Burst
 
-New Card: Futuristic Magi
+New Card: Futuristic Magazine
 
 Nerfed Ascension, lets see how busted it's still gonna be...
 

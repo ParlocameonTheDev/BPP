@@ -2,18 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using System.Linq;
-using UnboundLib;
-using UnboundLib.GameModes;
 using UnityEngine;
 using BPP.Cards;
-using ModdingUtils.Extensions;
-using ModdingUtils.Utils;
 using ModdingUtils.MonoBehaviours;
 
 namespace BPP.MonoBehaviours
 {
-    internal class ConfuzzleMono : ReversibleEffect
+    internal class ParryMono : ReversibleEffect
     {
         private float duration = 0;
         public override void OnOnDestroy()
@@ -27,16 +22,16 @@ namespace BPP.MonoBehaviours
                 ApplyModifiers();
             }
 
-            duration = 2f;
+            duration = 0.066f;
+
         }
 
         public override void OnStart()
-        {   
-            characterStatModifiersModifier.movementSpeed_mult = 2f;
+        {
+            gunStatModifier.damage_mult = 5f;
             block.BlockAction = (Action<BlockTrigger.BlockTriggerType>)Delegate.Combine(block.BlockAction, new Action<BlockTrigger.BlockTriggerType>(OnBlock));
             SetLivesToEffect(int.MaxValue);
         }
-
         public override void OnUpdate()
         {
             if (!(duration <= 0))
@@ -46,6 +41,7 @@ namespace BPP.MonoBehaviours
             else
             {
                 ClearModifiers();
+
             }
         }
     }
