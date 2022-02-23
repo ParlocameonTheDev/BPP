@@ -55,13 +55,20 @@ namespace BPP.Cards
                     positive = true,
                     stat = "Projectile Speed",
                     amount = "+75%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Damage",
                     amount = "+33%",
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Bullets",
+                    amount = "Arching",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

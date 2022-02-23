@@ -54,14 +54,14 @@ namespace BPP.Cards
                     positive = true,
                     stat = "Damage",
                     amount = "+100%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "ATKSPD",
                     amount = "+166%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 }
             };
         }

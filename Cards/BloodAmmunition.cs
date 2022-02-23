@@ -56,21 +56,21 @@ namespace BPP.Cards
                     positive = true,
                     stat = "Lifesteal",
                     amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "ATKSPD",
                     amount = "-33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Reload Time",
                     amount = "+0.25s",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };
         }

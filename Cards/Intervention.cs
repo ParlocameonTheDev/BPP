@@ -59,35 +59,35 @@ namespace BPP.Cards
                     positive = true,
                     stat = "Damage",
                     amount = "+150%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Projectile Speed",
                     amount = "+100%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Knockback",
                     amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "ATKSPD",
                     amount = "-50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Reload Speed",
+                    stat = "Reload Time",
                     amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };
         }

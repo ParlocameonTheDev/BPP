@@ -61,7 +61,7 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Health",
                     amount = "-50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };
         }

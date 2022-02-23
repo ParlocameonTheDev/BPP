@@ -71,14 +71,14 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Damage",
                     amount = "-60%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Reload Time",
                     amount = "+0.25s",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
         }

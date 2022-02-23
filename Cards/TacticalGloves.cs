@@ -54,14 +54,14 @@ namespace BPP.Cards
                     positive = true,
                     stat = "ATKSPD",
                     amount = "+10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Bullet Gravity",
                     amount = "-20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };
         }

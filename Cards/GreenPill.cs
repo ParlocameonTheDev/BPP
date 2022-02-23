@@ -55,21 +55,21 @@ namespace BPP.Cards
                     positive = true,
                     stat = "Movement Speed",
                     amount = "+20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Health",
                     amount = "-25%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
                     amount = "-25%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };
         }

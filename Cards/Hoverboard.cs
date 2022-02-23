@@ -62,7 +62,7 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Jump Height",
                     amount = "-66%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 }
             };
         }

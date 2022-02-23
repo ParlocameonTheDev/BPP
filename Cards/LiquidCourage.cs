@@ -70,7 +70,7 @@ namespace BPP.Cards
                     positive = true,
                     stat = "Gun Related Stats",
                     amount = "300%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {

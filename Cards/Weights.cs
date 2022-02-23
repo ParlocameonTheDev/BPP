@@ -54,14 +54,14 @@ namespace BPP.Cards
                     positive = true,
                     stat = "Damage",
                     amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Bullet Gravity",
                     amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };
         }

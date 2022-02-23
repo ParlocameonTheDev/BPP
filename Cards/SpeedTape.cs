@@ -54,14 +54,14 @@ namespace BPP.Cards
                     positive = true,
                     stat = "ATKSPD",
                     amount = "+25%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Reload Speed",
+                    stat = "Reload Time",
                     amount = "-10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
         }

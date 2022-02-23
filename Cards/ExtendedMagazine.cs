@@ -60,9 +60,9 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Reload Speed",
+                    stat = "Reload Time",
                     amount = "+0.33s",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
             };
         }

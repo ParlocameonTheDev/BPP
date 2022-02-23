@@ -61,7 +61,7 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Block Cooldown",
                     amount = "+0.75s",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotOf
                 }
             };
         }

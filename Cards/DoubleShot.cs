@@ -72,7 +72,7 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Damage",
                     amount = "-33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };
         }

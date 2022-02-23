@@ -61,7 +61,7 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Projectile Speed",
                     amount = "-10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };
         }
