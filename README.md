@@ -98,6 +98,8 @@ High Power Scope : High magnification sight that makes targets easier to hit at 
 Hoverboard : Gives you many additional jumps, while giving you a small jump height.
   
 P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
+
+Parry : Doubles your damage for 5 miliseconds after you block.
   
 Pump Action : Shoot, slam, and repeat.
   

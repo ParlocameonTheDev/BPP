@@ -22,13 +22,13 @@ namespace BPP.MonoBehaviours
                 ApplyModifiers();
             }
 
-            duration = 0.066f;
+            duration = 0.005f;
 
         }
 
         public override void OnStart()
         {
-            gunStatModifier.damage_mult = 5f;
+            gunStatModifier.damage_mult = 2f;
             block.BlockAction = (Action<BlockTrigger.BlockTriggerType>)Delegate.Combine(block.BlockAction, new Action<BlockTrigger.BlockTriggerType>(OnBlock));
             SetLivesToEffect(int.MaxValue);
         }
