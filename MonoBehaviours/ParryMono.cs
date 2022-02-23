@@ -1,10 +1,12 @@
-﻿using System;
+﻿using UnityEngine;
+using ModdingUtils.MonoBehaviours;
+using UnboundLib.Cards;
+using UnboundLib;
+using ModdingUtils.Extensions;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
-using UnityEngine;
 using BPP.Cards;
-using ModdingUtils.MonoBehaviours;
 
 namespace BPP.MonoBehaviours
 {
@@ -23,6 +25,8 @@ namespace BPP.MonoBehaviours
             }
 
             duration = 0.005f;
+            ColorEffect colorEffect = this.player.gameObject.AddComponent<ColorEffect>();
+            colorEffect.SetColor(Color.red);
 
         }
 
@@ -41,7 +45,7 @@ namespace BPP.MonoBehaviours
             else
             {
                 ClearModifiers();
-
+                UnityEngine.GameObject.Destroy(this.gameObject.GetOrAddComponent<ColorEffect>());
             }
         }
     }

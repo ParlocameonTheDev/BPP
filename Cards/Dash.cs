@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BPP.MonoBehaviours;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -22,11 +23,14 @@ namespace BPP.Cards
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            var mono = player.gameObject.GetOrAddComponent<DashMono>();
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Run when the card is removed from the player
+            var mono = player.gameObject.GetOrAddComponent<DashMono>();
+            UnityEngine.GameObject.Destroy(mono);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been removed from player {player.playerID}.");
         }
         protected override string GetTitle()
@@ -35,7 +39,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Dashes you towards your crosshair when you block.";
+            return "Dashes you towards your crosshair when you block, while giving you a small speed boost.";
         }
         protected override GameObject GetCardArt()
         {

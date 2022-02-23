@@ -11,17 +11,13 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Nailgun : CustomCard
+    class CounterIntuitive : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            cardInfo.allowMultiple = false;
-            gun.damage = 0.20f;
-            gun.attackSpeed = 0.40f;
-            gun.projectileSpeed = 0.50f;
-            gun.ammo = 15;
-            gun.reloadTime = 1.33f;
+            block.cdMultiplier = 0.34f;
+            gun.damage = 0.10f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -36,19 +32,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Nailgun";
+            return "Counter Intuitive";
         }
         protected override string GetDescription()
         {
-            return "Turns your weapon into a nailgun. Very weak, but shoots pretty fast.";
+            return "Trade off almost all of your damage for a better block cooldown.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["Nailgun"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -57,44 +53,23 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Ammo",
-                    amount = "+15",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "ATKSPD",
-                    amount = "+60%",
-                    simepleAmount = CardInfoStat.SimpleAmount.Some
+                    stat = "Block Cooldown",
+                    amount = "-66%",
+                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-80%",
+                    amount = "-90%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Reload Time",
-                    amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.Some
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Projectile Speed",
-                    amount = "-50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DestructiveRed;
+            return CardThemeColor.CardThemeColorType.ColdBlue;
         }
         public override string GetModName()
         {

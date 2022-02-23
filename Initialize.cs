@@ -117,6 +117,10 @@ namespace BPP
 
             CustomCard.BuildCard<Parry>();
 
+            CustomCard.BuildCard<Stockpile>();
+
+            CustomCard.BuildCard<CounterIntuitive>();
+
             // Work in progress cards, either they aren't finished, or they brokey.
 
             // CustomCard.BuildCard<LiquidCourage>();
@@ -183,6 +187,8 @@ namespace BPP
             cardArt.Add("FuturisticMagazine", Bundle.LoadAsset<GameObject>("C_FuturisticMagazine"));
             cardArt.Add("AmmoEnthusiast", Bundle.LoadAsset<GameObject>("C_AmmoEnthusiast"));
             cardArt.Add("Parry", Bundle.LoadAsset<GameObject>("C_Parry"));
+            cardArt.Add("Stockpile", Bundle.LoadAsset<GameObject>("C_Stockpile"));
+            cardArt.Add("CounterIntuitive", Bundle.LoadAsset<GameObject>("C_CounterIntuitive"));
 
             return cardArt;
 

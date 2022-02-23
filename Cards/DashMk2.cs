@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BPP.MonoBehaviours;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -35,7 +36,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Dashes you towards your crosshair with great strength when you block.";
+            return "Dashes you towards your crosshair with great strength when you block, while giving you a small speed boost.";
         }
         protected override GameObject GetCardArt()
         {

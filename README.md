@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (53 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (55 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -86,6 +86,8 @@ Blood Ammunition : Bullets that take health from others, and it's red so that's 
 Coilgun : Turns your weapon into a 5 round burst.
   
 Condensed Ammunition : Bullets will have no spread, but will travel slower and will be heavier.
+
+Counter Intuitive : Trade off almost all of your damage for a better block cooldown.
   
 Designated Marksman Rifle : Turns your weapon into a semi-auto rifle that can consistently hit targets from a distance.
   
@@ -133,6 +135,8 @@ Inversion : Now you can fly, kinda.
 Minigun : Turns your weapon into a belt-fed machine gun with devestating fire rate.
   
 Nuclear : Welcome to the end game...
+
+Stockpile : You will instantly reload your weapon when you are out of ammo.
   
 Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down your social security number when you ordered it.
   
@@ -143,6 +147,23 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 1.4.2</summary>
+<br>
+
+New Card: Counter Intuitive
+
+New Card: Stockpile
+
+Dash card rework, now gives slight speed boost after the dash, and a visual indicator when a player does dash.
+
+Escapist and Parry now also have visual indicators, very cool.
+
+Misc stuff for cards and mono behaviors that will make my job a lot easier.
+  
+---
+</details>
 
 <details>
 <summary>Version 1.4.1</summary>

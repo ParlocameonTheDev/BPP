@@ -10,7 +10,7 @@ using BPP.Cards;
 
 namespace BPP.MonoBehaviours
 {
-    internal class EscapistMono : ReversibleEffect
+    internal class AcceleratedBackHoppingMono : ReversibleEffect
     {
         private float duration = 0;
         public override void OnOnDestroy()
@@ -24,7 +24,7 @@ namespace BPP.MonoBehaviours
                 ApplyModifiers();
             }
 
-            duration = 0.66f;
+            duration = 0.10f;
             ColorEffect colorEffect = this.player.gameObject.AddComponent<ColorEffect>();
             colorEffect.SetColor(Color.white);
 
@@ -32,7 +32,7 @@ namespace BPP.MonoBehaviours
 
         public override void OnStart()
         {
-            characterStatModifiersModifier.movementSpeed_mult = 4f;
+            characterStatModifiersModifier.movementSpeed_mult = 1.66f;
             block.BlockAction = (Action<BlockTrigger.BlockTriggerType>)Delegate.Combine(block.BlockAction, new Action<BlockTrigger.BlockTriggerType>(OnBlock));
             SetLivesToEffect(int.MaxValue);
         }
