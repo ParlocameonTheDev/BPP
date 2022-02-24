@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (55 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (57 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -91,7 +91,7 @@ Counter Intuitive : Trade off almost all of your damage for a better block coold
   
 Designated Marksman Rifle : Turns your weapon into a semi-auto rifle that can consistently hit targets from a distance.
   
-Extended Magazine : Doubles your current ammo count.
+Enlarged Magazine : Doubles your current ammo count.
   
 Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your opponents with.
   
@@ -147,6 +147,20 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 1.4.3</summary>
+<br>
+
+New Card: Horizon
+
+New Card: Six Shooter
+
+Renamed Extended Magazine to Enlarged Magazine to improve compatibility with other mods.
+
+  
+---
+</details>
 
 <details>
 <summary>Version 1.4.2</summary>

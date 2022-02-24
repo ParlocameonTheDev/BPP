@@ -12,22 +12,19 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class DoubleShot : CustomCard
+    class VineBoom : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.ammo = 3;
-            gun.numberOfProjectiles = 1;
-            gun.damage = 0.67f;
-            gun.spread = 0.02f;
-
             cardInfo.allowMultiple = false;
+            gun.projectileColor += Color.green;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            ExtensionMethods.GetOrAddComponent<VineEffect>(player.gameObject, false);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -37,15 +34,15 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Double Shot";
+            return "Vine Boom";
         }
         protected override string GetDescription()
         {
-            return "Shoots an extra bullet when you fire your gun.";
+            return "bhmmmmmmmmmmmmmmmm.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["DoubleShot"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -58,30 +55,16 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullets",
-                    amount = "+1",
+                    stat = "Boom",
+                    amount = "Vine",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Ammo",
-                    amount = "+3",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Damage",
-                    amount = "-33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DefensiveBlue;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {

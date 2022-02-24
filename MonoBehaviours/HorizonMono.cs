@@ -10,7 +10,7 @@ using BPP.Cards;
 
 namespace BPP.MonoBehaviours
 {
-    internal class AcceleratedBackHoppingMono : ReversibleEffect
+    internal class HorizonMono : ReversibleEffect
     {
         private float duration = 0;
         public override void OnOnDestroy()
@@ -24,12 +24,12 @@ namespace BPP.MonoBehaviours
                 ApplyModifiers();
             }
 
-            duration = 0.10f;
+            duration = 1.50f;
         }
 
         public override void OnStart()
         {
-            characterStatModifiersModifier.movementSpeed_mult = 1.66f;
+            gravityModifier.gravityForce_mult = -1f;
             block.BlockAction = (Action<BlockTrigger.BlockTriggerType>)Delegate.Combine(block.BlockAction, new Action<BlockTrigger.BlockTriggerType>(OnBlock));
             SetLivesToEffect(int.MaxValue);
         }

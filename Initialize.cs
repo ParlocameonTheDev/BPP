@@ -14,45 +14,45 @@ namespace BPP
             CustomCard.BuildCard<AcceleratedBackHopping>();
 
             CustomCard.BuildCard<Dash>();
-            
+
             CustomCard.BuildCard<DashMk2>();
-            
+
             CustomCard.BuildCard<DesignatedMarksmanRifle>();
-            
+
             CustomCard.BuildCard<RapidFire>();
-            
+
             CustomCard.BuildCard<MakeshiftFullAuto>();
-            
+
             CustomCard.BuildCard<AtomicAmmunition>();
-            
+
             CustomCard.BuildCard<BloodAmmunition>();
-            
+
             CustomCard.BuildCard<Weights>();
-            
+
             CustomCard.BuildCard<Minigun>();
-            
+
             CustomCard.BuildCard<HighPowerScope>();
-            
+
             CustomCard.BuildCard<SwiftReactions>();
-            
+
             CustomCard.BuildCard<MunitionsPack>();
-            
+
             CustomCard.BuildCard<RedPill>();
-            
+
             CustomCard.BuildCard<BluePill>();
-            
+
             CustomCard.BuildCard<GreenPill>();
-            
+
             CustomCard.BuildCard<ButtStock>();
-            
+
             CustomCard.BuildCard<BlackTarHeroin>();
-            
-            CustomCard.BuildCard<ExtendedMagazine>();
-            
+
+            CustomCard.BuildCard<EnlargedMagazine>();
+
             CustomCard.BuildCard<OverlyConfident>();
-            
+
             CustomCard.BuildCard<OverlyDefensive>();
-            
+
             CustomCard.BuildCard<Sparatic>();
 
             CustomCard.BuildCard<NoScope>();
@@ -120,6 +120,12 @@ namespace BPP
             CustomCard.BuildCard<Stockpile>();
 
             CustomCard.BuildCard<CounterIntuitive>();
+
+            //CustomCard.BuildCard<VineBoom>();
+
+            CustomCard.BuildCard<SixShooter>();
+
+            CustomCard.BuildCard<Horizon>();
 
             // Work in progress cards, either they aren't finished, or they brokey.
 
@@ -189,8 +195,21 @@ namespace BPP
             cardArt.Add("Parry", Bundle.LoadAsset<GameObject>("C_Parry"));
             cardArt.Add("Stockpile", Bundle.LoadAsset<GameObject>("C_Stockpile"));
             cardArt.Add("CounterIntuitive", Bundle.LoadAsset<GameObject>("C_CounterIntuitive"));
+            //cardArt.Add("VineBoom", Bundle.LoadAsset<GameObject>("C_VineBoom"));
+            cardArt.Add("SixShooter", Bundle.LoadAsset<GameObject>("C_SixShooter"));
+            cardArt.Add("Horizon", Bundle.LoadAsset<GameObject>("C_Horizon"));
 
             return cardArt;
+
+        }
+
+        public static Dictionary<String, AudioClip> AudioClipDictionary()
+        {
+            Dictionary<String, AudioClip> audioClip = new Dictionary<String, AudioClip>();
+
+            audioClip.Add("VineBoomAudio", Bundle.LoadAsset<AudioClip>("A_VineBoom"));
+
+            return audioClip;
 
         }
 

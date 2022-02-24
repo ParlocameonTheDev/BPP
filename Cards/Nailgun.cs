@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BPP.MonoBehaviours;
+using BPP.RoundsEffects;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -17,9 +18,9 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-            gun.damage = 0.20f;
-            gun.attackSpeed = 0.40f;
-            gun.projectileSpeed = 0.50f;
+            gun.damage = 0.34f;
+            gun.attackSpeed = 0.34f;
+            gun.projectileSpeed = 0.75f;
             gun.ammo = 15;
             gun.reloadTime = 1.33f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -65,15 +66,22 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+60%",
+                    amount = "+66%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-80%",
+                    amount = "-66%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Projectile Speed",
+                    amount = "-25%",
+                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
                 new CardInfoStat()
                 {
@@ -81,13 +89,6 @@ namespace BPP.Cards
                     stat = "Reload Time",
                     amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Projectile Speed",
-                    amount = "-50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };
         }

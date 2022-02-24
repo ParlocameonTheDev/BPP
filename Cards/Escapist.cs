@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BPP.MonoBehaviours;
+using BPP.RoundsEffects;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -16,6 +17,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            cardInfo.allowMultiple = false;
             statModifiers.movementSpeed = 0.80f;
             block.cdMultiplier = 1.20f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");

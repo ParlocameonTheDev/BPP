@@ -27,11 +27,10 @@ namespace BPP
         public const string AbbrModName = "BPP";
         private const string ModId = "com.binarypenialporty.rounds.bpp";
         private const string ModName = "BPP";
-        public const string Version = "1.4.2";
+        public const string Version = "1.4.3";
         public const string ModInitials = "BPP";
-
         public static Dictionary<String, GameObject> CardArt = new Dictionary<String, GameObject>();
-
+        public static Dictionary<String, AudioClip> CustomAudio = new Dictionary<String, AudioClip>();
 
         public static BPP instance { get; private set; }
 
@@ -46,7 +45,7 @@ namespace BPP
             instance = this;
 
             // Setting up the code for the credits tab of the mod.
-            Unbound.RegisterCredits("<b><color=#ffd900>BPP v1.4.2</b></color>", new string[]
+            Unbound.RegisterCredits("<b><color=#ffd900>BPP v1.4.3</b></color>", new string[]
 {
                 "BinaryAssault, Penial, and Porty."
 }, new string[]
@@ -66,6 +65,7 @@ namespace BPP
             // Added a class specifically for initializing cards, because it was getting messy.
             Initialize.Cards();
             CardArt = Initialize.CardArtDictionary();
+            CustomAudio = Initialize.AudioClipDictionary();
         }
     }
 }

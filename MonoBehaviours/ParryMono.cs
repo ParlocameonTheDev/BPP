@@ -24,10 +24,7 @@ namespace BPP.MonoBehaviours
                 ApplyModifiers();
             }
 
-            duration = 0.005f;
-            ColorEffect colorEffect = this.player.gameObject.AddComponent<ColorEffect>();
-            colorEffect.SetColor(Color.red);
-
+            duration = 0.008f;
         }
 
         public override void OnStart()
@@ -45,7 +42,6 @@ namespace BPP.MonoBehaviours
             else
             {
                 ClearModifiers();
-                UnityEngine.GameObject.Destroy(this.gameObject.GetOrAddComponent<ColorEffect>());
             }
         }
     }

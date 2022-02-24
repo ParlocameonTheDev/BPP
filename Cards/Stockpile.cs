@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BPP.MonoBehaviours;
+using BPP.RoundsEffects;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -16,8 +17,10 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            cardInfo.allowMultiple = false;
             gun.reloadTime = 0.01f;
-            gun.attackSpeed = 1.50f;
+            gun.attackSpeed = 2.25f;
+            gun.damage = 0.67f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -61,7 +64,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "ATKSPD",
-                    amount = "-50%",
+                    amount = "-125%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Damage",
+                    amount = "-33%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 }
             };

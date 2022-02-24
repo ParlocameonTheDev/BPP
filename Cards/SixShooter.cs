@@ -12,22 +12,23 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class DoubleShot : CustomCard
+    class SixShooter : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.ammo = 3;
-            gun.numberOfProjectiles = 1;
-            gun.damage = 0.67f;
-            gun.spread = 0.02f;
-
             cardInfo.allowMultiple = false;
+            gun.damage = 1.66f;
+            gun.attackSpeed = 2.00f;
+            gun.projectileSpeed = 1.66f;
+            gun.reloadTime = 2.00f;
+            gun.spread = 0f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            gunAmmo.maxAmmo = 6;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -37,19 +38,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Double Shot";
+            return "Six Shooter";
         }
         protected override string GetDescription()
         {
-            return "Shoots an extra bullet when you fire your gun.";
+            return "<b>there's a snake in my boot</b>";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["DoubleShot"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -58,30 +59,44 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullets",
-                    amount = "+1",
+                    stat = "Damage",
+                    amount = "+66%",
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Max Ammo",
+                    amount = "+6",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Ammo",
-                    amount = "+3",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    stat = "Projectile Speed",
+                    amount = "+66%",
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Damage",
-                    amount = "-33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.lower
+                    stat = "ATKSPD",
+                    amount = "+100%",
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Reload Time",
+                    amount = "+100%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DefensiveBlue;
+            return CardThemeColor.CardThemeColorType.DestructiveRed;
         }
         public override string GetModName()
         {

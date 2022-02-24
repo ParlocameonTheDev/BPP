@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BPP.MonoBehaviours;
+using BPP.RoundsEffects;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -16,6 +17,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            cardInfo.allowMultiple = false;
             gun.bursts = 15;
             gun.timeBetweenBullets = 0.03f;
             gun.damage = 0.34f;

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BPP.MonoBehaviours;
+using BPP.RoundsEffects;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -16,6 +17,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            cardInfo.allowMultiple = false;
             block.cdMultiplier = 1.33f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -38,7 +40,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "<b><color=#de0000>DOUBLES</b></color> your damage for <b>5 miliseconds</b> after you block.";
+            return "<b><color=#de0000>DOUBLES</b></color> your weapon related stats for <b>8 miliseconds</b> after you block.";
         }
         protected override GameObject GetCardArt()
         {
