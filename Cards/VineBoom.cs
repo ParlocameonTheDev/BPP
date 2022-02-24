@@ -42,7 +42,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardArt["VineBoom"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

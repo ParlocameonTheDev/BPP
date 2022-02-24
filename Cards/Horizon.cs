@@ -18,7 +18,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-            block.cdMultiplier = 1.50f;
+            block.cdMultiplier = 1.33f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -44,7 +44,7 @@ namespace BPP.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardArt["Horizon"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -56,9 +56,9 @@ namespace BPP.Cards
             {
                 new CardInfoStat()
                 {
-                    positive = true,
+                    positive = false,
                     stat = "Block Cooldown",
-                    amount = "+50%",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
             };

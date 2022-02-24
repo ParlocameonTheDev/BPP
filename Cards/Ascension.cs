@@ -18,7 +18,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-            statModifiers.health = 0.30f;
+            statModifiers.health = 0.34f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -63,7 +63,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Health",
-                    amount = "-70%",
+                    amount = "-66%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 }
             };

@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (57 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (58 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -55,6 +55,8 @@ Sparatic : Gives a random amount of dashing force, which will dash you towards y
 Speed Tape : Decreases your reload speed and increases your attack speed.
   
 Steel Ammunition : While the bullets travel faster, they still arch downwards, requiring skill to use properly.
+
+Stimulants : Provides you with very small boosts to anything character related.
   
 Surgical Kit : A very shady medical kit that somehow still works. Gives you an extra life.
   
@@ -97,6 +99,8 @@ Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your 
   
 High Power Scope : High magnification sight that makes targets easier to hit at longer ranges.
 
+Horizon : Flip your characters gravity for a short period of time after blocking.
+
 Hoverboard : Gives you many additional jumps, while giving you a small jump height.
   
 P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
@@ -104,6 +108,8 @@ P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
 Parry : Doubles your damage for 5 miliseconds after you block.
   
 Pump Action : Shoot, slam, and repeat.
+
+Six Shooter : There's a snake in my boot!
   
 Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you can handle it.
 
@@ -156,9 +162,22 @@ New Card: Horizon
 
 New Card: Six Shooter
 
+New Card: Stimulants
+
+All card art has had their background colors dimmed to be more in line with vanilla card art.
+
 Renamed Extended Magazine to Enlarged Magazine to improve compatibility with other mods.
 
-  
+Fixed players turning white when picking a dash-related card.
+
+Parry stat adjustments.
+
+A buff for all pill-related cards.
+
+All gun based card that used max ammo were swapped to a normal ammo count, allowing for you to use other ammo increasing cards with them.
+
+Added card art for any new-ish card missing it.
+
 ---
 </details>
 

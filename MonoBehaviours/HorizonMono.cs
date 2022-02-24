@@ -24,7 +24,7 @@ namespace BPP.MonoBehaviours
                 ApplyModifiers();
             }
 
-            duration = 1.50f;
+            duration = 1f;
         }
 
         public override void OnStart()

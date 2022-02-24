@@ -12,24 +12,20 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class AA12 : CustomCard
+    class Stimulants : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            cardInfo.allowMultiple = false;
-            gun.numberOfProjectiles = 4;
-            gun.ammo = 20;
-            gun.damage = 0.25f;
-            gun.spread = 0.33f;
-            gun.gravity = 0.60f;
-            gun.attackSpeed = 0.50f;
-            gun.destroyBulletAfter = 0.50f;
+            statModifiers.movementSpeed = 1.06f;
+            statModifiers.health = 1.06f;
+            statModifiers.jump = 1.50f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            characterStats.lifeSteal = (characterStats.lifeSteal != 0f) ? (characterStats.lifeSteal * 1.06f) : (characterStats.lifeSteal + 0.06f);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -39,19 +35,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "AA-12 Shotgun";
+            return "Stimulants";
         }
         protected override string GetDescription()
         {
-            return "Turns your weapon into a devestating, full auto shotgun that can chew through health.";
+            return "Provides you with very small boosts to anything character related.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["AA12"];
+            return BPP.CardArt["Stimulants"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -60,44 +56,37 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullets",
-                    amount = "5",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    stat = "Health",
+                    amount = "+6%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Ammo",
-                    amount = "20",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    stat = "Movement Speed",
+                    amount = "+6%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "ATKSPD",
-                    amount = "+50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.Some
+                    stat = "Jump Height",
+                    amount = "+6%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
-                    positive = false,
-                    stat = "Damage",
-                    amount = "-75%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Spread",
-                    amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.Some
+                    positive = true,
+                    stat = "Life Steal",
+                    amount = "+6%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DestructiveRed;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {

@@ -42,11 +42,11 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "<b>there's a snake in my boot</b>";
+            return "<b>There's a snake in my boot!</b>";
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardArt["SixShooter"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

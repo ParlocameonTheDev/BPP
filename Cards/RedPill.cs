@@ -17,8 +17,8 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            statModifiers.movementSpeed = 0.75f;
-            statModifiers.health = 0.75f;
+            statModifiers.movementSpeed = 0.90f;
+            statModifiers.health = 0.90f;
             gun.damage = 1.20f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -63,14 +63,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Movement Speed",
-                    amount = "-25%",
+                    amount = "-10%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Health",
-                    amount = "-25%",
+                    amount = "-10%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };

@@ -121,15 +121,17 @@ namespace BPP
 
             CustomCard.BuildCard<CounterIntuitive>();
 
-            //CustomCard.BuildCard<VineBoom>();
-
             CustomCard.BuildCard<SixShooter>();
 
             CustomCard.BuildCard<Horizon>();
 
+            CustomCard.BuildCard<Stimulants>();
+
             // Work in progress cards, either they aren't finished, or they brokey.
 
             // CustomCard.BuildCard<LiquidCourage>();
+
+            //CustomCard.BuildCard<VineBoom>();
         }
 
         // Initializes Card Art
@@ -195,9 +197,10 @@ namespace BPP
             cardArt.Add("Parry", Bundle.LoadAsset<GameObject>("C_Parry"));
             cardArt.Add("Stockpile", Bundle.LoadAsset<GameObject>("C_Stockpile"));
             cardArt.Add("CounterIntuitive", Bundle.LoadAsset<GameObject>("C_CounterIntuitive"));
-            //cardArt.Add("VineBoom", Bundle.LoadAsset<GameObject>("C_VineBoom"));
+            cardArt.Add("VineBoom", Bundle.LoadAsset<GameObject>("C_VineBoom"));
             cardArt.Add("SixShooter", Bundle.LoadAsset<GameObject>("C_SixShooter"));
             cardArt.Add("Horizon", Bundle.LoadAsset<GameObject>("C_Horizon"));
+            cardArt.Add("Stimulants", Bundle.LoadAsset<GameObject>("C_Stimulants"));
 
             return cardArt;
 
