@@ -155,6 +155,15 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 1.4.5</summary>
+<br>
+
+Small adjustment to certain art for cards.
+
+---
+</details>
+
+<details>
 <summary>Version 1.4.4</summary>
 <br>
 

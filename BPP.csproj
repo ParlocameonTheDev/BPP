@@ -31,7 +31,7 @@
       <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Rounds Rounds Rounds Rounds Rounds Rounds\BepInEx\plugins\Pykess-ModdingUtils\ModdingUtils.dll</HintPath>
     </Reference>
     <Reference Include="UnboundLib">
-      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Rounds Rounds Rounds Rounds Rounds Rounds\BepInEx\plugins\willis81808-UnboundLib\UnboundLib.dll</HintPath>
+      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Divorce Gift\BepInEx\plugins\willis81808-UnboundLib\UnboundLib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>..\..\..\Downloads\Unity.TextMeshPro.dll</HintPath>
