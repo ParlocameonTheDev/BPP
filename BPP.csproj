@@ -19,7 +19,7 @@
       <HintPath>..\..\..\Downloads\BepInEx_x86_5.4.11.0\BepInEx\core\BepInEx.Harmony.dll</HintPath>
     </Reference>
     <Reference Include="CardChoiceSpawnUniqueCardPatch">
-      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Rounds Rounds Rounds Rounds Rounds Rounds\BepInEx\plugins\Pykess-CardChoiceSpawnUniqueCardPatch\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
+      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Divorce Gift\BepInEx\plugins\Pykess-CardChoiceSpawnUniqueCardPatch\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
     </Reference>
     <Reference Include="ClassesManager">
       <HintPath>..\..\..\Downloads\FluxxField-ClassesManager-1.4.1\ClassesManager.dll</HintPath>
@@ -28,7 +28,7 @@
       <HintPath>..\..\..\Downloads\BepInEx_x86_5.4.11.0\BepInEx\core\HarmonyXInterop.dll</HintPath>
     </Reference>
     <Reference Include="ModdingUtils">
-      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Rounds Rounds Rounds Rounds Rounds Rounds\BepInEx\plugins\Pykess-ModdingUtils\ModdingUtils.dll</HintPath>
+      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Divorce Gift\BepInEx\plugins\Pykess-ModdingUtils\ModdingUtils.dll</HintPath>
     </Reference>
     <Reference Include="UnboundLib">
       <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Divorce Gift\BepInEx\plugins\willis81808-UnboundLib\UnboundLib.dll</HintPath>
