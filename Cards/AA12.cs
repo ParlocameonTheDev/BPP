@@ -61,14 +61,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Bullets",
-                    amount = "5",
+                    amount = "+5",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "20",
+                    amount = "+20",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

@@ -66,7 +66,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "30    ",
+                    amount = "+30",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
