@@ -27,7 +27,7 @@ namespace BPP
         public const string AbbrModName = "BPP";
         private const string ModId = "com.binarypenialporty.rounds.bpp";
         private const string ModName = "BPP";
-        public const string Version = "1.4.6";
+        public const string Version = "1.5.0";
         public const string ModInitials = "BPP";
         public static Dictionary<String, GameObject> CardArt = new Dictionary<String, GameObject>();
         public static Dictionary<String, AudioClip> CustomAudio = new Dictionary<String, AudioClip>();
@@ -43,7 +43,7 @@ namespace BPP
         {
             instance = this;
 
-            Unbound.RegisterCredits("<b><color=#ffd900>BPP v1.4.6</b></color>", new string[]
+            Unbound.RegisterCredits("<b><color=#ffd900>BPP v1.5.0</b></color>", new string[]
 {
                 "BinaryAssault, Penial, and Porty."
 }, new string[]

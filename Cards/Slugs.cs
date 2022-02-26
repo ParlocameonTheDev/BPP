@@ -12,12 +12,12 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class BankShot : CustomCard
+    class Slugs : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.projectileSpeed = 0.90f;
-            gun.reflects = 2;
+            gun.damage = 1.10f;
+            gun.destroyBulletAfter = 20.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,15 +30,15 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Bank Shot";
+            return "Slugs";
         }
         protected override string GetDescription()
         {
-            return "Bullets will bounce off of surfaces, opening up many trickshot possibilities.";
+            return "Removes the range penalty from any cards you have picked.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["BankShot"];
+            return BPP.CardArt["Slugs"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -51,23 +51,23 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bounces",
-                    amount = "+2",
+                    stat = "Bullet Range",
+                    amount = "Reset",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
-                    positive = false,
-                    stat = "Projectile Speed",
-                    amount = "-10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                    positive = true,
+                    stat = "Damage",
+                    amount = "+10%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.FirepowerYellow;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {

@@ -15,22 +15,15 @@ namespace BPP.Cards
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            player.gameObject.AddComponent<AlcoholicMono>();
-
-            //Edits values on player when card is selected
-
-            //Positive Stats
+            var mono = player.gameObject.GetOrAddComponent<AlcoholicMono>();
             gun.numberOfProjectiles = 3;
-            gun.ammo *= 3;
+            gunAmmo.maxAmmo *= 2;
             gun.knockback = 3f;
-            //Negative Stats
             gun.spread /= 3f;
             gun.reloadTime /= 3f;
             gun.attackSpeed /= 3f;
@@ -41,8 +34,6 @@ namespace BPP.Cards
         {
             var mono = player.gameObject.GetOrAddComponent<AlcoholicMono>();
             UnityEngine.GameObject.Destroy(mono);
-
-            //Run when the card is removed from the player
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been removed from player {player.playerID}.");
         }
         protected override string GetTitle()
@@ -69,7 +60,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Gun Related Stats",
-                    amount = "300%",
+                    amount = "+300%",
                     simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()

@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (58 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (59 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -49,6 +49,8 @@ Rapid Fire : Increases your weapons rate of fire.
 Red Pill : Increases your damage while decreasing your movement speed and your max health.
   
 Rigged Slippers : These slippers that you found on the black market help you jump very high.
+
+Slugs : Removes the range penalty from any cards you have picked.
   
 Sparatic : Gives a random amount of dashing force, which will dash you towards your crosshair.
   
@@ -535,7 +537,6 @@ Old beta releases, not really important.
 <i>Credits</i>
 
 BinaryAssault (Mod Setup) [(Steam)](https://steamcommunity.com/id/Parlocameon) (BinaryAssault#8863 on Discord)
-
 
 
 Penial (Custom Cards, Custom Maps, Card Art) [(Steam)](https://steamcommunity.com/id/penialsteamlol) [(YouTube)](https://www.youtube.com/channel/UC1aCX3i4L6TyEv_rmo_HeRA) [(Twitch)](https://www.twitch.tv/penial_)

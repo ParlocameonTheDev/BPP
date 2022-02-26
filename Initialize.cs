@@ -127,6 +127,8 @@ namespace BPP
 
             CustomCard.BuildCard<Stimulants>();
 
+            CustomCard.BuildCard<Slugs>();
+
             // Work in progress cards, either they aren't finished, or they brokey.
 
             // CustomCard.BuildCard<LiquidCourage>();
@@ -201,6 +203,7 @@ namespace BPP
             cardArt.Add("SixShooter", Bundle.LoadAsset<GameObject>("C_SixShooter"));
             cardArt.Add("Horizon", Bundle.LoadAsset<GameObject>("C_Horizon"));
             cardArt.Add("Stimulants", Bundle.LoadAsset<GameObject>("C_Stimulants"));
+            cardArt.Add("Slugs", Bundle.LoadAsset<GameObject>("C_Slugs"));
 
             return cardArt;
 
