@@ -23,6 +23,7 @@ namespace BPP.Cards
             gun.projectileSpeed = 2.00f;
             gun.knockback = 1.33f;
             gun.reloadTime = 1.33f;
+            gun.destroyBulletAfter = 20.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -76,6 +77,13 @@ namespace BPP.Cards
                     stat = "Knockback",
                     amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Bullet Range",
+                    amount = "Reset",
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {

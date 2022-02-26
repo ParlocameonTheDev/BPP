@@ -63,7 +63,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "ATKSPD",
-                    amount = "+400%",
+                    amount = "-400%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 }
             };

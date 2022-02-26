@@ -155,6 +155,15 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 1.4.6</summary>
+<br>
+
+Small balance changes and adjustments to card art.
+
+---
+</details>
+
+<details>
 <summary>Version 1.4.5</summary>
 <br>
 
@@ -525,14 +534,14 @@ Old beta releases, not really important.
 
 <i>Credits</i>
 
-BinaryAssault (Custom Cards, Mod Setup) [(Steam)](https://steamcommunity.com/id/Parlocameon) (BinaryAssault#8863 on Discord)
+BinaryAssault (Mod Setup) [(Steam)](https://steamcommunity.com/id/Parlocameon) (BinaryAssault#8863 on Discord)
 
 
 
 Penial (Custom Cards, Custom Maps, Card Art) [(Steam)](https://steamcommunity.com/id/penialsteamlol) [(YouTube)](https://www.youtube.com/channel/UC1aCX3i4L6TyEv_rmo_HeRA) [(Twitch)](https://www.twitch.tv/penial_)
 
 
-Porty (Custom Cards, Custom Maps "all the good ones are his") [(Steam)](https://steamcommunity.com/id/portmens) [(YouTube)](https://www.youtube.com/channel/UCpG87Jxxd1DndN-DUjbPa_Q) (Portator#6582 on Discord)
+Porty (Custom Maps "all the good ones are his") [(Steam)](https://steamcommunity.com/id/portmens) [(YouTube)](https://www.youtube.com/channel/UCpG87Jxxd1DndN-DUjbPa_Q) (Portator#6582 on Discord)
 
 ---
 

@@ -18,7 +18,7 @@ namespace BPP.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             cardInfo.allowMultiple = false;
-            gun.damage = 0.34f;
+            gun.damage = 0.50f;
             gun.attackSpeed = 0.34f;
             gun.projectileSpeed = 0.75f;
             gun.ammo = 15;
@@ -73,7 +73,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-66%",
+                    amount = "-50%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
