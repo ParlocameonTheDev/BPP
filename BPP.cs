@@ -20,7 +20,6 @@ namespace BPP
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch", BepInDependency.DependencyFlags.HardDependency)]
 
     [BepInPlugin(ModId, ModName, Version)]
-
     [BepInProcess("Rounds.exe")]
     public class BPP : BaseUnityPlugin
     {
