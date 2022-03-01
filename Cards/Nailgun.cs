@@ -17,11 +17,9 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             cardInfo.allowMultiple = false;
-            gun.damage = 0.50f;
+            gun.damage = 0.34f;
             gun.attackSpeed = 0.34f;
-            gun.projectileSpeed = 0.75f;
-            gun.ammo = 15;
-            gun.reloadTime = 1.33f;
+            gun.ammo = 16;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -56,7 +54,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+15",
+                    amount = "+16",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
@@ -70,22 +68,8 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-50%",
+                    amount = "-66%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Projectile Speed",
-                    amount = "-25%",
-                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Reload Time",
-                    amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };
         }

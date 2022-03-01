@@ -12,12 +12,12 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class BluePill : CustomCard
+    class YellowPill : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            statModifiers.health = 1.20f;
-            gun.damage = 0.90f;
+            statModifiers.movementSpeed = 0.90f;
+            gun.attackSpeed = 0.75f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,15 +30,15 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Blue Pill";
+            return "Yellow Pill";
         }
         protected override string GetDescription()
         {
-            return "Increases your max health while decreasing your damage.";
+            return "Increases your attack speed while decreasing your movement speed.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["BluePill"];
+            return BPP.CardArt["YellowPill"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -51,14 +51,14 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Health",
-                    amount = "+20%",
+                    stat = "ATKSPD",
+                    amount = "+25%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Damage",
+                    stat = "Movement Speed",
                     amount = "-10%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
@@ -67,7 +67,7 @@ namespace BPP.Cards
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.ColdBlue;
+            return CardThemeColor.CardThemeColorType.FirepowerYellow;
         }
         public override string GetModName()
         {

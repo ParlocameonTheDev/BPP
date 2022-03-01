@@ -17,10 +17,10 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             cardInfo.allowMultiple = false;
-            gun.bursts = 15;
-            gun.timeBetweenBullets = 0.03f;
-            gun.damage = 0.34f;
-            gun.reloadTimeAdd = 0.66f;
+            gun.bursts = 12;
+            gun.timeBetweenBullets = 0.04f;
+            gun.damage = 0.30f;
+            gun.reloadTimeAdd = 0.70f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -38,7 +38,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Turns your weapon into a 15 round burst, how did this happen?";
+            return "Turns your weapon into a 12 round burst, how did this happen?";
         }
         protected override GameObject GetCardArt()
         {
@@ -56,7 +56,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Round Burst",
-                    amount = "15",
+                    amount = "12",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
@@ -70,14 +70,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-66%",
+                    amount = "-70%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+0.66s",
+                    amount = "+0.70s",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };

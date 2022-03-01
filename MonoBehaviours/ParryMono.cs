@@ -24,12 +24,16 @@ namespace BPP.MonoBehaviours
                 ApplyModifiers();
             }
 
-            duration = 0.008f;
+            duration = 0.01f;
         }
 
         public override void OnStart()
         {
             gunStatModifier.damage_mult = 2f;
+            gunStatModifier.knockback_mult = 2f;
+            gunStatModifier.gravity_mult = 2f;
+            gunStatModifier.projectileSpeed_mult = 2f;
+            gunStatModifier.attackSpeed_mult = 2f;
             block.BlockAction = (Action<BlockTrigger.BlockTriggerType>)Delegate.Combine(block.BlockAction, new Action<BlockTrigger.BlockTriggerType>(OnBlock));
             SetLivesToEffect(int.MaxValue);
         }

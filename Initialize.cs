@@ -70,6 +70,9 @@ namespace BPP
             CustomCard.BuildCard<Horizon>();
             CustomCard.BuildCard<Stimulants>();
             CustomCard.BuildCard<Slugs>();
+            CustomCard.BuildCard<YellowPill>();
+            CustomCard.BuildCard<PurplePill>();
+            CustomCard.BuildCard<WhitePill>();
 
             //      Work in progress cards, either they aren't finished, or they brokey.
             // CustomCard.BuildCard<LiquidCourage>();
@@ -143,6 +146,9 @@ namespace BPP
             cardArt.Add("Horizon", Bundle.LoadAsset<GameObject>("C_Horizon"));
             cardArt.Add("Stimulants", Bundle.LoadAsset<GameObject>("C_Stimulants"));
             cardArt.Add("Slugs", Bundle.LoadAsset<GameObject>("C_Slugs"));
+            cardArt.Add("YellowPill", Bundle.LoadAsset<GameObject>("C_YellowPill"));
+            cardArt.Add("PurplePill", Bundle.LoadAsset<GameObject>("C_PurplePill"));
+            cardArt.Add("WhitePill", Bundle.LoadAsset<GameObject>("C_WhitePill"));
 
             return cardArt;
 

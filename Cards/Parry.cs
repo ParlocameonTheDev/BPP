@@ -17,7 +17,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             cardInfo.allowMultiple = false;
-            block.cdMultiplier = 1.33f;
+            block.cdMultiplier = 1.40f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -37,7 +37,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "<b><color=#de0000>DOUBLES</b></color> your weapon related stats for <b>8 miliseconds</b> after you block.";
+            return "<b><color=#de0000>DOUBLES</b></color> your weapon related stats for <b>10 miliseconds</b> after you block.";
         }
         protected override GameObject GetCardArt()
         {
@@ -45,7 +45,7 @@ namespace BPP.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -55,7 +55,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Block Cooldown",
-                    amount = "+33%",
+                    amount = "+40%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
             };

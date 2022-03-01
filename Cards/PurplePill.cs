@@ -12,16 +12,16 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class BluePill : CustomCard
+    class PurplePill : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            statModifiers.health = 1.20f;
-            gun.damage = 0.90f;
+            block.cdMultiplier = 1.10f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
+            characterStats.lifeSteal = (characterStats.lifeSteal != 0f) ? (characterStats.lifeSteal * 1.20f) : (characterStats.lifeSteal + 0.20f);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -30,15 +30,15 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Blue Pill";
+            return "Purple Pill";
         }
         protected override string GetDescription()
         {
-            return "Increases your max health while decreasing your damage.";
+            return "Increases your life steal while increasing your block cooldown.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["BluePill"];
+            return BPP.CardArt["PurplePill"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -51,23 +51,23 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Health",
+                    stat = "Life Steal",
                     amount = "+20%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Damage",
+                    stat = "Block Cooldown",
                     amount = "-10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.ColdBlue;
+            return CardThemeColor.CardThemeColorType.EvilPurple;
         }
         public override string GetModName()
         {

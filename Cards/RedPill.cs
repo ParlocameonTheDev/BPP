@@ -16,7 +16,6 @@ namespace BPP.Cards
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            statModifiers.movementSpeed = 0.90f;
             statModifiers.health = 0.90f;
             gun.damage = 1.20f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -35,7 +34,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Increases your damage while decreasing your movement speed and your max health.";
+            return "Increases your damage while decreasing your health.";
         }
         protected override GameObject GetCardArt()
         {
@@ -55,13 +54,6 @@ namespace BPP.Cards
                     stat = "Damage",
                     amount = "+20%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Movement Speed",
-                    amount = "-10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
                 new CardInfoStat()
                 {
