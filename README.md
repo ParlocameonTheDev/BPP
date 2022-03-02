@@ -163,6 +163,17 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 1.5.1</summary>
+<br>
+
+More adjustments to Pill based cards, and the Stimulant card.
+
+Better card art for Pill based cards.
+
+---
+</details>
+
+<details>
 <summary>Version 1.5.0</summary>
 <br>
 

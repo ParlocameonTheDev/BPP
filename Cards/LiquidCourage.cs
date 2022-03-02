@@ -16,18 +16,17 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             cardInfo.allowMultiple = false;
+            gun.numberOfProjectiles = 2;
+            gun.knockback = 2.00f;
+            gun.attackSpeed = 0.01f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             var mono = player.gameObject.GetOrAddComponent<AlcoholicMono>();
-            gun.numberOfProjectiles = 3;
             gunAmmo.maxAmmo *= 2;
-            gun.knockback = 3f;
-            gun.spread /= 3f;
-            gun.reloadTime /= 3f;
-            gun.attackSpeed /= 3f;
-
+            gun.spread /= 2f;
+            gun.reloadTime /= 2f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -42,7 +41,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Triples your gun's stats, but inverts all of your controls every 5-10 seconds for 6 seconds.\n\"WHERE THE HELL AM I?!?!?!?\"";
+            return "DOUBLES your gun's stats, but randomly inverts your controls.";
         }
         protected override GameObject GetCardArt()
         {
@@ -60,14 +59,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Gun Related Stats",
-                    amount = "+300%",
+                    amount = "+200%",
                     simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Inverted Controls",
-                    amount = "(every 5 - 10s)",
+                    amount = "Occasional",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

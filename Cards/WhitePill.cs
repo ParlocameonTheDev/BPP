@@ -16,7 +16,7 @@ namespace BPP.Cards
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            block.cdMultiplier = 0.80f;
+            block.cdMultiplier = 0.75f;
             statModifiers.health = 0.90f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -52,7 +52,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Block Cooldown",
-                    amount = "-20%",
+                    amount = "-25%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
                 new CardInfoStat()
