@@ -18,8 +18,7 @@ namespace BPP
     [BepInDependency("com.willis.rounds.unbound", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.moddingutils", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch", BepInDependency.DependencyFlags.HardDependency)]
-
-    [BepInPlugin(ModId, ModName, Version)]
+    [BepInPlugin("com.binarypenialporty.rounds.bpp", "BPP", "1.5.2")]
     [BepInProcess("Rounds.exe")]
     public class BPP : BaseUnityPlugin
     {
@@ -35,9 +34,18 @@ namespace BPP
 
         void Awake()
         {
-            var harmony = new Harmony(ModId);
+            var harmony = new Harmony("com.binarypenialporty.rounds.bpp");
             harmony.PatchAll();
+            GameModeManager.AddHook("GameEnd", new Func<IGameModeHandler, IEnumerator>(this.ResetEffects));
         }
+
+        private IEnumerator ResetEffects(IGameModeHandler gm)
+        {
+            // Nothing to see here (yet)
+
+            yield break;
+        }
+
         void Start()
         {
             BPP.instance = this;

@@ -16,7 +16,7 @@ namespace BPP.Cards
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.projectileColor += Color.green;
+            gun.projectileColor = Color.green;
             gun.slow = (gun.slow > 0f) ? (gun.slow * 1.33f) : (gun.slow + 0.33f);
             gun.reloadTimeAdd = 0.25f;
             gun.projectielSimulatonSpeed = 0.67f;

@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (62 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (64 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -106,6 +106,8 @@ Designated Marksman Rifle : Turns your weapon into a semi-auto rifle that can co
 Enlarged Magazine : Doubles your current ammo count.
   
 Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your opponents with.
+
+Gravity Gun : RDM RDM RDM RDM RDM RDM
   
 High Power Scope : High magnification sight that makes targets easier to hit at longer ranges.
 
@@ -150,6 +152,8 @@ Minigun : Turns your weapon into a belt-fed machine gun with devestating fire ra
   
 Nuclear : Welcome to the end game...
 
+Spacious Ammunition : Bigger bullets, and when I say bigger, I mean BIGGER.
+
 Stockpile : You will instantly reload your weapon when you are out of ammo.
   
 Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down your social security number when you ordered it.
@@ -166,14 +170,18 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <summary>Version 1.5.2</summary>
 <br>
 
+New Card: Gravity Gun
+
+New Card: Spacious Ammunition
+
 New Card: Wounding Ammunition
 
 Removed Ascension due to it's unbalanced nature.
 
-Replaced Ascension Wounding Ammunition.
+Replaced Ascension with Wounding Ammunition.
 
 ---
-</details
+</details>
 
 <details>
 <summary>Version 1.5.1</summary>

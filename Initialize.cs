@@ -77,6 +77,8 @@ namespace BPP
             CustomCard.BuildCard<PurplePill>();
             CustomCard.BuildCard<WhitePill>();
             CustomCard.BuildCard<WoundingAmmunition>();
+            CustomCard.BuildCard<SpaciousAmmunition>();
+            CustomCard.BuildCard<GravityGun>();
 
             //      Work in progress cards, either they aren't finished, or they brokey.
             // CustomCard.BuildCard<LiquidCourage>();
@@ -160,7 +162,8 @@ namespace BPP
             cardArt.Add("PurplePill", Bundle.LoadAsset<GameObject>("C_PurplePill"));
             cardArt.Add("WhitePill", Bundle.LoadAsset<GameObject>("C_WhitePill"));
             cardArt.Add("WoundingAmmunition", Bundle.LoadAsset<GameObject>("C_WoundingAmmunition"));
-            cardArt.Add("Druggie", Bundle.LoadAsset<GameObject>("C_Druggie"));
+            cardArt.Add("SpaciousAmmunition", Bundle.LoadAsset<GameObject>("C_SpaciousAmmunition"));
+            cardArt.Add("GravityGun", Bundle.LoadAsset<GameObject>("C_GravityGun"));
 
             return cardArt;
 

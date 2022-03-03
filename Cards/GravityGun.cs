@@ -12,14 +12,14 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class WoundingAmmunition : CustomCard
+    class GravityGun : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             cardInfo.allowMultiple = false;
-            gun.slow = (gun.slow > 0f) ? (gun.slow * 1.33f) : (gun.slow + 0.33f);
-            gun.projectileSize = 0.90f;
-            gun.gravity = 1.10f;
+            gun.damage = 0.40f;
+            gun.knockback = 30f;
+            gun.destroyBulletAfter = 1.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -32,19 +32,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Wounding Ammunition";
+            return "Gravity Gun";
         }
         protected override string GetDescription()
         {
-            return "Bullets that drastically slow your targets.";
+            return "RDM RDM RDM RDM RDM RDM";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["WoundingAmmunition"];
+            return BPP.CardArt["GravityGun"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -53,30 +53,30 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullet Slow",
-                    amount = "+33%",
+                    stat = "Knockback",
+                    amount = "+600%",
                     simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Projectile Speed",
-                    amount = "-10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                    stat = "Damage",
+                    amount = "-60%",
+                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Bullet Gravity",
-                    amount = "+10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
+                    stat = "Bullet Range",
+                    amount = "Limited",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DestructiveRed;
+            return CardThemeColor.CardThemeColorType.FirepowerYellow;
         }
         public override string GetModName()
         {
