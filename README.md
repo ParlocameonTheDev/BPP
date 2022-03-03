@@ -74,6 +74,8 @@ Weights : Heavier bullets that arch harder, but deal more damage.
 
 White Pill : Decreases your block cooldown while decreasing your health.
 
+Wounding Ammunition : Bullets that drastically slow your targets.
+
 Yellow Pill : Increases your attack speed while decreasing your movement speed.
   
 ---
@@ -131,8 +133,6 @@ Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you ca
 AA-12 : Turns your weapon into a devestating, full auto shotgun that can chew through health.
 
 Angelic Burst : Turns your weapon into a 15 round burst, how did this happen?
-
-Acsension : Riseeeeeeeeeeee, RISEEEEEEEEEEEEEEEEEEEE!
   
 Black Tar Heroin : Absolutely NOTHING could go wrong, right?
   
@@ -161,6 +161,19 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 1.5.2</summary>
+<br>
+
+New Card: Wounding Ammunition
+
+Removed Ascension due to it's unbalanced nature.
+
+Replaced Ascension Wounding Ammunition.
+
+---
+</details
 
 <details>
 <summary>Version 1.5.1</summary>

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.MonoBehaviours;
 using BPP.RoundsEffects;
 using BPP.Utilities;
@@ -13,16 +12,14 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class RedPill : CustomCard
+    class WoundingAmmunition : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            cardInfo.categories = new CardCategory[]
-            {
-                CustomCardCategories.instance.CardCategory("Pills")
-            };
-            statModifiers.health = 0.90f;
-            gun.damage = 1.25f;
+            cardInfo.allowMultiple = false;
+            gun.slow = (gun.slow > 0f) ? (gun.slow * 1.50f) : (gun.slow + 0.50f);
+            gun.projectileSize = 0.90f;
+            gun.gravity = 1.10f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -35,15 +32,15 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Red Pill";
+            return "Wounding Ammunition";
         }
         protected override string GetDescription()
         {
-            return "Increases your damage while decreasing your health.";
+            return "Bullets that drastically slow your targets.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["RedPill"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -56,16 +53,23 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Damage",
-                    amount = "+25%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
+                    stat = "Bullet Slow",
+                    amount = "+50%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Health",
+                    stat = "Projectile Speed",
                     amount = "-10%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Bullet Gravity",
+                    amount = "+10%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
         }

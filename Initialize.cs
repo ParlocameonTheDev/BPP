@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using BepInEx;
 using UnboundLib.Cards;
+using UnboundLib.GameModes;
 using BPP.Cards;
+using BPP.MonoBehaviours;
 using UnityEngine;
 
 namespace BPP
 {
     internal class Initialize
     {
+
         public static void Cards()
         {
             CustomCard.BuildCard<AcceleratedBackHopping>();
@@ -57,7 +61,6 @@ namespace BPP
             CustomCard.BuildCard<SurgicalKit>();
             CustomCard.BuildCard<SteelAmmunition>();
             CustomCard.BuildCard<Inversion>();
-            CustomCard.BuildCard<Ascension>();
             CustomCard.BuildCard<Hoverboard>();
             CustomCard.BuildCard<Escapist>();
             CustomCard.BuildCard<AngelicBurst>();
@@ -73,15 +76,22 @@ namespace BPP
             CustomCard.BuildCard<YellowPill>();
             CustomCard.BuildCard<PurplePill>();
             CustomCard.BuildCard<WhitePill>();
+            CustomCard.BuildCard<WoundingAmmunition>();
 
             //      Work in progress cards, either they aren't finished, or they brokey.
             // CustomCard.BuildCard<LiquidCourage>();
             // CustomCard.BuildCard<VineBoom>();
+            // CustomCard.BuildCard<Ascension>();
+        }
+
+        public static void Managers()
+        {
+            //  Not being used yet, hehe ha
         }
 
         private static readonly AssetBundle Bundle = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("bppart", typeof(BPP).Assembly);
 
-        public static Dictionary<String, GameObject> CardArtDictionary()
+    public static Dictionary<String, GameObject> CardArtDictionary()
         {
             Dictionary<String, GameObject> cardArt = new Dictionary<String, GameObject>();
 
@@ -149,6 +159,8 @@ namespace BPP
             cardArt.Add("YellowPill", Bundle.LoadAsset<GameObject>("C_YellowPill"));
             cardArt.Add("PurplePill", Bundle.LoadAsset<GameObject>("C_PurplePill"));
             cardArt.Add("WhitePill", Bundle.LoadAsset<GameObject>("C_WhitePill"));
+            cardArt.Add("WoundingAmmunition", Bundle.LoadAsset<GameObject>("C_WoundingAmmunition"));
+            cardArt.Add("Druggie", Bundle.LoadAsset<GameObject>("C_Druggie"));
 
             return cardArt;
 

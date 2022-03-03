@@ -19,6 +19,7 @@ namespace BPP.Cards
             cardInfo.allowMultiple = false;
             gun.damage = 3.50f;
             gun.attackSpeed = 5.00f;
+            gun.projectileSize = 2.50f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
