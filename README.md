@@ -161,10 +161,18 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 </details>
 
-
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 1.5.3</summary>
+<br>
+
+Fixed an issue with the README that broke the patch notes.
+
+---
+</details>
 
 <details>
 <summary>Version 1.5.2</summary>
