@@ -6,6 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UnityProject\**" />
+    <EmbeddedResource Remove="UnityProject\**" />
+    <None Remove="UnityProject\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\..\..\Downloads\BepInEx_x86_5.4.11.0\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>

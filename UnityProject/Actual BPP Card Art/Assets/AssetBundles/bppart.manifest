@@ -1,0 +1,103 @@
+ManifestFileVersion: 0
+CRC: 2124845386
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 81e70678d5caee8f225c23cc986215dc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 000f1d785b060b01497c84a12617ee7b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/C_GamerAmmunition.prefab
+- Assets/Prefabs/C_SurgicalKit.prefab
+- Assets/Prefabs/C_RedPill.prefab
+- Assets/Prefabs/C_AmmoEnthusiast.prefab
+- Assets/Prefabs/C_SpeedTape.prefab
+- Assets/Prefabs/C_ButtStock.prefab
+- Assets/Prefabs/C_VineBoom.prefab
+- Assets/Prefabs/C_DesignatedMarksmanRifle.prefab
+- Assets/Prefabs/C_Stockpile.prefab
+- Assets/Prefabs/C_AA12.prefab
+- Assets/Prefabs/C_Weights.prefab
+- Assets/Prefabs/C_BlackTarHeroin.prefab
+- Assets/Prefabs/C_P90.prefab
+- Assets/Prefabs/C_AcceleratedBackHopping.prefab
+- Assets/Prefabs/C_GreenPill.prefab
+- Assets/Prefabs/C_RapidFire.prefab
+- Assets/Prefabs/C_BigBang.prefab
+- Assets/Prefabs/C_AtomicAmmunition.prefab
+- Assets/Prefabs/C_PumpAction.prefab
+- Assets/Prefabs/C_HighPowerScope.prefab
+- Assets/Prefabs/C_WoundingAmmunition.prefab
+- Assets/Prefabs/C_Hoverboard.prefab
+- Assets/Prefabs/C_Minigun.prefab
+- Assets/Prefabs/C_Horizon.prefab
+- Assets/Prefabs/C_MakeshiftFullAuto.prefab
+- Assets/Prefabs/C_DoubleShot.prefab
+- Assets/Prefabs/C_GroundPound.prefab
+- Assets/Prefabs/C_Escapist.prefab
+- Assets/Prefabs/C_AngelicBurst.prefab
+- Assets/Prefabs/C_RiggedSlippers.prefab
+- Assets/Prefabs/C_Stimulants.prefab
+- Assets/Prefabs/C_OldFashioned.prefab
+- Assets/Prefabs/C_YellowPill.prefab
+- Assets/Prefabs/C_WhitePill.prefab
+- Assets/Prefabs/C_Parry.prefab
+- Assets/Prefabs/C_OverlyDefensive.prefab
+- Assets/Prefabs/C_BluePill.prefab
+- Assets/Prefabs/C_Nailgun.prefab
+- Assets/Prefabs/C_TacticalGloves.prefab
+- Assets/Prefabs/C_SixShooter.prefab
+- Assets/Prefabs/C_BankShot.prefab
+- Assets/Prefabs/C_FuturisticMagazine.prefab
+- Assets/Prefabs/C_LiquidCourage.prefab
+- Assets/Prefabs/C_NoScope.prefab
+- Assets/Prefabs/C_SpaciousAmmunition.prefab
+- Assets/Prefabs/C_TrustyPanUltraSuperXL.prefab
+- Assets/Prefabs/C_OverlyConfident.prefab
+- Assets/Prefabs/C_Ascension.prefab
+- Assets/Prefabs/C_GravityGun.prefab
+- Assets/Prefabs/C_Coilgun.prefab
+- Assets/Prefabs/C_BloodAmmunition.prefab
+- Assets/Prefabs/C_CondensedShot.prefab
+- Assets/Prefabs/C_TrustyPan.prefab
+- Assets/Prefabs/C_Splatter.prefab
+- Assets/Prefabs/C_Sparatic.prefab
+- Assets/Prefabs/C_Inversion.prefab
+- Assets/Prefabs/C_Nuclear.prefab
+- Assets/Prefabs/C_SwiftReactions.prefab
+- Assets/Prefabs/C_MunitionsPack.prefab
+- Assets/Prefabs/C_CounterIntuitive.prefab
+- Assets/Prefabs/C_PurplePill.prefab
+- Assets/Prefabs/C_Dash.prefab
+- Assets/Prefabs/A_VineBoom.wav
+- Assets/Prefabs/C_SteelAmmunition.prefab
+- Assets/Prefabs/C_Slugs.prefab
+- Assets/Prefabs/C_ExtendedMagizine.prefab
+- Assets/Prefabs/C_DashMK2.prefab
+- Assets/Prefabs/C_Intervention.prefab
+Dependencies: []
