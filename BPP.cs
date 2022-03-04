@@ -4,7 +4,6 @@ using BepInEx;
 using HarmonyLib;
 using BPP.Cards;
 using BPP.MonoBehaviours;
-using ClassesManager;
 using Jotunn.Utils;
 using UnboundLib;
 using UnboundLib.Cards;
