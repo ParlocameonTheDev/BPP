@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Provides you with very small boosts to anything character related.";
+            return "uh.";
         }
         protected override GameObject GetCardArt()
         {

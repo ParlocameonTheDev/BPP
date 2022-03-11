@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to e n h a n c e your ROUNDS experience (64 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to your ROUNDS experience (67 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -104,6 +104,10 @@ Counter Intuitive : Trade off almost all of your damage for a better block coold
 Designated Marksman Rifle : Turns your weapon into a semi-auto rifle that can consistently hit targets from a distance.
   
 Enlarged Magazine : Doubles your current ammo count.
+
+Fisticuffs : Swap out your weapon for your fists, why not?
+
+Flex Seal : Coats your bullets with a very strong substance to make them more effective, somehow.
   
 Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your opponents with.
 
@@ -114,6 +118,8 @@ High Power Scope : High magnification sight that makes targets easier to hit at 
 Horizon : Flip your characters gravity for a short period of time after blocking.
 
 Hoverboard : Gives you many additional jumps, while giving you a small jump height.
+
+M249 : Turns your weapon into a heavy light-machine gun.
   
 P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
 
@@ -164,6 +170,25 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 2.0</summary>
+<br>
+
+New Card: Fisticuffs
+
+New Card: Flex Seal
+
+New Card: M249
+
+Many balance changes (as always, because stuff is always brokey :[ )
+
+Improved visibiliy for the stats on the Stimulants card, now it is less cramped.
+
+Updated mod dependencies to force newer versions of certain patches/utilities.
+
+---
+</details>
 
 <details>
 <summary>Version 1.5.4</summary>

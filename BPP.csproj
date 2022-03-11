@@ -13,16 +13,16 @@
 
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\Downloads\BepInEx_x86_5.4.12.0\BepInEx\core\0Harmony.dll</HintPath>
+      <HintPath>..\..\BepInEx_x86_5.4.11.0\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ROUNDS\Rounds_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>..\..\..\Downloads\BepInEx_x86_5.4.12.0\BepInEx\core\BepInEx.dll</HintPath>
+      <HintPath>..\..\BepInEx_x86_5.4.11.0\BepInEx\core\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx.Harmony">
-      <HintPath>..\..\..\Downloads\BepInEx_x86_5.4.12.0\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+      <HintPath>..\..\BepInEx_x86_5.4.11.0\BepInEx\core\BepInEx.Harmony.dll</HintPath>
     </Reference>
     <Reference Include="CardChoiceSpawnUniqueCardPatch">
       <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Mod Making\BepInEx\plugins\Pykess-CardChoiceSpawnUniqueCardPatch\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
@@ -31,7 +31,7 @@
       <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Mod Making\BepInEx\plugins\FluxxField-ClassesManager\ClassesManager.dll</HintPath>
     </Reference>
     <Reference Include="HarmonyXInterop">
-      <HintPath>..\..\..\Downloads\BepInEx_x86_5.4.12.0\BepInEx\core\HarmonyXInterop.dll</HintPath>
+      <HintPath>..\..\BepInEx_x86_5.4.11.0\BepInEx\core\HarmonyXInterop.dll</HintPath>
     </Reference>
     <Reference Include="ModdingUtils">
       <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Mod Making\BepInEx\plugins\Pykess-ModdingUtils\ModdingUtils.dll</HintPath>

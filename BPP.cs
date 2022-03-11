@@ -17,14 +17,14 @@ namespace BPP
     [BepInDependency("com.willis.rounds.unbound", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.moddingutils", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.binarypenialporty.rounds.bpp", "BPP", "1.5.4")]
+    [BepInPlugin("com.binarypenialporty.rounds.bpp", "BPP", "2.0.0")]
     [BepInProcess("Rounds.exe")]
     public class BPP : BaseUnityPlugin
     {
         public const string AbbrModName = "BPP";
         private const string ModId = "com.binarypenialporty.rounds.bpp";
         private const string ModName = "BPP";
-        public const string Version = "1.5.4";
+        public const string Version = "2.0.0";
         public const string ModInitials = "BPP";
         public static Dictionary<String, GameObject> CardArt = new Dictionary<String, GameObject>();
         public static Dictionary<String, AudioClip> CustomAudio = new Dictionary<String, AudioClip>();
@@ -49,7 +49,7 @@ namespace BPP
         {
             BPP.instance = this;
 
-            Unbound.RegisterCredits("<b><color=#ffd900>BPP v1.5.4</b></color>", new string[]
+            Unbound.RegisterCredits("<b><color=#ffd900>BPP v2.0</b></color>", new string[]
 {
                 "BinaryAssault, Penial, and Porty."
 }, new string[]

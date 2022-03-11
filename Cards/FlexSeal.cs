@@ -12,20 +12,17 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class DoubleShot : CustomCard
+    class FlexSeal : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.ammo = 3;
-            gun.numberOfProjectiles = 1;
-            gun.damage = 0.80f;
-            gun.spread = 0.04f;
-
-            cardInfo.allowMultiple = false;
+            gun.destroyBulletAfter = 20.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
+            gun.gravity = 0f;
+            gun.spread = 0f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -34,19 +31,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Double Shot";
+            return "Flex Seal";
         }
         protected override string GetDescription()
         {
-            return "Shoots an extra bullet when you fire your gun.";
+            return "Coats your bullets with a very strong substance to make them more effective, somehow.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["DoubleShot"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -55,30 +52,30 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullets",
-                    amount = "+1",
+                    stat = "Bullet Range",
+                    amount = "Reset",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Ammo",
-                    amount = "+3",
+                    stat = "Bullet Gravity",
+                    amount = "Reset",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
-                    positive = false,
-                    stat = "Damage",
-                    amount = "-20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                    positive = true,
+                    stat = "Spread",
+                    amount = "No",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DefensiveBlue;
+            return CardThemeColor.CardThemeColorType.EvilPurple;
         }
         public override string GetModName()
         {

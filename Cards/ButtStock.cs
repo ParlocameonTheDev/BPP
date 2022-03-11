@@ -17,6 +17,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             gun.gravity = 0.67f;
+            statModifiers.movementSpeed = 1.10f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -33,7 +34,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Increases your weapons stability, while reducing your mobility.";
+            return "Increases your weapons stability, while increasing your mobility.";
         }
         protected override GameObject GetCardArt()
         {
@@ -53,6 +54,13 @@ namespace BPP.Cards
                     stat = "Bullet Gravity",
                     amount = "-33%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Movement Speed",
+                    amount = "+10%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
         }

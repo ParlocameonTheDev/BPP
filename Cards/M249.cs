@@ -12,16 +12,15 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class DoubleShot : CustomCard
+    class M249 : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.ammo = 3;
-            gun.numberOfProjectiles = 1;
-            gun.damage = 0.80f;
-            gun.spread = 0.04f;
-
             cardInfo.allowMultiple = false;
+            gun.ammo = 40;
+            gun.reloadTime = 2.00f;
+            gun.damage = 1.20f;
+            gun.spread = 0.20f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -34,19 +33,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Double Shot";
+            return "M249";
         }
         protected override string GetDescription()
         {
-            return "Shoots an extra bullet when you fire your gun.";
+            return "Turns your weapon into a heavy light-machine gun.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["DoubleShot"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -55,27 +54,33 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullets",
-                    amount = "+1",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    stat = "Damage",
+                    amount = "+25%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+3",
+                    amount = "+40",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Damage",
-                    amount = "-20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                    stat = "Reload Time",
+                    amount = "+100%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Spread",
+                    amount = "+20%",
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };
         }
-
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
             return CardThemeColor.CardThemeColorType.DefensiveBlue;

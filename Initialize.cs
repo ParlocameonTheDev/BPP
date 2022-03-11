@@ -79,8 +79,11 @@ namespace BPP
             CustomCard.BuildCard<WoundingAmmunition>();
             CustomCard.BuildCard<SpaciousAmmunition>();
             CustomCard.BuildCard<GravityGun>();
+            CustomCard.BuildCard<M249>();
+            CustomCard.BuildCard<FlexSeal>();
+            CustomCard.BuildCard<Fisticuffs>();
 
-            //      Work in progress cards, either they aren't finished, or they brokey.
+            //      Disabled cards, either they aren't finished, they brokey, or are heavily unbalanced.
             // CustomCard.BuildCard<LiquidCourage>();
             // CustomCard.BuildCard<VineBoom>();
             // CustomCard.BuildCard<Ascension>();
@@ -88,7 +91,7 @@ namespace BPP
 
         public static void Managers()
         {
-            //  Not being used yet, hehe ha
+            //  Not being used yet, hehehe ha
         }
 
         private static readonly AssetBundle Bundle = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("bppart", typeof(BPP).Assembly);
@@ -164,6 +167,9 @@ namespace BPP
             cardArt.Add("WoundingAmmunition", Bundle.LoadAsset<GameObject>("C_WoundingAmmunition"));
             cardArt.Add("SpaciousAmmunition", Bundle.LoadAsset<GameObject>("C_SpaciousAmmunition"));
             cardArt.Add("GravityGun", Bundle.LoadAsset<GameObject>("C_GravityGun"));
+            cardArt.Add("M249", Bundle.LoadAsset<GameObject>("C_M249"));
+            cardArt.Add("FlexSeal", Bundle.LoadAsset<GameObject>("C_FlexSeal"));
+            cardArt.Add("Fisticuffs", Bundle.LoadAsset<GameObject>("C_Fisticuffs"));
 
             return cardArt;
 
