@@ -10,7 +10,7 @@ using BPP.Cards;
 
 namespace BPP.MonoBehaviours
 {
-    internal class ParryMono : ReversibleEffect
+    internal class CompressionMono : ReversibleEffect
     {
         private float duration = 0;
         public override void OnOnDestroy()
@@ -24,15 +24,12 @@ namespace BPP.MonoBehaviours
                 ApplyModifiers();
             }
 
-            duration = 0.01f;
+            duration = 0.50f;
         }
 
         public override void OnStart()
         {
-            gunStatModifier.damage_mult = 2f;
-            gunStatModifier.knockback_mult = 2f;
-            gunStatModifier.projectileSpeed_mult = 2f;
-            gunStatModifier.attackSpeed_mult = 2f;
+            characterStatModifiers.sizeMultiplier = 0.5f;
             block.BlockAction = (Action<BlockTrigger.BlockTriggerType>)Delegate.Combine(block.BlockAction, new Action<BlockTrigger.BlockTriggerType>(OnBlock));
             SetLivesToEffect(int.MaxValue);
         }

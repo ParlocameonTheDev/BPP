@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to your ROUNDS experience (67 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to your ROUNDS experience (68 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -96,6 +96,8 @@ Big Bang : A devistating damage boost, while sacrificing your attack speed.
 Blood Ammunition : Bullets that take health from others, and it's red so that's pretty cool!
   
 Coilgun : Turns your weapon into a 5 round burst.
+
+Compression : Halve your players size for a breif period of time after you block.
   
 Condensed Ammunition : Bullets will have no spread, but will travel slower and will be heavier.
 
@@ -174,6 +176,8 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <details>
 <summary>Version 2.0</summary>
 <br>
+
+New Card: Compression
 
 New Card: Fisticuffs
 

@@ -12,35 +12,36 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Horizon : CustomCard
+    class Compression : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             cardInfo.allowMultiple = false;
+            block.cdMultiplier = 1.33f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            var mono = player.gameObject.GetOrAddComponent<HorizonMono>();
+            var mono = player.gameObject.GetOrAddComponent<CompressionMono>();
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            var mono = player.gameObject.GetOrAddComponent<HorizonMono>();
+            var mono = player.gameObject.GetOrAddComponent<CompressionMono>();
             UnityEngine.GameObject.Destroy(mono);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been removed from player {player.playerID}.");
         }
         protected override string GetTitle()
         {
-            return "Horizon";
+            return "Compression";
         }
         protected override string GetDescription()
         {
-            return "Flip your characters gravity for a short period of time after blocking.";
+            return "<b><color=#de0000>HALVE</b></color> your players size for a breif period of time after you block.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["Horizon"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -52,17 +53,17 @@ namespace BPP.Cards
             {
                 new CardInfoStat()
                 {
-                    positive = true,
-                    stat = "",
-                    amount = "",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    positive = false,
+                    stat = "Block Cooldown",
+                    amount = "+33%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.MagicPink;
+            return CardThemeColor.CardThemeColorType.DefensiveBlue;
         }
         public override string GetModName()
         {
