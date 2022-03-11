@@ -166,6 +166,15 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 1.5.4</summary>
+<br>
+
+Fixed an issue that would cause game crashes when a player had the Stockpile card.
+
+---
+</details>
+
+<details>
 <summary>Version 1.5.3</summary>
 <br>
 

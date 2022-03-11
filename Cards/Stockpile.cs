@@ -17,7 +17,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             cardInfo.allowMultiple = false;
-            gun.reloadTime = 0.01f;
+            gun.reloadTime = 0.03f;
             gun.attackSpeed = 2.25f;
             gun.damage = 0.67f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
