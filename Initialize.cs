@@ -82,6 +82,7 @@ namespace BPP
             CustomCard.BuildCard<M249>();
             CustomCard.BuildCard<FlexSeal>();
             CustomCard.BuildCard<Fisticuffs>();
+            CustomCard.BuildCard<Compression>();
 
             //      Disabled cards, either they aren't finished, they brokey, or are heavily unbalanced.
             // CustomCard.BuildCard<LiquidCourage>();
@@ -170,6 +171,7 @@ namespace BPP
             cardArt.Add("M249", Bundle.LoadAsset<GameObject>("C_M249"));
             cardArt.Add("FlexSeal", Bundle.LoadAsset<GameObject>("C_FlexSeal"));
             cardArt.Add("Fisticuffs", Bundle.LoadAsset<GameObject>("C_Fisticuffs"));
+            cardArt.Add("Compression", Bundle.LoadAsset<GameObject>("C_Compression"));
 
             return cardArt;
 

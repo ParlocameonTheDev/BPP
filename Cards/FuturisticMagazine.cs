@@ -17,7 +17,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             cardInfo.allowMultiple = false;
-            gun.reloadTimeAdd = 0.50f;
+            gun.reloadTimeAdd = 0.66f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -60,7 +60,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+0.50s",
+                    amount = "+0.66s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
             };

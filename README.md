@@ -110,8 +110,6 @@ Designated Marksman Rifle : Turns your weapon into a semi-auto rifle that can co
 Enlarged Magazine : Doubles your current ammo count.
 
 Fisticuffs : Swap out your weapon for your fists, why not?
-
-Flex Seal : Coats your bullets with a very strong substance to make them more effective, somehow.
   
 Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your opponents with.
 
@@ -144,13 +142,15 @@ Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you ca
 
 AA-12 : Turns your weapon into a devestating, full auto shotgun that can chew through health.
 
-Angelic Burst : Turns your weapon into a 15 round burst, how did this happen?
+Angelic Burst : Turns your weapon into a 12 round burst, how did this happen?
   
 Black Tar Heroin : Absolutely NOTHING could go wrong, right?
   
 Dash MK2 : Dashes you towards your crosshair with great strength when you block.
 
 Escapist : Quadruples your movement speed after you block for a short period of time.
+
+Flex Seal : Coats your bullets with a very strong substance to make them more effective, somehow.
 
 Futuristic Magizine : Triples your current ammo count.
   
@@ -176,10 +176,11 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
-<summary>Version 2.0</summary>
+<summary>Version 2.0.0</summary>
 <br>
 
 Released on ##/##/##
+
 
 New Card: Compression
 

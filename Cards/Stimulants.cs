@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "uh.";
+            return "";
         }
         protected override GameObject GetCardArt()
         {

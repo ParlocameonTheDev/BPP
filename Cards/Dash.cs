@@ -55,7 +55,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Force forward while Dashing",
-                    amount = "+10.0",
+                    amount = "+10",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

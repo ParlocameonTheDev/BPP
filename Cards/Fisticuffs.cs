@@ -18,6 +18,7 @@ namespace BPP.Cards
         {
             cardInfo.allowMultiple = false;
             gun.bursts = 2;
+            gun.timeBetweenBullets = 0.03f;
             gun.damage = 1.75f;
             gun.attackSpeed = 0.75f;
             gun.destroyBulletAfter = 0.06f;
@@ -25,7 +26,6 @@ namespace BPP.Cards
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            gunAmmo.maxAmmo = 4;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -52,13 +52,6 @@ namespace BPP.Cards
         {
             return new CardInfoStat[]
             {
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Ammo",
-                    amount = "2",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
                 new CardInfoStat()
                 {
                     positive = true,
