@@ -12,6 +12,8 @@ Contact BinaryAssault#8863 on Discord with feedback or bug reports/concerns.
 
 ---
 
+<i>Card List</i>
+
 <details>
 <summary>Common Cards</summary>
 <br>
@@ -177,6 +179,8 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <summary>Version 2.0</summary>
 <br>
 
+Released on ##/##/##
+
 New Card: Compression
 
 New Card: Fisticuffs
@@ -198,6 +202,9 @@ Updated mod dependencies to force newer versions of certain patches/utilities.
 <summary>Version 1.5.4</summary>
 <br>
 
+Released on <i>3/5/2022</i>
+
+
 Fixed an issue that would cause game crashes when a player had the Stockpile card.
 
 ---
@@ -207,6 +214,9 @@ Fixed an issue that would cause game crashes when a player had the Stockpile car
 <summary>Version 1.5.3</summary>
 <br>
 
+Released on <i>3/3/2022</i>
+
+
 Fixed an issue with the README that broke the patch notes.
 
 ---
@@ -215,6 +225,9 @@ Fixed an issue with the README that broke the patch notes.
 <details>
 <summary>Version 1.5.2</summary>
 <br>
+
+Released on <i>3/3/2022</i>
+
 
 New Card: Gravity Gun
 
@@ -233,6 +246,9 @@ Replaced Ascension with Wounding Ammunition.
 <summary>Version 1.5.1</summary>
 <br>
 
+Released on <i>3/2/2022</i>
+
+
 More adjustments to Pill based cards, and the Stimulant card.
 
 Better card art for Pill based cards.
@@ -243,6 +259,9 @@ Better card art for Pill based cards.
 <details>
 <summary>Version 1.5.0</summary>
 <br>
+
+Released on <i>3/1/2022</i>
+
 
 New Card: Purple Pill
 
@@ -267,6 +286,9 @@ Slight nerf to Angelic Burst.
 <summary>Version 1.4.6</summary>
 <br>
 
+Released on <i>2/26/2022</i>
+
+
 Small balance changes and adjustments to card art.
 
 ---
@@ -275,6 +297,9 @@ Small balance changes and adjustments to card art.
 <details>
 <summary>Version 1.4.5</summary>
 <br>
+
+Released on <i>2/25/2022</i>
+
 
 Small adjustment to certain art for cards.
 
@@ -285,6 +310,9 @@ Small adjustment to certain art for cards.
 <summary>Version 1.4.4</summary>
 <br>
 
+Released on <i>2/25/2022</i>
+
+
 A hotfix for magazine-based cards, and horizon's duration.
 
 ---
@@ -293,6 +321,9 @@ A hotfix for magazine-based cards, and horizon's duration.
 <details>
 <summary>Version 1.4.3</summary>
 <br>
+
+Released on <i>2/24/2022</i>
+
 
 New Card: Horizon
 
@@ -321,6 +352,9 @@ Added card art for any new-ish card missing it.
 <summary>Version 1.4.2</summary>
 <br>
 
+Released on <i>2/23/2022</i>
+
+
 New Card: Counter Intuitive
 
 New Card: Stockpile
@@ -338,6 +372,9 @@ Misc stuff for cards and mono behaviors that will make my job a lot easier.
 <summary>Version 1.4.1</summary>
 <br>
 
+Released on <i>2/23/2022</i>
+
+
 New Card: Parry
 
 Simple Stats have been setup for people using this setting in game.
@@ -348,6 +385,9 @@ Simple Stats have been setup for people using this setting in game.
 <details>
 <summary>Version 1.4.0</summary>
 <br>
+
+Released on <i>2/20/2022</i>
+
 
 New Card: Ammo Enthusiast
   
@@ -373,6 +413,9 @@ Some more balance changes, as usual.
 <details>
 <summary>Version 1.3.5</summary>
 <br>
+
+Released on <i>2/18/2022</i>
+
   
 New Card: Escapist
 
@@ -386,6 +429,9 @@ Some more balance changes, as usual.
 <details>
 <summary>Version 1.3.4</summary>
 <br>
+
+Released on <i>2/16/2022</i>
+
   
 New Card: Acsension
 
@@ -401,6 +447,9 @@ A fix for cards that we're supposed to give the player a tighter spread - thanks
 <details>
 <summary>Version 1.3.3</summary>
 <br>
+
+Released on <i>2/13/2022</i>
+
   
 Small hotfix, adjusting the README and changing the rarity of some cards.
   
@@ -410,7 +459,10 @@ Small hotfix, adjusting the README and changing the rarity of some cards.
 <details>
 <summary>Version 1.3.2</summary>
 <br>
-  
+
+Released on <i>2/11/2022</i>
+
+
 New Card: Inversion
 
 Even more card art adjustments.
@@ -421,6 +473,9 @@ Even more card art adjustments.
 <details>
 <summary>Version 1.3.1</summary>
 <br>
+
+Released on <i>2/11/2022</i>
+
   
 New stuff, yay :)
 
@@ -441,6 +496,9 @@ A small amount of balancing.
 <summary>Version 1.3.0</summary>
 <br>
 
+Released on <i>2/8/2022</i>
+
+
 Every single card in BPP now has card art, and a decent chunk of those are animated as well. Some cards we're reworked and some older art was also updated.
 
 New Card: Intervention
@@ -454,6 +512,9 @@ Bug fix for the nailgun cards attack speed.
 <summary>Version 1.2.5</summary>
 <br>
 
+Released on <i>2/7/2022</i>
+
+
 We have added some more card art, while animating some old card art as well.
 
 Did a little bit of balancing too.
@@ -465,6 +526,9 @@ Did a little bit of balancing too.
 <summary>Version 1.2.4</summary>
 <br>
 
+Released on <i>2/5/2022</i>
+
+
 Reworked all card art to be more colorful, we are also in the process of animating a lot of them.
 
 Some more balancing is included as well.
@@ -475,6 +539,9 @@ Some more balancing is included as well.
 <details>
 <summary>Version 1.2.3</summary>
 <br>
+
+Released on <i>2/3/2022</i>
+
   
 More balance tweaks, and bug fixes.
 
@@ -486,6 +553,9 @@ More balance tweaks, and bug fixes.
 <details>
 <summary>Version 1.2.2</summary>
 <br>
+
+Released on <i>2/3/2022</i>
+
   
 More balance tweaks, and bug fixes.
 
@@ -502,6 +572,9 @@ Literally one peice of card art for the AA-12 card
 <summary>Version 1.2.1</summary>
 <br>
 
+Released on <i>2/2/2022</i>
+
+
 Some balance tweaks, and spelling errors being fixed.
   
   ---
@@ -510,6 +583,9 @@ Some balance tweaks, and spelling errors being fixed.
 <details>
 <summary>Version 1.2.0</summary>
 <br>
+
+Released on <i>1/31/2022</i>
+
 
 We have officially split up BPP into two seperate mods, "BPP", and "BPP-Maps." This will make it easier to play with specific content from are pack.
 
@@ -544,6 +620,9 @@ More balancing and bug fixes, as usual.
 <summary>Version 1.1.2</summary>
 <br>
 
+Released on <i>1/26/2022</i>
+
+
 Mainly bug fixes, a little bit of balancing as well.
   
   ---
@@ -552,6 +631,9 @@ Mainly bug fixes, a little bit of balancing as well.
 <details>
 <summary>Version 1.1.1</summary>
 <br>
+
+Released on <i>1/25/2022</i>
+
 
 Hello again, we decided that some maps needed to go, mainly ones with weird layouts. These were some of are first maps and they definently did not play well. To fill in the removal of them, we created 2 more, but expect more soon™. And as usual, we made some minor balance tweaks, and a small amonunt of bug fixes. 
 
@@ -582,6 +664,9 @@ More balancing and bug fixes, as usual.
 <summary>Version 1.1.0</summary>
 <br>
 
+Released on <i>1/23/2022</i>
+
+
 We did some more stuff, mainly new content and more balancing, which I think is pretty cool.
 
 Readdded most of the removed cards, with new balancing
@@ -604,6 +689,9 @@ More balancing and bug fixes, should be fine now, hopefully...
 <summary>Version 1.0.1</summary>
 <br>
 
+Released on <i>1/22/2022</i>
+
+
 Yo, I (Penial) caught COVID shortly after we released the mod, and very quickly started recieving feedback. I am now feeling fine and have adjusted many things. There are no new cards or maps, but I have fixed many bugs and made various balance tweaks. I also want to thank Willuwontu for the information about card stats and for their pull requests.
 
 Removed Card: Avid Venter
@@ -625,6 +713,9 @@ Balanced almost every card to be more in-line with other popular packs and vanil
 <summary>Version 1.0.0</summary>
 <br>
 
+Released on <i>1/18/2022</i>
+
+
 Initial release.
   
   ---
@@ -633,6 +724,9 @@ Initial release.
 <details>
 <summary>Version 0.3.5 - 0.3.6</summary>
 <br>
+
+Released within <i>1/16/2022 to 1/17/2022</i>
+
 
 Old beta releases, not really important.
   
