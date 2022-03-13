@@ -147,6 +147,8 @@ Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you ca
 
 Suppressor : Shoot your foes from afar, and hope they don't hear you.
 
+Vector : No full auto in buildings.
+
 ---
 </details>
 
@@ -242,13 +244,19 @@ Many balance changes (as always, because stuff is always brokey :[ )
 
 Improved visibiliy for the stats on the Stimulants card, now it is less cramped..
 
+Fixed Escapist card art.
+
 Renamed Rapid Fire to Muzzle Boost.
 
 Buffed Horizon.
 
 Buffed Parry.
 
+Nerfed Angelic Burst.
+
 Nerfed P90.
+
+Nerfed Minigun.
 
 Updated mod dependencies to force newer versions of certain patches/utilities.
 

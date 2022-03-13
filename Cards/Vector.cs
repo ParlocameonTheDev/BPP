@@ -43,11 +43,11 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "It's like you attached a water hose to the gun.";
+            return "No full auto in buildings.";
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return BPP.CardArt["Vector"];
         }
         protected override CardInfo.Rarity GetRarity()
         {

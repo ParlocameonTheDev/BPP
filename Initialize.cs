@@ -90,7 +90,7 @@ namespace BPP
             CustomCard.BuildCard<Addict>();
             CustomCard.BuildCard<HatTrick>();
             CustomCard.BuildCard<Ascension>();
-            CustomCard.BuildCard<MuzzleBreak>();
+            CustomCard.BuildCard<MuzzleBrake>();
             CustomCard.BuildCard<MuzzleFlash>();
             CustomCard.BuildCard<GrabBag>();
             CustomCard.BuildCard<Foregrip>();
@@ -191,7 +191,7 @@ namespace BPP
             cardArt.Add("MysteriousAmmunition", Bundle.LoadAsset<GameObject>("C_MysteriousAmmunition"));
             cardArt.Add("Addict", Bundle.LoadAsset<GameObject>("C_Addict"));
             cardArt.Add("HatTrick", Bundle.LoadAsset<GameObject>("C_HatTrick"));
-            cardArt.Add("MuzzleBreak", Bundle.LoadAsset<GameObject>("C_MuzzleBreak"));
+            cardArt.Add("MuzzleBrake", Bundle.LoadAsset<GameObject>("C_MuzzleBrake"));
             cardArt.Add("MuzzleFlash", Bundle.LoadAsset<GameObject>("C_MuzzleFlash"));
             cardArt.Add("GrabBag", Bundle.LoadAsset<GameObject>("C_GrabBag"));
             cardArt.Add("Foregrip", Bundle.LoadAsset<GameObject>("C_Foregrip"));

@@ -53,7 +53,7 @@ namespace BPP.Cards
 
 		protected override GameObject GetCardArt()
 		{
-			return null;
+			return BPP.CardArt["MysteriousAmmunition"];
 		}
 
 		protected override string GetDescription()
