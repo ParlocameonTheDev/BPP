@@ -15,6 +15,8 @@ namespace BPP
 
         public static void Cards()
         {
+            UnityEngine.Debug.Log("BPP cards have been loaded into the client successfully!");
+
             CustomCard.BuildCard<AcceleratedBackHopping>();
             CustomCard.BuildCard<Dash>();
             CustomCard.BuildCard<DashMk2>();
@@ -108,6 +110,7 @@ namespace BPP
         }
 
         private static readonly AssetBundle Bundle = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("bppart", typeof(BPP).Assembly);
+
 
     public static Dictionary<String, GameObject> CardArtDictionary()
         {
