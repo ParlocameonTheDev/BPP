@@ -82,16 +82,24 @@ namespace BPP
             CustomCard.BuildCard<M249>();
             CustomCard.BuildCard<FlexSeal>();
             CustomCard.BuildCard<Fisticuffs>();
-            CustomCard.BuildCard<Compression>();
             CustomCard.BuildCard<Vector>();
             CustomCard.BuildCard<AntiMaterialRifle>();
             CustomCard.BuildCard<PepperGun>();
             CustomCard.BuildCard<ArmsDealer>();
+            CustomCard.BuildCard<MysteriousAmmunition>();
+            CustomCard.BuildCard<Addict>();
+            CustomCard.BuildCard<HatTrick>();
+            CustomCard.BuildCard<Ascension>();
+            CustomCard.BuildCard<MuzzleBreak>();
+            CustomCard.BuildCard<MuzzleFlash>();
+            CustomCard.BuildCard<GrabBag>();
+            CustomCard.BuildCard<Foregrip>();
+            CustomCard.BuildCard<Suppressor>();
 
             //      Disabled cards, either they aren't finished, they brokey, or are heavily unbalanced.
             // CustomCard.BuildCard<LiquidCourage>();
             // CustomCard.BuildCard<VineBoom>();
-            // CustomCard.BuildCard<Ascension>();
+            // CustomCard.BuildCard<Compression>();
         }
 
         public static void Managers()
@@ -180,6 +188,14 @@ namespace BPP
             cardArt.Add("AntiMaterialRifle", Bundle.LoadAsset<GameObject>("C_AntiMaterialRifle"));
             cardArt.Add("PepperGun", Bundle.LoadAsset<GameObject>("C_PepperGun"));
             cardArt.Add("ArmsDealer", Bundle.LoadAsset<GameObject>("C_ArmsDealer"));
+            cardArt.Add("MysteriousAmmunition", Bundle.LoadAsset<GameObject>("C_MysteriousAmmunition"));
+            cardArt.Add("Addict", Bundle.LoadAsset<GameObject>("C_Addict"));
+            cardArt.Add("HatTrick", Bundle.LoadAsset<GameObject>("C_HatTrick"));
+            cardArt.Add("MuzzleBreak", Bundle.LoadAsset<GameObject>("C_MuzzleBreak"));
+            cardArt.Add("MuzzleFlash", Bundle.LoadAsset<GameObject>("C_MuzzleFlash"));
+            cardArt.Add("GrabBag", Bundle.LoadAsset<GameObject>("C_GrabBag"));
+            cardArt.Add("Foregrip", Bundle.LoadAsset<GameObject>("C_Foregrip"));
+            cardArt.Add("Suppressor", Bundle.LoadAsset<GameObject>("C_Suppressor"));
 
             return cardArt;
 

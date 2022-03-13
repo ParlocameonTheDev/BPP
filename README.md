@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to your ROUNDS experience (76 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to your ROUNDS experience (80 cards.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -35,6 +35,12 @@ Ground Pound : Dashes you downwards when you block, making you extremely sus.
 Makeshift Full Auto : Greatly increases fire rate, if you are willing to suffer the consequences.
   
 Munitions Pack : haha ammo go brrrrrrrrrrrrrrr!
+
+Muzzle Boost : Increases your weapons rate of fire.
+
+Muzzle Break : Resets the bullet gravity changes from any cards you have picked.
+
+Muzzle Flash : Lowers your rate of fire for more accuracy.
   
 Nailgun : Turns your weapon into a nailgun. Very weak, but shoots pretty fast.
   
@@ -47,8 +53,6 @@ Overly Confident : Increases your block cooldown for increased mobility.
 Overly Defensive : Decreases your mobility for a decreased block cooldown.
 
 Purple Pill : Increases your life steal while increasing your block cooldown.
-  
-Rapid Fire : Increases your weapons rate of fire.
   
 Red Pill : Increases your damage while decreasing your movement speed and your max health.
   
@@ -89,6 +93,8 @@ Yellow Pill : Increases your attack speed while decreasing your movement speed.
   
 Accelerated Back Hopping : I'm a movement player Louis! Dashes you in the oppisite direction of your crosshair when you block.
 
+Addict : Get three pill-related cards (excluding Black Tar Heroin.)
+
 Ammo Enthusiast : You got some issues my guy...
 
 Arms Dealer : Get a random gun-related card
@@ -112,6 +118,8 @@ Designated Marksman Rifle : Turns your weapon into a semi-auto rifle that can co
 Enlarged Magazine : Doubles your current ammo count.
 
 Fisticuffs : Swap out your weapon for your fists, why not?
+
+Foregrip : Removes the spread penalty from any cards you have picked, while increasing your mobility.
   
 Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your opponents with.
 
@@ -124,6 +132,8 @@ Horizon : Flip your characters gravity for a short period of time after blocking
 Hoverboard : Gives you many additional jumps, while giving you a small jump height.
 
 M249 : Turns your weapon into a heavy light-machine gun.
+
+Mysterious Ammunition : Get a random ammo-related card.
   
 P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
 
@@ -134,6 +144,8 @@ Pump Action : Shoot, slam, and repeat.
 Six Shooter : There's a snake in my boot!
   
 Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you can handle it.
+
+Suppressor : Shoot your foes from afar, and hope they don't hear you.
 
 ---
 </details>
@@ -147,6 +159,8 @@ AA-12 : Turns your weapon into a devestating, full auto shotgun that can chew th
 Angelic Burst : Turns your weapon into a 12 round burst, how did this happen?
 
 Anti Material Rifle : That's one big bullet bud...
+
+Ascension : Riseeeeeeeeeeee, RISEEEEEEEEEEEEEEEEEEEE!
   
 Black Tar Heroin : Absolutely NOTHING could go wrong, right?
   
@@ -157,6 +171,10 @@ Escapist : Quadruples your movement speed after you block for a short period of 
 Flex Seal : Coats your bullets with a very strong substance to make them more effective, somehow.
 
 Futuristic Magizine : Triples your current ammo count.
+
+Grab Bag : Get two random ammunition-related cards.
+
+Hat Trick : Get four random common cards.
   
 Intervention : Turns your weapon into a high-caliber sniper rifle.
   
@@ -185,32 +203,40 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <summary>Version 2.0.0</summary>
 <br>
 
-Released on ##/##/##
+Released on <i>3/13/2022</i>
 
+
+New Card: Addict
 
 New Card: Anti Material Rifle
 
 New Card: Arms Dealer
 
-New Card: Compression
-
 New Card: Fisticuffs
 
 New Card: Flex Seal
 
-// New Card: Foregrip
+New Card: Foregrip
+
+New Card: Grab Bag
+
+New Card: Hat Trick
 
 New Card: M249
 
-// New Card: Muzzle Brake
+New Card: Muzzle Brake
 
-// New Card: Muzzle Flash
+New Card: Muzzle Flash
+
+New Card: Mysterious Ammunition
 
 New Card: Pepper Gun
 
-// New Card: Suppressor
+New Card: Suppressor
 
 New Card: Vector
+
+Readded Card: Ascension
 
 Many balance changes (as always, because stuff is always brokey :[ )
 

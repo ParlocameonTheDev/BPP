@@ -2,7 +2,7 @@
   "name": "BPP",
   "version_number": "2.0.0",
   "website_url": "https://github.com/ParlocameonTheDev/BPP",
-  "description": "Adds a countless amount of creative cards to your ROUNDS experience (76 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)",
+  "description": "Adds a countless amount of creative cards to your ROUNDS experience (80 cards.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)",
   "dependencies": [
     "willis81808-UnboundLib-2.10.1",
     "BepInEx-BepInExPack_ROUNDS-5.4.1100",

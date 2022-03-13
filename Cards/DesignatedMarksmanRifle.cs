@@ -21,6 +21,7 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Guns")
             };
+            cardInfo.allowMultiple = false;
             gun.damage = 1.50f;
             gun.projectileSpeed = 1.75f;
             gun.attackSpeed = 1.50f;

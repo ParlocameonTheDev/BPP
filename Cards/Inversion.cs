@@ -61,7 +61,7 @@ namespace BPP.Cards
                     positive = false,
                     stat = "Movement Speed",
                     amount = "Almost No",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
         }

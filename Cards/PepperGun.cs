@@ -21,6 +21,8 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Guns")
             };
+            cardInfo.allowMultiple = false;
+            gun.projectileColor = Color.white;
             gun.ammo = 40;
             gun.numberOfProjectiles = 49;
             gun.reloadTime = 3.00f;
@@ -74,7 +76,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-98%",
+                    amount = "-100%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
@@ -90,6 +92,13 @@ namespace BPP.Cards
                     stat = "Spread",
                     amount = "+30%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Bullet Range",
+                    amount = "Short",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
         }

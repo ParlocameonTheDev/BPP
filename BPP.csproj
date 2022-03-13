@@ -59,7 +59,6 @@
 
   <ItemGroup>
     <Folder Include="Maps\" />
-    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

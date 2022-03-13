@@ -18,7 +18,7 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-	internal class ArmsDealer : CustomCard
+	internal class MysteriousAmmunition : CustomCard
 	{
 		public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers)
 		{
@@ -48,7 +48,7 @@ namespace BPP.Cards
 
 		protected override string GetTitle()
 		{
-			return "Arms Dealer";
+			return "Mysterious Ammunition";
 		}
 
 		protected override GameObject GetCardArt()
@@ -58,7 +58,7 @@ namespace BPP.Cards
 
 		protected override string GetDescription()
 		{
-			return "Get a random <b><color=#ff0000>gun-related</b></color> card.";
+			return "Get a random <b><color=#fff700>ammunition-related</b></color> card.";
 		}
 
 		protected override CardInfo.Rarity GetRarity()
@@ -73,7 +73,7 @@ namespace BPP.Cards
 
 		protected override CardThemeColor.CardThemeColorType GetTheme()
 		{
-			return CardThemeColor.CardThemeColorType.FirepowerYellow;
+			return CardThemeColor.CardThemeColorType.EvilPurple;
 		}
 
 		public override string GetModName()
@@ -83,12 +83,12 @@ namespace BPP.Cards
 
 		public bool condition(CardInfo card, Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
 		{
-			return card.categories.Intersect(ArmsDealer.gunCards).Any<CardCategory>();
+			return card.categories.Intersect(MysteriousAmmunition.ammunitionCards).Any<CardCategory>();
 		}
 
-		public static CardCategory[] gunCards = new CardCategory[]
+		public static CardCategory[] ammunitionCards = new CardCategory[]
 		{
-			CustomCardCategories.instance.CardCategory("Guns")
+			CustomCardCategories.instance.CardCategory("Ammunitions")
 		};
 	}
 }

@@ -23,10 +23,10 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.ammo = 33;
-            gun.attackSpeed = 0.01f;
+            gun.attackSpeed = 0.03f;
             gun.reloadTime = 0.60f;
             gun.damage = 0.10f;
-            gun.spread = 0.20f;
+            gun.spread = 0.10f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -43,7 +43,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "It's like you attached a water hose to a gun.";
+            return "It's like you attached a water hose to the gun.";
         }
         protected override GameObject GetCardArt()
         {
@@ -66,17 +66,17 @@ namespace BPP.Cards
                 },
                 new CardInfoStat()
                 {
-                    positive = false,
-                    stat = "Damage",
-                    amount = "-90%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
+                    positive = true,
+                    stat = "ATKSPD",
+                    amount = "+100%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "ATKSPD",
-                    amount = "+100%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
+                    stat = "Damage",
+                    amount = "-90%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
                 {
@@ -89,7 +89,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Spread",
-                    amount = "+20%",
+                    amount = "+10%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };

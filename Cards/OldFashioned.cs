@@ -19,7 +19,7 @@ namespace BPP.Cards
         {
             cardInfo.categories = new CardCategory[]
             {
-                CustomCardCategories.instance.CardCategory("Guns")
+                CustomCardCategories.instance.CardCategory("Ammunitions")
             };
             gun.damage = 1.33f;
             gun.knockback = 1.33f;

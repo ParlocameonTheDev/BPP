@@ -24,7 +24,7 @@ namespace BPP.Cards
             cardInfo.allowMultiple = false;
             gun.ammo = 60;
             gun.reloadTimeAdd = 4.00f;
-            gun.damage = 0.05f;
+            gun.damage = 0.04f;
             gun.attackSpeed = 0.01f;
             gun.projectielSimulatonSpeed = 0.50f;
             gun.spread = 0.25f;
@@ -91,7 +91,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-95%",
+                    amount = "-96%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
