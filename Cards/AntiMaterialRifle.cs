@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class P90 : CustomCard
+    class AntiMaterialRifle : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
@@ -21,16 +21,16 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Guns")
             };
-            gun.ammo = 25;
-            gun.attackSpeed = 0.25f;
-            gun.reloadTime = 1.33f;
-            gun.damage = 0.30f;
-            gun.spread = 0.15f;
-            gun.gravity = 0.25f;
+            cardInfo.allowMultiple = false;
+            gun.reloadTime = 4.00f;
+            gun.damage = 4.00f;
+            gun.knockback = 4.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
+            gun.spread = 0f;
+            gunAmmo.maxAmmo = 1;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -39,15 +39,15 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "P90";
+            return "Anti Material Rifle";
         }
         protected override string GetDescription()
         {
-            return "Turns your weapon into a inaccurate, high fire rate bullet hose.";
+            return "That's one big bullet bud...";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["P90"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -60,43 +60,44 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "ATKSPD",
-                    amount = "+75%",
+                    stat = "Damage",
+                    amount = "+300%",
                     simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Ammo",
-                    amount = "+25",
+                    stat = "Knockback",
+                    amount = "+300%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Spread",
+                    amount = "No",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Damage",
-                    amount = "-70%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
+                    stat = "Max Ammo",
+                    amount = "1",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+33%",
-                    simepleAmount = CardInfoStat.SimpleAmount.Some
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Spread",
-                    amount = "+15%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
+                    amount = "+300%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 }
             };
         }
+
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.ColdBlue;
+            return CardThemeColor.CardThemeColorType.FirepowerYellow;
         }
         public override string GetModName()
         {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.MonoBehaviours;
 using BPP.RoundsEffects;
 using BPP.Utilities;
@@ -13,20 +12,11 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class P90 : CustomCard
+    class MuzzleBoost : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            cardInfo.categories = new CardCategory[]
-            {
-                CustomCardCategories.instance.CardCategory("Guns")
-            };
-            gun.ammo = 25;
-            gun.attackSpeed = 0.25f;
-            gun.reloadTime = 1.33f;
-            gun.damage = 0.30f;
-            gun.spread = 0.15f;
-            gun.gravity = 0.25f;
+            gun.attackSpeed = 0.60f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -39,19 +29,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "P90";
+            return "Muzzle Boost";
         }
         protected override string GetDescription()
         {
-            return "Turns your weapon into a inaccurate, high fire rate bullet hose.";
+            return "Increases your weapons rate of fire.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["P90"];
+            return BPP.CardArt["RapidFire"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -61,36 +51,8 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+75%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Ammo",
-                    amount = "+25",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Damage",
-                    amount = "-70%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Reload Time",
-                    amount = "+33%",
+                    amount = "+40%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Spread",
-                    amount = "+15%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
         }

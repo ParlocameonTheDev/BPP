@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class P90 : CustomCard
+    class Vector : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
@@ -21,12 +21,12 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Guns")
             };
-            gun.ammo = 25;
-            gun.attackSpeed = 0.25f;
-            gun.reloadTime = 1.33f;
-            gun.damage = 0.30f;
-            gun.spread = 0.15f;
-            gun.gravity = 0.25f;
+            cardInfo.allowMultiple = false;
+            gun.ammo = 33;
+            gun.attackSpeed = 0.01f;
+            gun.reloadTime = 0.60f;
+            gun.damage = 0.10f;
+            gun.spread = 0.20f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -39,15 +39,15 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "P90";
+            return "Vector";
         }
         protected override string GetDescription()
         {
-            return "Turns your weapon into a inaccurate, high fire rate bullet hose.";
+            return "It's like you attached a water hose to a gun.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["P90"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
@@ -60,43 +60,44 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "ATKSPD",
-                    amount = "+75%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
                     stat = "Ammo",
-                    amount = "+25",
+                    amount = "+33",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-70%",
+                    amount = "-90%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
+                    stat = "ATKSPD",
+                    amount = "+100%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
                     stat = "Reload Time",
-                    amount = "+33%",
+                    amount = "+40%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Spread",
-                    amount = "+15%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
+                    amount = "+20%",
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };
         }
+
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.ColdBlue;
+            return CardThemeColor.CardThemeColorType.FirepowerYellow;
         }
         public override string GetModName()
         {

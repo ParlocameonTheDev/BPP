@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.MonoBehaviours;
 using BPP.RoundsEffects;
 using BPP.Utilities;
@@ -12,11 +13,19 @@ using UnityEngine;
 
 namespace BPP.Cards
 {
-    class RapidFire : CustomCard
+    class PepperGun : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.attackSpeed = 0.60f;
+            cardInfo.categories = new CardCategory[]
+            {
+                CustomCardCategories.instance.CardCategory("Guns")
+            };
+            gun.ammo = 40;
+            gun.numberOfProjectiles = 49;
+            gun.reloadTime = 3.00f;
+            gun.damage = 0.02f;
+            gun.spread = 0.30f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -29,19 +38,19 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Rapid Fire";
+            return "Pepper Gun";
         }
         protected override string GetDescription()
         {
-            return "Increases your weapons rate of fire.";
+            return "The household choice of weaponry, just aim for the face!";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["RapidFire"];
+            return null;
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -50,15 +59,43 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "ATKSPD",
-                    amount = "+40%",
+                    stat = "Bullets",
+                    amount = "50",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Ammo",
+                    amount = "+40",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Damage",
+                    amount = "-98%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Reload Time",
+                    amount = "+200%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    stat = "Spread",
+                    amount = "+30%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.ColdBlue;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {

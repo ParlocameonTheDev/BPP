@@ -48,16 +48,7 @@ namespace BPP.Cards
         }
         protected override CardInfoStat[] GetStats()
         {
-            return new CardInfoStat[]
-            {
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "",
-                    amount = "",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-            };
+            return null;
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()

@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to your ROUNDS experience (68 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to your ROUNDS experience (76 cards) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -90,6 +90,8 @@ Yellow Pill : Increases your attack speed while decreasing your movement speed.
 Accelerated Back Hopping : I'm a movement player Louis! Dashes you in the oppisite direction of your crosshair when you block.
 
 Ammo Enthusiast : You got some issues my guy...
+
+Arms Dealer : Get a random gun-related card
   
 Atomic Ammunition : Slower bullets that deal more damage depending on how much they have travelled and slow their targets.
   
@@ -143,6 +145,8 @@ Splatter : Shoots 10 bullets when you fire your gun, pretty excessive but you ca
 AA-12 : Turns your weapon into a devestating, full auto shotgun that can chew through health.
 
 Angelic Burst : Turns your weapon into a 12 round burst, how did this happen?
+
+Anti Material Rifle : That's one big bullet bud...
   
 Black Tar Heroin : Absolutely NOTHING could go wrong, right?
   
@@ -161,6 +165,8 @@ Inversion : Now you can fly, kinda.
 Minigun : Turns your weapon into a belt-fed machine gun with devestating fire rate.
   
 Nuclear : Welcome to the end game...
+
+Pepper Gun : The household choice of weaponry, just aim for the face!
 
 Spacious Ammunition : Bigger bullets, and when I say bigger, I mean BIGGER.
 
@@ -182,17 +188,41 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 Released on ##/##/##
 
 
+New Card: Anti Material Rifle
+
+New Card: Arms Dealer
+
 New Card: Compression
 
 New Card: Fisticuffs
 
 New Card: Flex Seal
 
+// New Card: Foregrip
+
 New Card: M249
+
+// New Card: Muzzle Brake
+
+// New Card: Muzzle Flash
+
+New Card: Pepper Gun
+
+// New Card: Suppressor
+
+New Card: Vector
 
 Many balance changes (as always, because stuff is always brokey :[ )
 
-Improved visibiliy for the stats on the Stimulants card, now it is less cramped.
+Improved visibiliy for the stats on the Stimulants card, now it is less cramped..
+
+Renamed Rapid Fire to Muzzle Boost.
+
+Buffed Horizon.
+
+Buffed Parry.
+
+Nerfed P90.
 
 Updated mod dependencies to force newer versions of certain patches/utilities.
 

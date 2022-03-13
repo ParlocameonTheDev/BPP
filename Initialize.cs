@@ -19,7 +19,7 @@ namespace BPP
             CustomCard.BuildCard<Dash>();
             CustomCard.BuildCard<DashMk2>();
             CustomCard.BuildCard<DesignatedMarksmanRifle>();
-            CustomCard.BuildCard<RapidFire>();
+            CustomCard.BuildCard<MuzzleBoost>();
             CustomCard.BuildCard<MakeshiftFullAuto>();
             CustomCard.BuildCard<AtomicAmmunition>();
             CustomCard.BuildCard<BloodAmmunition>();
@@ -83,6 +83,10 @@ namespace BPP
             CustomCard.BuildCard<FlexSeal>();
             CustomCard.BuildCard<Fisticuffs>();
             CustomCard.BuildCard<Compression>();
+            CustomCard.BuildCard<Vector>();
+            CustomCard.BuildCard<AntiMaterialRifle>();
+            CustomCard.BuildCard<PepperGun>();
+            CustomCard.BuildCard<ArmsDealer>();
 
             //      Disabled cards, either they aren't finished, they brokey, or are heavily unbalanced.
             // CustomCard.BuildCard<LiquidCourage>();
@@ -172,6 +176,10 @@ namespace BPP
             cardArt.Add("FlexSeal", Bundle.LoadAsset<GameObject>("C_FlexSeal"));
             cardArt.Add("Fisticuffs", Bundle.LoadAsset<GameObject>("C_Fisticuffs"));
             cardArt.Add("Compression", Bundle.LoadAsset<GameObject>("C_Compression"));
+            cardArt.Add("Vector", Bundle.LoadAsset<GameObject>("C_Vector"));
+            cardArt.Add("AntiMaterialRifle", Bundle.LoadAsset<GameObject>("C_AntiMaterialRifle"));
+            cardArt.Add("PepperGun", Bundle.LoadAsset<GameObject>("C_PepperGun"));
+            cardArt.Add("ArmsDealer", Bundle.LoadAsset<GameObject>("C_ArmsDealer"));
 
             return cardArt;
 

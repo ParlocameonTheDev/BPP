@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.MonoBehaviours;
 using BPP.RoundsEffects;
 using BPP.Utilities;
@@ -16,6 +17,10 @@ namespace BPP.Cards
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
+            cardInfo.categories = new CardCategory[]
+            {
+                CustomCardCategories.instance.CardCategory("Guns")
+            };
             cardInfo.allowMultiple = false;
             gun.ammo = 7;
             gun.numberOfProjectiles = 9;
@@ -56,7 +61,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Bullets",
-                    amount = "+9",
+                    amount = "10",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
