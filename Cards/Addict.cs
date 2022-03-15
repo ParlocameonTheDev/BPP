@@ -76,7 +76,7 @@ namespace BPP.Cards
 
 		protected override string GetDescription()
 		{
-			return "Get three random <b><color=#2200ff>pill-related</b></color> cards (excluding Black Tar Heroin.)";
+			return "Get three random <b><color=#2200ff>pill-related</b></color> cards (excluding Black Tar Heroin) from BPP.";
 		}
 
 		protected override CardInfo.Rarity GetRarity()

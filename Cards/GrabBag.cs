@@ -67,7 +67,7 @@ namespace BPP.Cards
 
 		protected override string GetDescription()
 		{
-			return "Get two random <b><color=#fff700>ammunition-related</b></color> cards.";
+			return "Get two random <b><color=#fff700>ammunition-related</b></color> cards from BPP.";
 		}
 
 		protected override CardInfo.Rarity GetRarity()
