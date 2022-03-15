@@ -202,6 +202,42 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 2.1.0</summary>
+<br>
+
+Released on <i>3/14/2022</i>
+
+
+A lot of card art adjustments.
+
+---
+</details>
+
+<details>
+<summary>Version 2.0.1</summary>
+<br>
+
+Released on <i>3/14/2022</i>
+
+
+Fixed Pepper Gun.
+
+Buffed Suppressor.
+
+Nerfed Makeshift Full Auto.
+
+Nerfed Muzzle Booster.
+
+Nerfed Nailgun.
+
+Nerfed Trusty Pan Ultra Super XL.
+
+Nerfed Vector.
+
+---
+</details>
+
+<details>
 <summary>Version 2.0.0</summary>
 <br>
 

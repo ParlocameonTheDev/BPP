@@ -23,9 +23,9 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.ammo = 33;
-            gun.attackSpeed = 0.03f;
-            gun.reloadTime = 0.60f;
-            gun.damage = 0.10f;
+            gun.attackSpeed = 0.10f;
+            gun.reloadTime = 1.50f;
+            gun.damage = 0.05f;
             gun.spread = 0.10f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -68,21 +68,21 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+100%",
+                    amount = "+90%",
                     simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-90%",
+                    amount = "-95%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+40%",
+                    amount = "+50%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()

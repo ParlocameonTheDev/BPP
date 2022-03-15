@@ -28,6 +28,7 @@ namespace BPP.Cards
             gun.reloadTime = 3.00f;
             gun.damage = 0.02f;
             gun.spread = 0.30f;
+            gun.destroyBulletAfter = 0.12f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)

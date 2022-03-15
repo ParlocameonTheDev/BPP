@@ -22,7 +22,7 @@ namespace BPP.Cards
                 CustomCardCategories.instance.CardCategory("Guns")
             };
             cardInfo.allowMultiple = false;
-            gun.attackSpeed = 0.10f;
+            gun.attackSpeed = 0.20f;
             gun.reloadTimeAdd = 0.35f;
             gun.damage = 0.30f;
             gun.projectileSpeed = 0.65f;
@@ -61,7 +61,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+100%",
+                    amount = "+80%",
                     simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()

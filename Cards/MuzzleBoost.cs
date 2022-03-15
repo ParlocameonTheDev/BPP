@@ -16,7 +16,7 @@ namespace BPP.Cards
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.attackSpeed = 0.60f;
+            gun.attackSpeed = 0.65f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -29,7 +29,7 @@ namespace BPP.Cards
         }
         protected override string GetTitle()
         {
-            return "Muzzle Boost";
+            return "Muzzle Booster";
         }
         protected override string GetDescription()
         {
@@ -51,7 +51,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+40%",
+                    amount = "+35%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };
