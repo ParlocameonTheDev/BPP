@@ -202,6 +202,22 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 2.0.3</summary>
+<br>
+
+Released on <i>3/15/2022</i>
+
+
+More card art adjustments.
+
+Mod settings added.
+
+More debug thingys for people who want them (nobody will want it.)
+
+---
+</details>
+
+<details>
 <summary>Version 2.0.2</summary>
 <br>
 

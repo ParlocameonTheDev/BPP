@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using ModdingUtils.RoundsEffects;
-using UnboundLib;
+using Sonigon;
+using Sonigon.Internal;
 using UnityEngine;
 
 namespace BPP.RoundsEffects
@@ -11,31 +12,21 @@ namespace BPP.RoundsEffects
 		public override void Hit(Vector2 position, Vector2 normal, Vector2 velocity)
 		{
 			this.player = base.gameObject.GetComponent<Player>();
-			using (List<CardInfo>.Enumerator enumerator = this.player.data.currentCards.GetEnumerator())
+			this.soundParameterIntensity.intensity = 0.5f;
+			SoundContainer soundContainer = ScriptableObject.CreateInstance<SoundContainer>();
+			soundContainer.setting.volumeIntensityEnable = true;
+			soundContainer.audioClip[0] = BPP.CustomAudio["VineBoom"];
+			SoundEvent soundEvent = ScriptableObject.CreateInstance<SoundEvent>();
+			soundEvent.soundContainerArray[0] = soundContainer;
+			this.soundParameterIntensity.intensity *= BPP.globalVolMute.Value;
+			SoundManager.Instance.Play(soundEvent, base.transform, new SoundParameterBase[]
 			{
-				while (enumerator.MoveNext())
-				{
-					if (enumerator.Current.cardName.ToLower() == "toxic cloud")
-					{
-						this.hasToxic = true;
-						break;
-					}
-				}
-			}
-			AudioSource orAddComponent = ExtensionMethods.GetOrAddComponent<AudioSource>(base.gameObject, false);
-			if (this.hasToxic)
-			{
-				orAddComponent.PlayOneShot(BPP.CustomAudio["VineBoom"], 4f);
-			}
-			orAddComponent.PlayOneShot(BPP.CustomAudio["VineBoom"], 2f);
-		}
-
-		public VineEffect()
-		{
+				this.soundParameterIntensity
+			});
 		}
 
 		private Player player;
 
-		private bool hasToxic;
+		private SoundParameterIntensity soundParameterIntensity = new SoundParameterIntensity(0f, UpdateMode.Continuous);
 	}
 }

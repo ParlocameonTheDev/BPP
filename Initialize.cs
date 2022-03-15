@@ -116,6 +116,7 @@ namespace BPP
         {
             Dictionary<String, GameObject> cardArt = new Dictionary<String, GameObject>();
 
+            UnityEngine.Debug.Log("BPP card art have been loaded into the client successfully!");
             cardArt.Add("AA12", Bundle.LoadAsset<GameObject>("C_AA12"));
             cardArt.Add("AcceleratedBackHopping", Bundle.LoadAsset<GameObject>("C_AcceleratedBackHopping"));
             cardArt.Add("Dash", Bundle.LoadAsset<GameObject>("C_Dash"));
@@ -208,6 +209,7 @@ namespace BPP
         {
             Dictionary<String, AudioClip> audioClip = new Dictionary<String, AudioClip>();
 
+            UnityEngine.Debug.Log("BPP audio have been loaded into the client successfully!");
             audioClip.Add("VineBoomAudio", Bundle.LoadAsset<AudioClip>("A_VineBoom"));
 
             return audioClip;
