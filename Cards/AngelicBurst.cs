@@ -23,7 +23,7 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.bursts = 12;
-            gun.timeBetweenBullets = 0.04f;
+            gun.timeBetweenBullets = 0.03f;
             gun.damage = 0.20f;
             gun.reloadTimeAdd = 0.75f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");

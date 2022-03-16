@@ -26,7 +26,7 @@ namespace BPP.Cards
             gun.ammo = 40;
             gun.numberOfProjectiles = 49;
             gun.reloadTime = 3.00f;
-            gun.damage = 0.02f;
+            gun.damage = 0.01f;
             gun.spread = 0.30f;
             gun.destroyBulletAfter = 0.12f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -77,7 +77,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-100%",
+                    amount = "-99%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()

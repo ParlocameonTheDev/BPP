@@ -52,8 +52,8 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Boom",
-                    amount = "Vine",
+                    stat = "Vine Boom",
+                    amount = "Bullets go ",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };

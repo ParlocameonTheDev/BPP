@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace BPP.RoundsEffects
 {
-	internal class VineEffect : HitSurfaceEffect
+	internal class BankShotEffect : HitSurfaceEffect
 	{
 		public override void Hit(Vector2 position, Vector2 normal, Vector2 velocity)
 		{
@@ -15,7 +15,7 @@ namespace BPP.RoundsEffects
 			this.soundParameterIntensity.intensity = 0.66f;
 			SoundContainer soundContainer = ScriptableObject.CreateInstance<SoundContainer>();
 			soundContainer.setting.volumeIntensityEnable = true;
-			soundContainer.audioClip[0] = BPP.CustomAudio["VineBoomAudio"];
+			soundContainer.audioClip[0] = BPP.CustomAudio["BankShotAudio"];
 			SoundEvent soundEvent = ScriptableObject.CreateInstance<SoundEvent>();
 			soundEvent.soundContainerArray[0] = soundContainer;
 			this.soundParameterIntensity.intensity *= BPP.globalVolMute.Value;
