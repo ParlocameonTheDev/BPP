@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2124845386
+CRC: 3973634414
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 81e70678d5caee8f225c23cc986215dc
+    Hash: 6136d2b19e00f5451b06d62d8eb50393
   TypeTreeHash:
     serializedVersion: 2
     Hash: 000f1d785b060b01497c84a12617ee7b
@@ -32,22 +32,32 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 Assets:
+- Assets/Prefabs/C_HatTrick.prefab
 - Assets/Prefabs/C_GamerAmmunition.prefab
 - Assets/Prefabs/C_SurgicalKit.prefab
+- Assets/Prefabs/C_AntiMaterialRifle.prefab
 - Assets/Prefabs/C_RedPill.prefab
 - Assets/Prefabs/C_AmmoEnthusiast.prefab
+- Assets/Prefabs/C_MysteriousAmmunition.prefab
 - Assets/Prefabs/C_SpeedTape.prefab
 - Assets/Prefabs/C_ButtStock.prefab
 - Assets/Prefabs/C_VineBoom.prefab
+- Assets/Prefabs/C_PepperGun.prefab
+- Assets/Prefabs/C_M249.prefab
 - Assets/Prefabs/C_DesignatedMarksmanRifle.prefab
 - Assets/Prefabs/C_Stockpile.prefab
 - Assets/Prefabs/C_AA12.prefab
+- Assets/Prefabs/C_GrabBag.prefab
 - Assets/Prefabs/C_Weights.prefab
 - Assets/Prefabs/C_BlackTarHeroin.prefab
+- Assets/Prefabs/C_Foregrip.prefab
 - Assets/Prefabs/C_P90.prefab
 - Assets/Prefabs/C_AcceleratedBackHopping.prefab
 - Assets/Prefabs/C_GreenPill.prefab
 - Assets/Prefabs/C_RapidFire.prefab
+- Assets/Prefabs/C_Suppressor.prefab
+- Assets/Prefabs/C_Addict.prefab
+- Assets/Prefabs/C_MuzzleBrake.prefab
 - Assets/Prefabs/C_BigBang.prefab
 - Assets/Prefabs/C_AtomicAmmunition.prefab
 - Assets/Prefabs/C_PumpAction.prefab
@@ -62,8 +72,11 @@ Assets:
 - Assets/Prefabs/C_Escapist.prefab
 - Assets/Prefabs/C_AngelicBurst.prefab
 - Assets/Prefabs/C_RiggedSlippers.prefab
+- Assets/Prefabs/C_MuzzleFlash.prefab
 - Assets/Prefabs/C_Stimulants.prefab
 - Assets/Prefabs/C_OldFashioned.prefab
+- Assets/Prefabs/C_ArmsDealer.prefab
+- Assets/Prefabs/C_Fisticuffs.prefab
 - Assets/Prefabs/C_YellowPill.prefab
 - Assets/Prefabs/C_WhitePill.prefab
 - Assets/Prefabs/C_Parry.prefab
@@ -84,6 +97,7 @@ Assets:
 - Assets/Prefabs/C_Coilgun.prefab
 - Assets/Prefabs/C_BloodAmmunition.prefab
 - Assets/Prefabs/C_CondensedShot.prefab
+- Assets/Prefabs/C_FlexSeal.prefab
 - Assets/Prefabs/C_TrustyPan.prefab
 - Assets/Prefabs/C_Splatter.prefab
 - Assets/Prefabs/C_Sparatic.prefab
@@ -96,6 +110,7 @@ Assets:
 - Assets/Prefabs/C_Dash.prefab
 - Assets/Prefabs/A_VineBoom.wav
 - Assets/Prefabs/C_SteelAmmunition.prefab
+- Assets/Prefabs/C_Vector.prefab
 - Assets/Prefabs/C_Slugs.prefab
 - Assets/Prefabs/C_ExtendedMagizine.prefab
 - Assets/Prefabs/C_DashMK2.prefab
