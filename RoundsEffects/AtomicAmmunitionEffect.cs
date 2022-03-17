@@ -7,15 +7,15 @@ using UnityEngine;
 
 namespace BPP.RoundsEffects
 {
-	internal class BankShotEffect : HitSurfaceEffect
+	internal class AtomicAmmunitionEffect : HitSurfaceEffect
 	{
 		public override void Hit(Vector2 position, Vector2 normal, Vector2 velocity)
 		{
 			this.player = base.gameObject.GetComponent<Player>();
-			this.soundParameterIntensity.intensity = 0.8f;
+			this.soundParameterIntensity.intensity = 1f;
 			SoundContainer soundContainer = ScriptableObject.CreateInstance<SoundContainer>();
 			soundContainer.setting.volumeIntensityEnable = true;
-			soundContainer.audioClip[0] = BPP.CustomAudio["BankShotAudio"];
+			soundContainer.audioClip[0] = BPP.CustomAudio["AtomicAudio"];
 			SoundEvent soundEvent = ScriptableObject.CreateInstance<SoundEvent>();
 			soundEvent.soundContainerArray[0] = soundContainer;
 			this.soundParameterIntensity.intensity = base.transform.localScale.x * Optionshandler.vol_Sfx / 1f * BPP.globalVolMute.Value * Optionshandler.vol_Master;

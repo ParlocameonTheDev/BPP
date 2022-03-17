@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to your ROUNDS experience (81 cards.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to your ROUNDS experience (80 cards.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -75,8 +75,6 @@ Swift Reactions : Dashes you upwards when you block, allowing for a swift escape
 Tactical Gloves : Increases your fire rate and decreases your bullet gravity.
   
 Trusty Pan : This world-famous pan can block anything that may be in your way, sometimes, maybe...
-
-Vine Boom : bhmmmmmmmmmmmmmmmm.
   
 Weights : Heavier bullets that arch harder, but deal more damage.
 
@@ -202,6 +200,24 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 2.1.0</summary>
+<br>
+
+Released on <i>3/17/2022</i>
+
+
+Removed Vine Boom, was mainly a test for SFX
+
+Added various amounts of SFX across the BPP cards.
+
+Added a variety of new settings for the mod.
+
+BPP SFX is now affected by the vanilla master volume and SFX volume.
+
+---
+</details>
 
 <details>
 <summary>Version 2.0.4</summary>

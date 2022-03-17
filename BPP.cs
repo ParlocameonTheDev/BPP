@@ -23,14 +23,14 @@ namespace BPP
     [BepInDependency("com.willis.rounds.unbound", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.moddingutils", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.binarypenialporty.rounds.bpp", "BPP", "2.0.4")]
+    [BepInPlugin("com.binarypenialporty.rounds.bpp", "BPP", "2.1.0")]
     [BepInProcess("Rounds.exe")]
     public class BPP : BaseUnityPlugin
     {
         public const string AbbrModName = "BPP";
         private const string ModId = "com.binarypenialporty.rounds.bpp";
         private const string ModName = "BPP";
-        public const string Version = "2.0.4";
+        public const string Version = "2.1.0";
         public const string ModInitials = "BPP";
         public static Dictionary<String, GameObject> CardArt = new Dictionary<String, GameObject>();
         public static Dictionary<String, AudioClip> CustomAudio = new Dictionary<String, AudioClip>();
@@ -60,7 +60,7 @@ namespace BPP
             BPP.instance = this;
             // Credits
             UnityEngine.Debug.Log("BPP credits have been loaded into the client successfully!");
-            Unbound.RegisterCredits("<b><color=#ffd900>BPP v2.0.4</b></color>", new string[]
+            Unbound.RegisterCredits("<b><color=#ffd900>BPP v2.1.0</b></color>", new string[]
             {
                 "BinaryAssault, Penial, and Porty."
                 }, new string[]
@@ -77,6 +77,7 @@ namespace BPP
                 "https://steamcommunity.com/id/portmens"
                 });
                 // Mod Settings
+                UnityEngine.Debug.Log("BPP settings have been loaded into the client successfully!");
                 Unbound.RegisterMenu("<b>BPP Settings</b>", delegate ()
                 {
                 }, new Action<GameObject>(this.NewGUI), null, true);
@@ -94,11 +95,38 @@ namespace BPP
 
         private void NewGUI(GameObject menu)
         {
-            UnityEngine.Debug.Log("BPP settings have been loaded into the client successfully!");
             TextMeshProUGUI textMeshProUGUI;
             MenuHandler.CreateText("BPP Settings", menu, out textMeshProUGUI, 60, true, null, null, null, null);
             Slider slider;
             MenuHandler.CreateSlider("SFX Volume", menu, 50, 0f, 1f, BPP.globalVolMute.Value, new UnityAction<float>(this.GlobalVolAction), out slider, false, null, Slider.Direction.LeftToRight, true, null, null, null, null);
+            GameObject toggle = MenuHandler.CreateToggle(BPP.settingsDebugModeToggle, "Debug Mode", menu, delegate (bool value)
+            {
+                BPP.settingsDebugModeToggle = value;
+            }, 50, true, null, null, null, null);
+            MenuHandler.CreateText("<b><color=#ff0000>^^</b></color>(game restart required for some forms of debugging)<b><color=#ff0000>^^</b></color>", menu, out textMeshProUGUI, 20, true, null, null, null, null);
+            MenuHandler.CreateButton("Reset all settings to default", menu, delegate ()
+            {
+                UnityEngine.Debug.Log("All BPP settings we're reset to their default values.");
+                BPP.globalVolMute.Value = 1f;
+            }, 40, true, null, null, null, null);
+            MenuHandler.CreateText("You are playing with <b><color=#ffd900>BPP v2.1.0</b></color>", menu, out textMeshProUGUI, 20, true, null, null, null, null);
+        }
+
+        public static bool settingsDebugModeToggle
+        {
+            get
+            {
+                return PlayerPrefs.GetInt(BPP.GetConfigKey("settingsDebugModeToggle"), 0) == 1;
+            }
+            set
+            {
+                PlayerPrefs.SetInt(BPP.GetConfigKey("settingsDebugModeToggle"), value ? 1 : 0);
+            }
+        }
+
+        private static string GetConfigKey(string key)
+        {
+            return "BPP_" + key;
         }
     }
 }

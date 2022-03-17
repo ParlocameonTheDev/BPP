@@ -3,6 +3,8 @@ using ModdingUtils.MonoBehaviours;
 using UnboundLib.Cards;
 using UnboundLib;
 using ModdingUtils.Extensions;
+using Sonigon;
+using Sonigon.Internal;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -25,6 +27,18 @@ namespace BPP.MonoBehaviours
             }
 
             duration = 0.10f;
+
+            this.player = base.gameObject.GetComponent<Player>();
+            SoundContainer soundContainer = ScriptableObject.CreateInstance<SoundContainer>();
+            soundContainer.setting.volumeIntensityEnable = true;
+            soundContainer.audioClip[0] = BPP.CustomAudio["DashAudio"];
+            SoundEvent soundEvent = ScriptableObject.CreateInstance<SoundEvent>();
+            soundEvent.soundContainerArray[0] = soundContainer;
+            this.soundParameterIntensity.intensity = base.transform.localScale.x * Optionshandler.vol_Sfx / 1f * BPP.globalVolMute.Value * Optionshandler.vol_Master;
+            SoundManager.Instance.Play(soundEvent, base.transform, new SoundParameterBase[]
+            {
+                this.soundParameterIntensity
+            });
         }
 
         public override void OnStart()
@@ -44,5 +58,9 @@ namespace BPP.MonoBehaviours
                 ClearModifiers();
             }
         }
+
+        private Player player;
+
+        private SoundParameterIntensity soundParameterIntensity = new SoundParameterIntensity(0f, UpdateMode.Continuous);
     }
 }

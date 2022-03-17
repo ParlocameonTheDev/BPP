@@ -97,11 +97,11 @@ namespace BPP
             CustomCard.BuildCard<GrabBag>();
             CustomCard.BuildCard<Foregrip>();
             CustomCard.BuildCard<Suppressor>();
-            CustomCard.BuildCard<VineBoom>();
 
             //      Disabled cards, either they aren't finished, they brokey, or are heavily unbalanced.
             // CustomCard.BuildCard<LiquidCourage>();
             // CustomCard.BuildCard<Compression>();
+            // CustomCard.BuildCard<VineBoom>();
         }
 
         public static void Managers()
@@ -212,6 +212,8 @@ namespace BPP
             UnityEngine.Debug.Log("BPP audio have been loaded into the client successfully!");
             audioClip.Add("VineBoomAudio", Bundle.LoadAsset<AudioClip>("A_VineBoom"));
             audioClip.Add("BankShotAudio", Bundle.LoadAsset<AudioClip>("A_BankShot"));
+            audioClip.Add("AtomicAudio", Bundle.LoadAsset<AudioClip>("A_Atomic"));
+            audioClip.Add("DashAudio", Bundle.LoadAsset<AudioClip>("A_Dash"));
 
             return audioClip;
 

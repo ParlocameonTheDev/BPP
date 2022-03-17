@@ -8,7 +8,7 @@ namespace BPP.Utilities
     {
         public static void Log(object message)
         {
-           if(Config.isDebugBuild)
+           if(BPP.settingsDebugModeToggle)
             {
                 UnityEngine.Debug.Log(message);
             }

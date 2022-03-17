@@ -3,6 +3,8 @@ using ModdingUtils.MonoBehaviours;
 using UnboundLib.Cards;
 using UnboundLib;
 using ModdingUtils.Extensions;
+using Sonigon;
+using Sonigon.Internal;
 using System;
 using System.Collections;
 using System.Collections.Generic;
