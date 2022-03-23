@@ -23,7 +23,7 @@ namespace BPP.Cards
             };
             gun.projectileColor = Color.green;
             gun.slow = (gun.slow > 0f) ? (gun.slow * 1.33f) : (gun.slow + 0.33f);
-            gun.reloadTimeAdd = 0.25f;
+            gun.reloadTimeAdd = 0.33f;
             gun.projectielSimulatonSpeed = 0.67f;
             gun.damageAfterDistanceMultiplier = 1.66f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -82,7 +82,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+0.25s",
+                    amount = "+0.33s",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };

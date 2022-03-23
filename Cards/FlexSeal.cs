@@ -74,7 +74,7 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Projectile Speed",
+                    stat = "Bullet Speed",
                     amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 }

@@ -23,7 +23,7 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.numberOfProjectiles = 4;
-            gun.ammo = 20;
+            gun.ammo = 16;
             gun.damage = 0.25f;
             gun.spread = 0.33f;
             gun.gravity = 0.60f;
@@ -70,7 +70,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+20",
+                    amount = "+16",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

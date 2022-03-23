@@ -23,7 +23,7 @@ namespace BPP.Cards
             };
             gun.bursts = 5;
             gun.ammo = 7;
-            gun.damage = 0.40f;
+            gun.damage = 0.35f;
             gun.timeBetweenBullets = 0.04f;
             gun.reloadTimeAdd = 0.25f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -74,7 +74,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-60%",
+                    amount = "-65%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()

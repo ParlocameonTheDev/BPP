@@ -41,7 +41,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "You will instantly reload your weapon when you are out of ammo.";
+            return "You will instantly reload your weapon after you shoot.";
         }
         protected override GameObject GetCardArt()
         {

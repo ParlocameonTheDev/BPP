@@ -23,7 +23,7 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.ammo = 33;
-            gun.reloadTimeAdd = 2.50f;
+            gun.reloadTimeAdd = 3.33f;
             statModifiers.movementSpeed = 0.67f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -67,7 +67,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Reload Speed",
-                    amount = "+2.50s",
+                    amount = "+3.33s",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()

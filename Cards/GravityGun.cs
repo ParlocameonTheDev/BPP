@@ -24,7 +24,7 @@ namespace BPP.Cards
             cardInfo.allowMultiple = false;
             gun.damage = 0.40f;
             gun.knockback = 30f;
-            gun.destroyBulletAfter = 1.00f;
+            gun.destroyBulletAfter = 3.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)

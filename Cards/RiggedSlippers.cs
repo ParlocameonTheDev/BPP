@@ -16,7 +16,7 @@ namespace BPP.Cards
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            statModifiers.jump = 1.50f;
+            statModifiers.jump = 1.66f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -51,7 +51,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Jump Height",
-                    amount = "+50%",
+                    amount = "+66%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };

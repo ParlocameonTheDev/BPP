@@ -24,7 +24,7 @@ namespace BPP.Cards
             cardInfo.allowMultiple = false;
             gun.damage = 1.50f;
             gun.projectileSpeed = 1.75f;
-            gun.attackSpeed = 1.50f;
+            gun.attackSpeed = 1.60f;
             gun.reloadTimeAdd = 0.33f;
             gun.knockback = 0.33f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -67,7 +67,7 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Projectile Speed",
+                    stat = "Bullet Speed",
                     amount = "+75%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotOf
                 },
@@ -82,7 +82,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "ATKSPD",
-                    amount = "-50%",
+                    amount = "-60%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()

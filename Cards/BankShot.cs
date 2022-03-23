@@ -21,7 +21,7 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Ammunitions")
             };
-            gun.projectileSpeed = 0.90f;
+            gun.projectileSpeed = 0.85f;
             gun.reflects = 2;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -64,8 +64,8 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Projectile Speed",
-                    amount = "-10%",
+                    stat = "Bullet Speed",
+                    amount = "-15%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };

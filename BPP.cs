@@ -23,14 +23,14 @@ namespace BPP
     [BepInDependency("com.willis.rounds.unbound", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.moddingutils", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.binarypenialporty.rounds.bpp", "BPP", "2.1.0")]
+    [BepInPlugin("com.binarypenialporty.rounds.bpp", "BPP", "2.2.0")]
     [BepInProcess("Rounds.exe")]
     public class BPP : BaseUnityPlugin
     {
         public const string AbbrModName = "BPP";
         private const string ModId = "com.binarypenialporty.rounds.bpp";
         private const string ModName = "BPP";
-        public const string Version = "2.1.0";
+        public const string Version = "2.2.0";
         public const string ModInitials = "BPP";
         public static Dictionary<String, GameObject> CardArt = new Dictionary<String, GameObject>();
         public static Dictionary<String, AudioClip> CustomAudio = new Dictionary<String, AudioClip>();
@@ -60,7 +60,7 @@ namespace BPP
             BPP.instance = this;
             // Credits
             UnityEngine.Debug.Log("BPP credits have been loaded into the client successfully!");
-            Unbound.RegisterCredits("<b><color=#ffd900>BPP v2.1.0</b></color>", new string[]
+            Unbound.RegisterCredits("<b><color=#ffd900>BPP v2.2.0</b></color>", new string[]
             {
                 "BinaryAssault, Penial, and Porty."
                 }, new string[]
@@ -109,7 +109,7 @@ namespace BPP
                 UnityEngine.Debug.Log("All BPP settings we're reset to their default values.");
                 BPP.globalVolMute.Value = 1f;
             }, 40, true, null, null, null, null);
-            MenuHandler.CreateText("You are playing with <b><color=#ffd900>BPP v2.1.0</b></color>", menu, out textMeshProUGUI, 20, true, null, null, null, null);
+            MenuHandler.CreateText("You are playing with <b><color=#ffd900>BPP v2.2.0</b></color>", menu, out textMeshProUGUI, 20, true, null, null, null, null);
         }
 
         public static bool settingsDebugModeToggle
