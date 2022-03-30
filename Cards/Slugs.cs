@@ -22,11 +22,11 @@ namespace BPP.Cards
                 CustomCardCategories.instance.CardCategory("Ammunitions")
             };
             gun.damage = 1.10f;
-            gun.destroyBulletAfter = 20.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
+            gun.gravity = 1f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -39,7 +39,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Removes the range penalty from any cards you have picked.";
+            return "Resets your bullet gravity.";
         }
         protected override GameObject GetCardArt()
         {
@@ -56,7 +56,7 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bullet Range",
+                    stat = "Bullet Gravity",
                     amount = "Reset",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },

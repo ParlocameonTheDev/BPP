@@ -22,7 +22,7 @@ namespace BPP.Cards
                 CustomCardCategories.instance.CardCategory("Ammunitions")
             };
             cardInfo.allowMultiple = false;
-            gun.reloadTimeAdd = 0.66f;
+            gun.reloadTimeAdd = 0.80f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -65,7 +65,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+0.66s",
+                    amount = "+0.80s",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
             };

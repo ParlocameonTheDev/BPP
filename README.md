@@ -202,6 +202,18 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 2.2.1</summary>
+<br>
+
+Released on <i>3/30/2022</i>
+
+
+Slight stat changes, nothing to see here.
+
+---
+</details>
+
+<details>
 <summary>Version 2.2.0</summary>
 <br>
 

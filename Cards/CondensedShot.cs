@@ -21,7 +21,7 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Ammunitions")
             };
-            gun.projectileSpeed = 0.90f;
+            gun.projectileSpeed = 0.70f;
             gun.gravity = 0.90f;
             gun.destroyBulletAfter = 20.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -61,20 +61,6 @@ namespace BPP.Cards
                     stat = "Spread",
                     amount = "No",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Bullet Range",
-                    amount = "Reset",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Bullet Speed",
-                    amount = "-10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
                 new CardInfoStat()
                 {

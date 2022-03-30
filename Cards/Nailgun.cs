@@ -22,8 +22,8 @@ namespace BPP.Cards
                 CustomCardCategories.instance.CardCategory("Guns")
             };
             cardInfo.allowMultiple = false;
-            gun.damage = 0.25f;
-            gun.attackSpeed = 0.34f;
+            gun.damage = 0.20f;
+            gun.attackSpeed = 0.40f;
             gun.ammo = 16;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -66,14 +66,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+66%",
+                    amount = "+60%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-75%",
+                    amount = "-80%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 }
             };

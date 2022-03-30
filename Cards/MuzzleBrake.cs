@@ -21,7 +21,7 @@ namespace BPP.Cards
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            gun.gravity = 1f;
+            gun.gravity = 0.34f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -34,7 +34,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Resets the bullet gravity changes from any cards you have picked.";
+            return "Greatly lowers your bullet gravity.";
         }
         protected override GameObject GetCardArt()
         {
@@ -52,7 +52,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Bullet Gravity",
-                    amount = "Reset",
+                    amount = "-66%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

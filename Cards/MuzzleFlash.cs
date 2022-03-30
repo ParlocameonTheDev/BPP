@@ -16,8 +16,8 @@ namespace BPP.Cards
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.attackSpeed = 1.33f;
-            gun.projectielSimulatonSpeed = 1.33f;
+            gun.attackSpeed = 1.40f;
+            gun.projectielSimulatonSpeed = 1.40f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -60,14 +60,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "ATKSPD",
-                    amount = "-33%",
+                    amount = "-40%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Projectile Speed",
-                    amount = "-33%",
+                    amount = "-40%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };
