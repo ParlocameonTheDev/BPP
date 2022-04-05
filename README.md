@@ -4,7 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to your ROUNDS experience (80 cards.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
+Adds a countless amount of creative cards to your ROUNDS experience (70 cards.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
 
 Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
 
@@ -42,11 +42,7 @@ Muzzle Break : Resets the bullet gravity changes from any cards you have picked.
 
 Muzzle Flash : Lowers your rate of fire for more accuracy.
   
-Nailgun : Turns your weapon into a nailgun. Very weak, but shoots pretty fast.
-  
 No Scope : Ballista > DSR 50. fight me bro (this is a Black Ops 2 reference.)
-  
-Old Fashioned : Bullets that deal more damage, and cause more knockback, while making your weapon fire slower.
   
 Overly Confident : Increases your block cooldown for increased mobility.
   
@@ -55,28 +51,18 @@ Overly Defensive : Decreases your mobility for a decreased block cooldown.
 Purple Pill : Increases your life steal while increasing your block cooldown.
   
 Red Pill : Increases your damage while decreasing your movement speed and your max health.
-  
-Rigged Slippers : These slippers that you found on the black market help you jump very high.
 
 Slugs : Removes the range penalty from any cards you have picked.
   
 Sparatic : Gives a random amount of dashing force, which will dash you towards your crosshair.
   
-Speed Tape : Decreases your reload speed and increases your attack speed.
-  
 Steel Ammunition : While the bullets travel faster, they still arch downwards, requiring skill to use properly.
 
 Stimulants : Provides you with very small boosts to anything character related.
   
-Surgical Kit : A very shady medical kit that somehow still works. Gives you an extra life.
-  
 Swift Reactions : Dashes you upwards when you block, allowing for a swift escape.
   
-Tactical Gloves : Increases your fire rate and decreases your bullet gravity.
-  
 Trusty Pan : This world-famous pan can block anything that may be in your way, sometimes, maybe...
-  
-Weights : Heavier bullets that arch harder, but deal more damage.
 
 White Pill : Decreases your block cooldown while decreasing your health.
 
@@ -113,8 +99,6 @@ Condensed Ammunition : Bullets will have no spread, but will travel slower and w
 
 Counter Intuitive : Trade off almost all of your damage for a better block cooldown.
   
-Designated Marksman Rifle : Turns your weapon into a semi-auto rifle that can consistently hit targets from a distance.
-  
 Enlarged Magazine : Doubles your current ammo count.
 
 Fisticuffs : Swap out your weapon for your fists, why not?
@@ -129,8 +113,6 @@ High Power Scope : High magnification sight that makes targets easier to hit at 
 
 Horizon : Flip your characters gravity for a short period of time after blocking.
 
-Hoverboard : Gives you many additional jumps, while giving you a small jump height.
-
 M249 : Turns your weapon into a heavy light-machine gun.
 
 Mysterious Ammunition : Get a random ammo-related card.
@@ -138,8 +120,6 @@ Mysterious Ammunition : Get a random ammo-related card.
 P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
 
 Parry : Doubles your damage for 5 miliseconds after you block.
-  
-Pump Action : Shoot, slam, and repeat.
 
 Six Shooter : There's a snake in my boot!
   
@@ -184,9 +164,7 @@ Inversion : Now you can fly, kinda.
   
 Minigun : Turns your weapon into a belt-fed machine gun with devestating fire rate.
   
-Nuclear : Welcome to the end game...
-
-Pepper Gun : The household choice of weaponry, just aim for the face!
+Nuclear : Welcome to the end game...!
 
 Spacious Ammunition : Bigger bullets, and when I say bigger, I mean BIGGER.
 

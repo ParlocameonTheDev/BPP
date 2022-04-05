@@ -22,13 +22,13 @@ namespace BPP.Cards
                 CustomCardCategories.instance.CardCategory("Guns")
             };
             cardInfo.allowMultiple = false;
-            gun.ammo = 60;
+            gun.ammo = 50;
             gun.reloadTimeAdd = 4.00f;
-            gun.damage = 0.04f;
-            gun.attackSpeed = 0.01f;
-            gun.projectielSimulatonSpeed = 0.50f;
+            gun.damage = 0.03f;
+            gun.attackSpeed = 0.20f;
+            gun.projectielSimulatonSpeed = 0.35f;
             gun.spread = 0.25f;
-            statModifiers.movementSpeed = 0.60f;
+            statModifiers.movementSpeed = 0.50f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -63,21 +63,21 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+100%",
+                    amount = "+80%",
                     simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+60",
+                    amount = "+50",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Movement Speed",
-                    amount = "-40%",
+                    amount = "-50%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
@@ -91,14 +91,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-96%",
+                    amount = "-97%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Projectile Speed",
-                    amount = "-50%",
+                    amount = "-65%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };

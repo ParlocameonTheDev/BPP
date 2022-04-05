@@ -20,12 +20,9 @@ namespace BPP
             CustomCard.BuildCard<AcceleratedBackHopping>();
             CustomCard.BuildCard<Dash>();
             CustomCard.BuildCard<DashMk2>();
-            CustomCard.BuildCard<DesignatedMarksmanRifle>();
             CustomCard.BuildCard<MuzzleBoost>();
-            CustomCard.BuildCard<MakeshiftFullAuto>();
             CustomCard.BuildCard<AtomicAmmunition>();
             CustomCard.BuildCard<BloodAmmunition>();
-            CustomCard.BuildCard<Weights>();
             CustomCard.BuildCard<Minigun>();
             CustomCard.BuildCard<HighPowerScope>();
             CustomCard.BuildCard<SwiftReactions>();
@@ -49,21 +46,13 @@ namespace BPP
             CustomCard.BuildCard<TrustyPanUltraSuperXL>();
             CustomCard.BuildCard<Coilgun>();
             CustomCard.BuildCard<Splatter>();
-            CustomCard.BuildCard<Nailgun>();
-            CustomCard.BuildCard<SpeedTape>();
             CustomCard.BuildCard<AA12>();
             CustomCard.BuildCard<GroundPound>();
-            CustomCard.BuildCard<PumpAction>();
             CustomCard.BuildCard<P90>();
-            CustomCard.BuildCard<OldFashioned>();
             CustomCard.BuildCard<GamerAmmunition>();
             CustomCard.BuildCard<Intervention>();
-            CustomCard.BuildCard<TacticalGloves>();
-            CustomCard.BuildCard<RiggedSlippers>();
-            CustomCard.BuildCard<SurgicalKit>();
             CustomCard.BuildCard<SteelAmmunition>();
             CustomCard.BuildCard<Inversion>();
-            CustomCard.BuildCard<Hoverboard>();
             CustomCard.BuildCard<Escapist>();
             CustomCard.BuildCard<AngelicBurst>();
             CustomCard.BuildCard<FuturisticMagazine>();
@@ -86,7 +75,6 @@ namespace BPP
             CustomCard.BuildCard<Fisticuffs>();
             CustomCard.BuildCard<Vector>();
             CustomCard.BuildCard<AntiMaterialRifle>();
-            CustomCard.BuildCard<PepperGun>();
             CustomCard.BuildCard<ArmsDealer>();
             CustomCard.BuildCard<MysteriousAmmunition>();
             CustomCard.BuildCard<Addict>();
@@ -97,8 +85,26 @@ namespace BPP
             CustomCard.BuildCard<GrabBag>();
             CustomCard.BuildCard<Foregrip>();
             CustomCard.BuildCard<Suppressor>();
+            CustomCard.BuildCard<Chained>();
 
-            //      Disabled cards, either they aren't finished, they brokey, or are heavily unbalanced.
+            //  Disabled Cards
+
+            // CustomCard.BuildCard<SurgicalKit>();
+            // CustomCard.BuildCard<Nailgun>();
+            // CustomCard.BuildCard<Weights>();
+            // CustomCard.BuildCard<SpeedTape>();
+            // CustomCard.BuildCard<MakeshiftFullAuto>();
+            // CustomCard.BuildCard<TacticalGloves>();
+            // CustomCard.BuildCard<RiggedSlippers>();
+            // CustomCard.BuildCard<Hoverboard>();
+            // CustomCard.BuildCard<DesignatedMarksmanRifle>();
+            // CustomCard.BuildCard<PumpAction>();
+            // CustomCard.BuildCard<OldFashioned>();
+
+
+
+            //  Unfinished Cards
+
             // CustomCard.BuildCard<LiquidCourage>();
             // CustomCard.BuildCard<Compression>();
             // CustomCard.BuildCard<VineBoom>();
@@ -190,7 +196,6 @@ namespace BPP
             cardArt.Add("Compression", Bundle.LoadAsset<GameObject>("C_Compression"));
             cardArt.Add("Vector", Bundle.LoadAsset<GameObject>("C_Vector"));
             cardArt.Add("AntiMaterialRifle", Bundle.LoadAsset<GameObject>("C_AntiMaterialRifle"));
-            cardArt.Add("PepperGun", Bundle.LoadAsset<GameObject>("C_PepperGun"));
             cardArt.Add("ArmsDealer", Bundle.LoadAsset<GameObject>("C_ArmsDealer"));
             cardArt.Add("MysteriousAmmunition", Bundle.LoadAsset<GameObject>("C_MysteriousAmmunition"));
             cardArt.Add("Addict", Bundle.LoadAsset<GameObject>("C_Addict"));

@@ -23,7 +23,7 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.damage = 1.50f;
-            gun.projectileSpeed = 1.75f;
+            gun.projectileSpeed = 1.50f;
             gun.attackSpeed = 1.60f;
             gun.reloadTimeAdd = 0.33f;
             gun.knockback = 0.33f;
@@ -68,7 +68,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Bullet Speed",
-                    amount = "+75%",
+                    amount = "+50%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotOf
                 },
                 new CardInfoStat()
