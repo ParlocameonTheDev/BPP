@@ -90,6 +90,8 @@ Atomic Ammunition : Slower bullets that deal more damage depending on how much t
 Big Bang : A devistating damage boost, while sacrificing your attack speed.
   
 Blood Ammunition : Bullets that take health from others, and it's red so that's pretty cool!
+
+Chained : Make every player but you move slower.
   
 Coilgun : Turns your weapon into a 5 round burst.
 
@@ -178,6 +180,43 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 2.3.0</summary>
+<br>
+
+Released on <i>4/7/2022</i>
+
+
+Yo, Mr. patch notes guy Penial here. For the foreseeable future, BPP will NOT be receiving and CONTENT updates, if there are any major bugs/balance issues, they will be looked into. The reason for this is a loss of intrest/burnout from ROUNDS, but I will continue work on the mod eventually. Until then, 11 cards that we're problematic have been removed. These will be replaced eventually with brand new cards.
+
+
+Added Card: Chained
+
+Removed Card: Surgical Kit
+
+Removed Card: Nailgun
+
+Removed Card: Weights
+
+Removed Card: Speed Tape
+
+Removed Card: Makeshift Full Auto
+
+Removed Card: Tactical Gloves
+
+Removed Card: Rigged Slippers
+
+Removed Card: Hoverboard
+
+Removed Card: Designated Marksman Rifle
+
+Removed Card: Pump Action
+
+Removed Card: Old Fashioned
+
+---
+</details>
 
 <details>
 <summary>Version 2.2.1</summary>
