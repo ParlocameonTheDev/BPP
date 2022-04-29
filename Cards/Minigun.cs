@@ -23,12 +23,12 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.ammo = 50;
-            gun.reloadTimeAdd = 4.00f;
-            gun.damage = 0.03f;
+            gun.reloadTimeAdd = 5f;
+            gun.damage = 0.02f;
             gun.attackSpeed = 0.20f;
-            gun.projectielSimulatonSpeed = 0.35f;
+            gun.projectielSimulatonSpeed = 0.25f;
             gun.spread = 0.25f;
-            statModifiers.movementSpeed = 0.50f;
+            statModifiers.movementSpeed = 0.25f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -77,28 +77,28 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Movement Speed",
-                    amount = "-50%",
+                    amount = "-75%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+4s",
+                    amount = "+5s",
                     simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-97%",
+                    amount = "-98%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Projectile Speed",
-                    amount = "-65%",
+                    amount = "-75%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };

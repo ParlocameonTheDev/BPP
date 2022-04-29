@@ -23,7 +23,7 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.projectileColor = Color.cyan;
-            gun.projectileSpeed = 0.80f;
+            gun.projectileSpeed = 0.70f;
             gun.damageAfterDistanceMultiplier = 3.00f;
             gun.slow = (gun.slow > 0f) ? (gun.slow * 1.40f) : (gun.slow + 0.40f);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
@@ -74,7 +74,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Bullet Speed",
-                    amount = "-20%",
+                    amount = "-30%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };

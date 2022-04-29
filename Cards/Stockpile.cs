@@ -23,8 +23,8 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.reloadTime = 0.03f;
-            gun.attackSpeed = 2.25f;
-            gun.damage = 0.67f;
+            gun.attackSpeed = 2.75f;
+            gun.damage = 0.50f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -66,14 +66,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "ATKSPD",
-                    amount = "-125%",
+                    amount = "-175%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-33%",
+                    amount = "-50%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 }
             };
