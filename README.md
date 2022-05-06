@@ -4,11 +4,7 @@
 
 ---
 
-Adds a countless amount of creative cards to your ROUNDS experience (70 cards.) Made by Binary, Penial, and Porty (omg, look, it's the acronym!)
-
-Constantly being updates with new content, balance tweaks, and bug fixes. Expect issues to arise, but also expect them to be fixed in a timely matter.
-
-Contact BinaryAssault#8863 on Discord with feedback or bug reports/concerns.
+Adds a countless amount of creative cards to your ROUNDS experience (60 cards, 1 class) Maintained by Penial.
 
 ---
 
@@ -17,8 +13,6 @@ Contact BinaryAssault#8863 on Discord with feedback or bug reports/concerns.
 <details>
 <summary>Common Cards</summary>
 <br>
-  
-Bank Shot : Bullets will bounce off of surfaces, opening up many trickshot possibilities.
   
 Blue Pill : Increases your max health while decreasing your movement speed and damage.
   
@@ -32,8 +26,6 @@ Green Pill : Increases your movement speed while decreasing your max health and 
   
 Ground Pound : Dashes you downwards when you block, making you extremely sus.
   
-Makeshift Full Auto : Greatly increases fire rate, if you are willing to suffer the consequences.
-  
 Munitions Pack : haha ammo go brrrrrrrrrrrrrrr!
 
 Muzzle Boost : Increases your weapons rate of fire.
@@ -42,7 +34,7 @@ Muzzle Break : Resets the bullet gravity changes from any cards you have picked.
 
 Muzzle Flash : Lowers your rate of fire for more accuracy.
   
-No Scope : Ballista > DSR 50. fight me bro (this is a Black Ops 2 reference.)
+No Scope : Ballista > DSR 50. fight me bro.
   
 Overly Confident : Increases your block cooldown for increased mobility.
   
@@ -51,12 +43,6 @@ Overly Defensive : Decreases your mobility for a decreased block cooldown.
 Purple Pill : Increases your life steal while increasing your block cooldown.
   
 Red Pill : Increases your damage while decreasing your movement speed and your max health.
-
-Slugs : Removes the range penalty from any cards you have picked.
-  
-Sparatic : Gives a random amount of dashing force, which will dash you towards your crosshair.
-  
-Steel Ammunition : While the bullets travel faster, they still arch downwards, requiring skill to use properly.
 
 Stimulants : Provides you with very small boosts to anything character related.
   
@@ -82,8 +68,6 @@ Accelerated Back Hopping : I'm a movement player Louis! Dashes you in the oppisi
 Addict : Get three pill-related cards (excluding Black Tar Heroin.)
 
 Ammo Enthusiast : You got some issues my guy...
-
-Arms Dealer : Get a random gun-related card
   
 Atomic Ammunition : Slower bullets that deal more damage depending on how much they have travelled and slow their targets.
   
@@ -94,12 +78,8 @@ Blood Ammunition : Bullets that take health from others, and it's red so that's 
 Chained : Make every player but you move slower.
   
 Coilgun : Turns your weapon into a 5 round burst.
-
-Compression : Halve your players size for a breif period of time after you block.
   
 Condensed Ammunition : Bullets will have no spread, but will travel slower and will be heavier.
-
-Counter Intuitive : Trade off almost all of your damage for a better block cooldown.
   
 Enlarged Magazine : Doubles your current ammo count.
 
@@ -108,16 +88,10 @@ Fisticuffs : Swap out your weapon for your fists, why not?
 Foregrip : Removes the spread penalty from any cards you have picked, while increasing your mobility.
   
 Gamer Ammunition : Bullets infused with caffine and rainbow GFUEL to crush your opponents with.
-
-Gravity Gun : RDM RDM RDM RDM RDM RDM
   
 High Power Scope : High magnification sight that makes targets easier to hit at longer ranges.
 
 Horizon : Flip your characters gravity for a short period of time after blocking.
-
-M249 : Turns your weapon into a heavy light-machine gun.
-
-Mysterious Ammunition : Get a random ammo-related card.
   
 P90 : Turns your weapon into a inaccurate, high fire rate bullet hose.
 
@@ -150,19 +124,13 @@ Black Tar Heroin : Absolutely NOTHING could go wrong, right?
   
 Dash MK2 : Dashes you towards your crosshair with great strength when you block.
 
-Escapist : Quadruples your movement speed after you block for a short period of time.
-
 Flex Seal : Coats your bullets with a very strong substance to make them more effective, somehow.
 
 Futuristic Magizine : Triples your current ammo count.
 
-Grab Bag : Get two random ammunition-related cards.
-
 Hat Trick : Get four random common cards.
   
 Intervention : Turns your weapon into a high-caliber sniper rifle.
-  
-Inversion : Now you can fly, kinda.
   
 Minigun : Turns your weapon into a belt-fed machine gun with devestating fire rate.
   
@@ -180,6 +148,32 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 ---
 
 <i>Patch Notes</i>
+
+<details>
+<summary>Version 3.0.0</summary>
+<br>
+
+Released on <i>5/6/2022</i>
+
+
+New Class: Sabotager
+
+	- Chained (Uncommon)
+	- Clumsy (Uncommon)
+	- Culling (Common)
+	- Offbrand Caliber (Uncommon)
+	- Sluggish (Common)
+
+Card rebalance
+
+Card art improvments
+
+Rematch support (things that didn't reset properly now do reset properly)
+
+Removed cards that I/others did not like
+
+---
+</details>
 
 <details>
 <summary>Version 2.3.1</summary>

@@ -27,6 +27,9 @@
     <Reference Include="CardChoiceSpawnUniqueCardPatch">
       <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\ROUNDS\profiles\Mod Creating\BepInEx\plugins\Pykess-CardChoiceSpawnUniqueCardPatch\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
     </Reference>
+    <Reference Include="ClassesManagerReborn">
+      <HintPath>..\..\..\Downloads\Root-Classes_Manager_Reborn-1.2.3\ClassesManagerReborn.dll</HintPath>
+    </Reference>
     <Reference Include="HarmonyXInterop">
       <HintPath>..\..\..\Downloads\BepInEx_x86_5.4.11.0\BepInEx\core\HarmonyXInterop.dll</HintPath>
     </Reference>

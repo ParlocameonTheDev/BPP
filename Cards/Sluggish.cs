@@ -1,52 +1,56 @@
-﻿using System;
+﻿using ClassesManagerReborn.Util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.MonoBehaviours;
 using BPP.RoundsEffects;
 using BPP.Utilities;
-using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
 namespace BPP.Cards
 {
-    class Escapist : CustomCard
+    class Sluggish : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            cardInfo.allowMultiple = false;
-            statModifiers.movementSpeed = 0.80f;
-            block.cdMultiplier = 1.20f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            var mono = player.gameObject.GetOrAddComponent<EscapistMono>();
+            foreach (Player player2 in PlayerManager.instance.players)
+            {
+                bool flag = player2.playerID != player.playerID;
+                if (flag)
+                {
+                    player2.GetComponent<WeaponHandler>().gun.attackSpeedMultiplier *= 0.85f;
+                }
+            }
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
         }
+
+        internal static CardInfo Card = null;
+
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            var mono = player.gameObject.GetOrAddComponent<EscapistMono>();
-            UnityEngine.GameObject.Destroy(mono);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been removed from player {player.playerID}.");
         }
         protected override string GetTitle()
         {
-            return "Escapist";
+            return "Sluggish";
         }
         protected override string GetDescription()
         {
-            return "<b><color=#ffd900>QUADRUPLES</b></color> your movement speed after you block for a short period of time.";
+            return "Make every player other than you attack slower.";
         }
         protected override GameObject GetCardArt()
         {
-            return BPP.CardArt["Escapist"];
+            return BPP.CardArt["Sabotager"];
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -54,24 +58,17 @@ namespace BPP.Cards
             {
                 new CardInfoStat()
                 {
-                    positive = false,
-                    stat = "Movement Speed",
-                    amount = "-20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Block Cooldown",
-                    amount = "+20%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
+                    positive = true,
+                    stat = "Other players attack speed",
+                    amount = "-15%",
+                    simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.DefensiveBlue;
+            return CardThemeColor.CardThemeColorType.FirepowerYellow;
         }
         public override string GetModName()
         {

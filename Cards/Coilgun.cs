@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CardChoiceSpawnUniqueCardPatch.CustomCategories;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
+﻿using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.Utilities;
-using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -24,7 +16,7 @@ namespace BPP.Cards
             gun.bursts = 5;
             gun.ammo = 7;
             gun.damage = 0.30f;
-            gun.timeBetweenBullets = 0.04f;
+            gun.timeBetweenBullets = 0.03f;
             gun.reloadTimeAdd = 0.30f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }

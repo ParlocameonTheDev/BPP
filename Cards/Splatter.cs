@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CardChoiceSpawnUniqueCardPatch.CustomCategories;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
+﻿using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.Utilities;
-using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -22,8 +14,8 @@ namespace BPP.Cards
                 CustomCardCategories.instance.CardCategory("Guns")
             };
             cardInfo.allowMultiple = false;
-            gun.ammo = 7;
-            gun.numberOfProjectiles = 9;
+            gun.ammo = 6;
+            gun.numberOfProjectiles = 8;
             gun.damage = 0.34f;
             gun.spread = 0.33f;
             gun.destroyBulletAfter = 0.75f;
@@ -61,14 +53,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Bullets",
-                    amount = "10",
+                    amount = "9",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+7",
+                    amount = "+6",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

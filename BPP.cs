@@ -23,14 +23,15 @@ namespace BPP
     [BepInDependency("com.willis.rounds.unbound", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.moddingutils", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.binarypenialporty.rounds.bpp", "BPP", "2.3.1")]
+    [BepInDependency("root.classes.manager.reborn", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInPlugin("com.binarypenialporty.rounds.bpp", "BPP", "3.0.0")]
     [BepInProcess("Rounds.exe")]
     public class BPP : BaseUnityPlugin
     {
         public const string AbbrModName = "BPP";
         private const string ModId = "com.binarypenialporty.rounds.bpp";
         private const string ModName = "BPP";
-        public const string Version = "2.3.1";
+        public const string Version = "3.0.0";
         public const string ModInitials = "BPP";
         public static Dictionary<String, GameObject> CardArt = new Dictionary<String, GameObject>();
         public static Dictionary<String, AudioClip> CustomAudio = new Dictionary<String, AudioClip>();
@@ -45,14 +46,31 @@ namespace BPP
             var harmony = new Harmony("com.binarypenialporty.rounds.bpp");
             harmony.PatchAll();
             BPP.globalVolMute = base.Config.Bind<float>("BPP", "Volume for BPP SFX", 100f, "Volume for BPP SFX");
+            GameModeManager.AddHook("GameStart", new Func<IGameModeHandler, IEnumerator>(this.ResetEffects));
             GameModeManager.AddHook("GameEnd", new Func<IGameModeHandler, IEnumerator>(this.ResetEffects));
         }
 
         private IEnumerator ResetEffects(IGameModeHandler gm)
         {
-            // Nothing to see here (yet)
-
+            this.DestroyAll<AcceleratedBackHoppingMono>();
+            this.DestroyAll<AMRHealthMono>();
+            this.DestroyAll<AMRMono>();
+            this.DestroyAll<DashMK2Mono>();
+            this.DestroyAll<DashMono>();
+            this.DestroyAll<GroundPoundMono>();
+            this.DestroyAll<HorizonMono>();
+            this.DestroyAll<ParryMono>();
+            this.DestroyAll<SwiftReactionsMono>();
             yield break;
+        }
+
+        private void DestroyAll<T>() where T : UnityEngine.Object
+        {
+            T[] array = UnityEngine.Object.FindObjectsOfType<T>();
+            for (int i = array.Length - 1; i >= 0; i--)
+            {
+                UnityEngine.Object.Destroy(array[i]);
+            }
         }
 
         void Start()
@@ -60,7 +78,7 @@ namespace BPP
             BPP.instance = this;
             // Credits
             UnityEngine.Debug.Log("BPP credits have been loaded into the client successfully!");
-            Unbound.RegisterCredits("<b><color=#ffd900>BPP v2.3.1</b></color>", new string[]
+            Unbound.RegisterCredits("<b><color=#ffd900>BPP v3.0.0</b></color>", new string[]
             {
                 "BinaryAssault, Penial, and Porty."
                 }, new string[]
@@ -83,7 +101,6 @@ namespace BPP
                 }, new Action<GameObject>(this.NewGUI), null, true);
                 // Added a class specifically for initializing cards, because it was getting messy.
                 Initialize.Cards();
-                Initialize.Managers();
                 CardArt = Initialize.CardArtDictionary();
                 CustomAudio = Initialize.AudioClipDictionary();
         }
@@ -109,7 +126,7 @@ namespace BPP
                 UnityEngine.Debug.Log("All BPP settings we're reset to their default values.");
                 BPP.globalVolMute.Value = 1f;
             }, 40, true, null, null, null, null);
-            MenuHandler.CreateText("You are playing with <b><color=#ffd900>BPP v2.3.1</b></color>", menu, out textMeshProUGUI, 20, true, null, null, null, null);
+            MenuHandler.CreateText("You are playing with <b><color=#ffd900>BPP v3.0.0</b></color>", menu, out textMeshProUGUI, 20, true, null, null, null, null);
         }
 
         public static bool settingsDebugModeToggle

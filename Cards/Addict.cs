@@ -3,22 +3,16 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using ModdingUtils.Extensions;
 using ModdingUtils.Utils;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
-using BPP.Utilities;
-using UnboundLib;
 using UnboundLib.Cards;
 using UnboundLib.Utils;
 using UnityEngine;
 
 namespace BPP.Cards
 {
-	internal class Addict : CustomCard
+    internal class Addict : CustomCard
 	{
 		public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers)
 		{

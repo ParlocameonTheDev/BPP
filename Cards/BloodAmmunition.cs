@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CardChoiceSpawnUniqueCardPatch.CustomCategories;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
+﻿using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.Utilities;
-using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -23,7 +15,7 @@ namespace BPP.Cards
             };
             gun.projectileColor = Color.red;
             gun.attackSpeed = 0.67f;
-            gun.reloadTimeAdd = 0.25f;
+            gun.reloadTimeAdd = 0.33f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -73,7 +65,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+0.25s",
+                    amount = "+0.33s",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };

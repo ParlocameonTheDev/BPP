@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CardChoiceSpawnUniqueCardPatch.CustomCategories;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
+﻿using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.Utilities;
-using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -21,7 +13,7 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Ammunitions")
             };
-            gun.ammo = 3;
+            gun.ammo = 5;
             gun.reloadTime = 0.80f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -57,7 +49,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+3",
+                    amount = "+5",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()

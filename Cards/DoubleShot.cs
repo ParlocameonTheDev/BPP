@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CardChoiceSpawnUniqueCardPatch.CustomCategories;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
+﻿using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.Utilities;
-using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -23,7 +15,7 @@ namespace BPP.Cards
             };
             gun.ammo = 3;
             gun.numberOfProjectiles = 1;
-            gun.damage = 0.60f;
+            gun.damage = 0.70f;
             gun.spread = 0.05f;
 
             cardInfo.allowMultiple = false;
@@ -75,7 +67,7 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "Damage",
-                    amount = "-40%",
+                    amount = "-30%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
+﻿using BPP.MonoBehaviours;
 using BPP.Utilities;
 using UnboundLib;
 using UnboundLib.Cards;
@@ -17,6 +11,7 @@ namespace BPP.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             cardInfo.allowMultiple = false;
+            statModifiers.jump = 1.35f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -48,7 +43,16 @@ namespace BPP.Cards
         }
         protected override CardInfoStat[] GetStats()
         {
-            return null;
+            return new CardInfoStat[]
+            {
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Jump Height",
+                    amount = "+35%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
+                }
+            };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()

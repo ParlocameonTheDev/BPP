@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
-using BPP.Utilities;
-using UnboundLib;
+﻿using BPP.Utilities;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -34,7 +26,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "Ballista > DSR 50. fight me bro (this is a Black Ops 2 reference.)";
+            return "Ballista > DSR 50. fight me bro.";
         }
         protected override GameObject GetCardArt()
         {

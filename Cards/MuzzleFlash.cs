@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
-using BPP.Utilities;
-using UnboundLib;
+﻿using BPP.Utilities;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -16,8 +8,8 @@ namespace BPP.Cards
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.attackSpeed = 1.40f;
-            gun.projectielSimulatonSpeed = 1.40f;
+            gun.attackSpeed = 1.25f;
+            gun.projectielSimulatonSpeed = 1.25f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -60,14 +52,14 @@ namespace BPP.Cards
                 {
                     positive = false,
                     stat = "ATKSPD",
-                    amount = "-40%",
+                    amount = "-25%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Projectile Speed",
-                    amount = "-40%",
+                    amount = "-25%",
                     simepleAmount = CardInfoStat.SimpleAmount.lower
                 }
             };

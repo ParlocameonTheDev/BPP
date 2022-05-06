@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CardChoiceSpawnUniqueCardPatch.CustomCategories;
-using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
+﻿using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.Utilities;
-using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -23,9 +15,9 @@ namespace BPP.Cards
             };
             cardInfo.allowMultiple = false;
             gun.projectileColor = Color.cyan;
-            gun.projectileSpeed = 0.70f;
+            gun.projectileSpeed = 0.65f;
             gun.damageAfterDistanceMultiplier = 3.00f;
-            gun.slow = (gun.slow > 0f) ? (gun.slow * 1.40f) : (gun.slow + 0.40f);
+            gun.slow = (gun.slow > 0f) ? (gun.slow * 1.35f) : (gun.slow + 0.35f);
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -67,14 +59,14 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Bullet Slow",
-                    amount = "+40%",
+                    amount = "+35%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Bullet Speed",
-                    amount = "-30%",
+                    amount = "-35%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };

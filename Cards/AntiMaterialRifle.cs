@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using BPP.MonoBehaviours;
-using BPP.RoundsEffects;
 using BPP.Utilities;
-using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -25,10 +21,21 @@ namespace BPP.Cards
             gun.reloadTime = 4.00f;
             gun.damage = 4.00f;
             gun.knockback = 4.00f;
+            gun.destroyBulletAfter = 20.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
+            List<ObjectsToSpawn> list = gun.objectsToSpawn.ToList<ObjectsToSpawn>();
+            list.Add(new ObjectsToSpawn
+            {
+                AddToProjectile = new GameObject("A_Golden", new Type[]
+                {
+                    typeof(AMRMono)
+                })
+            });
+            gun.objectsToSpawn = list.ToArray();
+
             gun.spread = 0f;
             gunAmmo.maxAmmo = 1;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been added to player {player.playerID}.");
@@ -43,7 +50,7 @@ namespace BPP.Cards
         }
         protected override string GetDescription()
         {
-            return "That's one big bullet bud...";
+            return "Bullets halve the players health for 5 seconds.";
         }
         protected override GameObject GetCardArt()
         {
@@ -74,8 +81,8 @@ namespace BPP.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Spread",
-                    amount = "No",
+                    stat = "Bullet Range",
+                    amount = "Reset",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
