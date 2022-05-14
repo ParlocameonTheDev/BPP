@@ -1,5 +1,7 @@
 ﻿using ClassesManagerReborn.Util;
+using BPP.MonoBehaviours;
 using BPP.Utilities;
+using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -14,6 +16,7 @@ namespace BPP.Cards
             gun.damage = 0.85f;
             statModifiers.health = 0.85f;
             statModifiers.movementSpeed = 0.85f;
+            gameObject.GetOrAddComponent<ClassNameMono>();
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)

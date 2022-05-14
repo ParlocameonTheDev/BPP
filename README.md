@@ -150,6 +150,17 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 3.0.1</summary>
+<br>
+
+Released on <i>5/14/2022</i>
+
+Fix for sabotager class that will give it colored top corners.
+
+---
+</details>
+
+<details>
 <summary>Version 3.0.0</summary>
 <br>
 
