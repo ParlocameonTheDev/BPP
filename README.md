@@ -150,6 +150,25 @@ Trusty Pan Ultra Super XL : 30 day satisfaction guarantee, we did not copy down 
 <i>Patch Notes</i>
 
 <details>
+<summary>Version 3.1.0</summary>
+<br>
+
+Released on <i>8/20/2023</i>
+
+Removed the Sabotager class and any accosiated cards
+
+Updated Steam URL on the credits menu
+
+Mod settings can no longer be adjusted during gameplay
+
+Removed Debug Mode toggle from mod settings
+
+Updated all mod dependencies
+
+---
+</details>
+
+<details>
 <summary>Version 3.0.1</summary>
 <br>
 

@@ -15,7 +15,7 @@ namespace BPP
 
         public static void Cards()
         {
-            UnityEngine.Debug.Log("BPP cards have been loaded into the client successfully!");
+            UnityEngine.Debug.Log("BPP cards have been loaded successfully!");
 
             // Freely Available Cards
             CustomCard.BuildCard<AcceleratedBackHopping>();
@@ -72,14 +72,6 @@ namespace BPP
             CustomCard.BuildCard<MuzzleFlash>();
             CustomCard.BuildCard<Foregrip>();
             CustomCard.BuildCard<Suppressor>();
-
-            // Sabotager Class
-            CustomCard.BuildCard<Sabotager>((card) => Sabotager.Card = card);
-            CustomCard.BuildCard<Chained>((card) => Chained.Card = card);
-            CustomCard.BuildCard<Culling>((card) => Culling.Card = card);
-            CustomCard.BuildCard<Sluggish>((card) => Sluggish.Card = card);
-            CustomCard.BuildCard<FakeCaliber>((card) => FakeCaliber.Card = card);
-            CustomCard.BuildCard<Clumsy>((card) => Clumsy.Card = card);
         }
 
         private static readonly AssetBundle Bundle = Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("bppart", typeof(BPP).Assembly);
@@ -89,7 +81,7 @@ namespace BPP
         {
             Dictionary<String, GameObject> cardArt = new Dictionary<String, GameObject>();
 
-            UnityEngine.Debug.Log("BPP card art have been loaded into the client successfully!");
+            UnityEngine.Debug.Log("BPP card art have been loaded successfully!");
             cardArt.Add("AA12", Bundle.LoadAsset<GameObject>("C_AA12"));
             cardArt.Add("AcceleratedBackHopping", Bundle.LoadAsset<GameObject>("C_AcceleratedBackHopping"));
             cardArt.Add("Dash", Bundle.LoadAsset<GameObject>("C_Dash"));
@@ -144,7 +136,6 @@ namespace BPP
             cardArt.Add("MuzzleFlash", Bundle.LoadAsset<GameObject>("C_MuzzleFlash"));
             cardArt.Add("Foregrip", Bundle.LoadAsset<GameObject>("C_Foregrip"));
             cardArt.Add("Suppressor", Bundle.LoadAsset<GameObject>("C_Suppressor"));
-            cardArt.Add("Sabotager", Bundle.LoadAsset<GameObject>("C_Sabotager"));
 
             return cardArt;
 
@@ -154,9 +145,10 @@ namespace BPP
         {
             Dictionary<String, AudioClip> audioClip = new Dictionary<String, AudioClip>();
 
-            UnityEngine.Debug.Log("BPP audio have been loaded into the client successfully!");
+            UnityEngine.Debug.Log("BPP audio have been loaded successfully!");
             audioClip.Add("ReflectAudio", Bundle.LoadAsset<AudioClip>("A_Reflect"));
             audioClip.Add("AtomicAudio", Bundle.LoadAsset<AudioClip>("A_Atomic"));
+            audioClip.Add("NuclearAudio", Bundle.LoadAsset<AudioClip>("A_Nuclear"));
             audioClip.Add("DashAudio", Bundle.LoadAsset<AudioClip>("A_Dash"));
 
             return audioClip;
