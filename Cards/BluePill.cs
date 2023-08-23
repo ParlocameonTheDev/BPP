@@ -13,7 +13,7 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Pills")
             };
-            statModifiers.health = 1.25f;
+            statModifiers.health = 1.33f;
             gun.damage = 0.90f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -49,7 +49,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Health",
-                    amount = "+25%",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()

@@ -13,7 +13,7 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Pills")
             };
-            block.cdMultiplier = 0.75f;
+            block.cdMultiplier = 0.67f;
             statModifiers.health = 0.90f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -49,7 +49,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Block Cooldown",
-                    amount = "-25%",
+                    amount = "-33%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
                 new CardInfoStat()

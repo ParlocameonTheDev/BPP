@@ -14,7 +14,7 @@ namespace BPP.Cards
                 CustomCardCategories.instance.CardCategory("Pills")
             };
             statModifiers.health = 0.90f;
-            gun.damage = 1.25f;
+            gun.damage = 1.33f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -49,7 +49,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Damage",
-                    amount = "+25%",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()

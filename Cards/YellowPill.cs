@@ -14,7 +14,7 @@ namespace BPP.Cards
                 CustomCardCategories.instance.CardCategory("Pills")
             };
             statModifiers.movementSpeed = 0.90f;
-            gun.attackSpeed = 0.75f;
+            gun.attackSpeed = 0.67f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -49,7 +49,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "ATKSPD",
-                    amount = "+25%",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()

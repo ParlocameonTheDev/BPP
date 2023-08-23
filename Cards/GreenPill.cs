@@ -13,7 +13,7 @@ namespace BPP.Cards
             {
                 CustomCardCategories.instance.CardCategory("Pills")
             };
-            statModifiers.movementSpeed = 1.25f;
+            statModifiers.movementSpeed = 1.33f;
             gun.attackSpeed = 1.10f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
@@ -49,7 +49,7 @@ namespace BPP.Cards
                 {
                     positive = true,
                     stat = "Movement Speed",
-                    amount = "+25%",
+                    amount = "+33%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
