@@ -157,6 +157,8 @@ Released on <i>8/20/2023</i>
 
 Removed the Sabotager class and any accosiated cards
 
+Fixed Condensed Shot applying a minimum bullet range (thank you Anarkey)
+
 Updated Steam URL on the credits menu
 
 Mod settings can no longer be adjusted during gameplay

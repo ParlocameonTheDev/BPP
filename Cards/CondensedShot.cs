@@ -15,7 +15,6 @@ namespace BPP.Cards
             };
             gun.projectileSpeed = 0.90f;
             gun.gravity = 0.90f;
-            gun.destroyBulletAfter = 20.00f;
             BPPDebug.Log($"[{BPP.ModInitials}][Card] {GetTitle()} has been setup.");
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
